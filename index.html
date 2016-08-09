@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pure Material CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./fonts/roboto/stylesheet.css" rel="stylesheet">
+    <link href="./node_modules/normalize.css/normalize.css" rel="stylesheet">
+    <link href="./css/pure-material.css" rel="stylesheet">
+    <link href="./fonts/material-icons/material-icons.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <input id="drawer-input" type="checkbox">
+      <label data-button for="drawer-input" id="drawer-label" class="nav-icon"><span class="material-icons">menu</span>
+        <div class="overlay"></div>
+      </label>
+      <nav id="drawer">
+        <div class="flexible-bar">
+          <div class="flexible-bar-media">
+            <div>
+              <h2>PURE MATERIAL CSS</h2>
+            </div>
+          </div>
+        </div>
+        <ul data-list>
+          <li><a href="#grid"> <i data-background="primary" class="material-icons">line_style </i>Grid</a></li>
+          <li><a href="#elevations"> <i data-background="accent" class="material-icons">layers </i>Elevations</a></li>
+          <li><a href="#colors"> <i data-background="info" class="material-icons">group_work </i>Colors</a></li>
+          <li><a href="#badges"> <i data-background="success" class="material-icons">chat_bubble </i>Badges</a></li>
+          <li><a href="#buttons"> <i data-background="warning" class="material-icons">arrow_forward </i>Buttons</a></li>
+          <li><a href="#cards"> <i data-background="danger" class="material-icons">video_label </i>Cards</a></li>
+          <li><a href="#dialogs"> <i data-background="primary" class="material-icons">web_asset </i>Dialogs</a></li>
+          <li><a href="#lists"> <i data-background="accent" class="material-icons">list </i>Lists</a></li>
+          <li><a href="#forms"> <i data-background="info" class="material-icons">format_color_text </i>Forms</a></li>
+          <li><a href="#menus"> <i data-background="success" class="material-icons">menu </i>Menus</a></li>
+          <li><a href="#tables"> <i data-background="warning" class="material-icons">view_list </i>Tables</a></li>
+          <li><a href="#tool-bars"> <i data-background="default" class="material-icons">add</i>Toolbars</a></li>
+          <li><a href="#tabs"> <i data-background="default" class="material-icons">add</i>Tabs</a></li>
+          <li><a href="#tooltips"> <i data-background="accent" class="material-icons">label </i>Tooltips</a></li>
+          <li><a href="#progress"> <i data-background="info" class="material-icons">trending_flat </i>Progress</a></li>
+          <li><a href="#spinner"> <i data-background="success" class="material-icons">refresh </i>Spinner</a></li>
+          <li><a href="#sliders"> <i data-background="default" class="material-icons">add</i>Sliders</a></li>
+          <li><a href="#toggles"> <i data-background="default" class="material-icons">add</i>Toggles</a></li>
+          <li><a href="#notifications"> <i data-background="default" class="material-icons">add</i>Notifications</a></li>
+          <li><a href="#chips"> <i data-background="default" class="material-icons">add</i>Chips</a></li>
+          <li><a href="#expansion-panels"> <i data-background="default" class="material-icons">add</i>Expansion panels</a></li>
+          <li><a href="#bottom-navigation"> <i data-background="default" class="material-icons">add</i>Bottom navigation</a></li>
+          <li><a href="#bottom-sheets"> <i data-background="default" class="material-icons">add</i>Bottom sheets</a></li>
+          <li><a href="#steppers"> <i data-background="default" class="material-icons">add</i>Steppers</a></li>
+          <li><a href="#search"> <i data-background="default" class="material-icons">add</i>Search</a></li>
+          <li><a href="#pickers"> <i data-background="default" class="material-icons">add</i>Pickers</a></li>
+        </ul>
+      </nav>
+      <h1>PURE MATERIAL CSS</h1>
+      <nav><a href="#about" data-button>About</a><a href="#getting-started" data-button>Getting started</a><a href="#" data-button>Github</a><a href="#" data-button>Download</a></nav>
+      <div class="menu-icon"></div>
+    </header>
+    <div class="flexible-bar"></div>
+    <div class="tab-bar"></div>
+    <article id="about" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="getting-started" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <!-- Components-->
+    <article id="grid" class="page"> 
+      <h1>
+         
+        Simple row<small>(Columns without gutters)</small>
+      </h1>
+      <hr>
+      <div data-row>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="3" data-background="white" data-elevation="2">data-column="3"</div>
+        <div data-column="3" data-background="white" data-elevation="2">data-column="3"</div>
+        <div data-column="3" data-background="white" data-elevation="2">data-column="3"</div>
+        <div data-column="3" data-background="white" data-elevation="2">data-column="3"</div>
+        <div data-column="4" data-background="white" data-elevation="2">data-column="4"</div>
+        <div data-column="4" data-background="white" data-elevation="2">data-column="4"</div>
+        <div data-column="4" data-background="white" data-elevation="2">data-column="4"</div>
+        <div data-column="5" data-background="white" data-elevation="2">data-column="5"</div>
+        <div data-column="5" data-background="white" data-elevation="2">data-column="5"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="6" data-background="white" data-elevation="2">data-column="6"</div>
+        <div data-column="6" data-background="white" data-elevation="2">data-column="6"</div>
+        <div data-column="7" data-background="white" data-elevation="2">data-column="7"</div>
+        <div data-column="5" data-background="white" data-elevation="2">data-column="5"</div>
+        <div data-column="8" data-background="white" data-elevation="2">data-column="8"</div>
+        <div data-column="4" data-background="white" data-elevation="2">data-column="4"</div>
+        <div data-column="9" data-background="white" data-elevation="2">data-column="9"</div>
+        <div data-column="3" data-background="white" data-elevation="2">data-column="3"</div>
+        <div data-column="10" data-background="white" data-elevation="2">data-column="10"</div>
+        <div data-column="2" data-background="white" data-elevation="2">data-column="2"</div>
+        <div data-column="11" data-background="white" data-elevation="2">data-column="11"</div>
+        <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
+        <div data-column="12" data-background="white" data-elevation="2">data-column="12"</div>
+      </div>
+      <pre>&lt;div data-row&gt;<br>   &lt;div data-column=&quot;{size}&quot;&gt;&lt;/div&gt;<br>   &lt;!-- Or --&gt;<br>   &lt;div data-column=&quot;{screen}-{size}&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <h1>
+         
+        Row guttered<small>(Columns with gutters)</small>
+      </h1>
+      <hr>
+      <div data-row-gutter>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="3">
+          <div data-elevation="2" data-background="white">data-column="3"</div>
+        </div>
+        <div data-column="3">
+          <div data-elevation="2" data-background="white">data-column="3"</div>
+        </div>
+        <div data-column="3">
+          <div data-elevation="2" data-background="white">data-column="3"</div>
+        </div>
+        <div data-column="3">
+          <div data-elevation="2" data-background="white">data-column="3"</div>
+        </div>
+        <div data-column="4">
+          <div data-elevation="2" data-background="white">data-column="4"</div>
+        </div>
+        <div data-column="4">
+          <div data-elevation="2" data-background="white">data-column="4"</div>
+        </div>
+        <div data-column="4">
+          <div data-elevation="2" data-background="white">data-column="4"</div>
+        </div>
+        <div data-column="5">
+          <div data-elevation="2" data-background="white">data-column="5"</div>
+        </div>
+        <div data-column="5">
+          <div data-elevation="2" data-background="white">data-column="5"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="6">
+          <div data-elevation="2" data-background="white">data-column="6"</div>
+        </div>
+        <div data-column="6">
+          <div data-elevation="2" data-background="white">data-column="6"</div>
+        </div>
+        <div data-column="7">
+          <div data-elevation="2" data-background="white">data-column="7"</div>
+        </div>
+        <div data-column="5">
+          <div data-elevation="2" data-background="white">data-column="5"</div>
+        </div>
+        <div data-column="8">
+          <div data-elevation="2" data-background="white">data-column="8"</div>
+        </div>
+        <div data-column="4">
+          <div data-elevation="2" data-background="white">data-column="4"</div>
+        </div>
+        <div data-column="9">
+          <div data-elevation="2" data-background="white">data-column="9"</div>
+        </div>
+        <div data-column="3">
+          <div data-elevation="2" data-background="white">data-column="3"</div>
+        </div>
+        <div data-column="10">
+          <div data-elevation="2" data-background="white">data-column="10"</div>
+        </div>
+        <div data-column="2">
+          <div data-elevation="2" data-background="white">data-column="2"</div>
+        </div>
+        <div data-column="11">
+          <div data-elevation="2" data-background="white">data-column="11"</div>
+        </div>
+        <div data-column="1">
+          <div data-elevation="2" data-background="white">data-column="1"</div>
+        </div>
+        <div data-column="12">
+          <div data-elevation="2" data-background="white">data-column="12"</div>
+        </div>
+      </div>
+      <pre>&lt;div data-row-gutter&gt;<br>   &lt;div data-column=&quot;{size}&quot;&gt;&lt;/div&gt;<br>   &lt;!-- Or --&gt;<br>   &lt;div data-column=&quot;{screen}-{size}&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <h1>Screen sizes </h1>
+      <hr>
+      <table> 
+        <thead>
+          <tr> 
+            <th>Device</th>
+            <th>Class Prefix</th>
+            <th>Screen size</th>
+          </tr>
+        </thead>
+        <tbody class="text-left">
+          <tr>
+            <td>Extra small devices</td>
+            <td>data-column="xs-{size}"</td>
+            <td>Phones (<480px)</td>
+          </tr>
+          <tr> 
+            <td>Small devices </td>
+            <td>data-column="sm-{size}"</td>
+            <td>Tablets (<840px)</td>
+          </tr>
+          <tr> 
+            <td>Medium devices </td>
+            <td>data-column="md-{size}"</td>
+            <td>Desktops (<1280px)</td>
+          </tr>
+          <tr> 
+            <td>Large devices </td>
+            <td>data-column="lg-{size}"</td>
+            <td>Desktops (<1440px)</td>
+          </tr>
+          <tr> 
+            <td>Extra large devices</td>
+            <td>data-column="xlg-{size}"</td>
+            <td>Desktops (>1440px)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>Responsive columns</h1>
+      <hr>
+      <div data-row-gutter>
+        <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">
+          <div data-elevation="2" data-background="white">&nbsp</div>
+        </div>
+        <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">
+          <div data-elevation="2" data-background="white">&nbsp</div>
+        </div>
+        <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">
+          <div data-elevation="2" data-background="white">&nbsp</div>
+        </div>
+        <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">
+          <div data-elevation="2" data-background="white">&nbsp</div>
+        </div>
+        <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">
+          <div data-elevation="2" data-background="white">&nbsp</div>
+        </div>
+        <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">
+          <div data-elevation="2" data-background="white">&nbsp</div>
+        </div>
+      </div>
+      <pre>&lt;div data-row-gutter&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>&lt;/div&gt;<br></pre>
+    </article>
+    <article id="elevations" class="page">
+      <h1>Elevations</h1>
+      <hr>
+      <div data-row-gutter>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="1" data-background="white" class="padding-8">data-elevation="1"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="2" data-background="white" class="padding-8">data-elevation="2"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="3" data-background="white" class="padding-8">data-elevation="3"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="4" data-background="white" class="padding-8">data-elevation="4"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="6" data-background="white" class="padding-8">data-elevation="6"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="8" data-background="white" class="padding-8">data-elevation="8"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="9" data-background="white" class="padding-8">data-elevation="9"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="10" data-background="white" class="padding-8">data-elevation="10"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="11" data-background="white" class="padding-8">data-elevation="11"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="12" data-background="white" class="padding-8">data-elevation="12"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="16" data-background="white" class="padding-8">data-elevation="16"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="24" data-background="white" class="padding-8">data-elevation="24"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="26" data-background="white" class="padding-8">data-elevation="26"</div>
+        </div>
+      </div>
+      <h1>Embosses</h1>
+      <hr>
+      <div data-row-gutter>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="1" data-background="white" class="padding-8">data-emboss="1"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="2" data-background="white" class="padding-8">data-emboss="2"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="3" data-background="white" class="padding-8">data-emboss="3"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="4" data-background="white" class="padding-8">data-emboss="4"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="6" data-background="white" class="padding-8">data-emboss="6"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="8" data-background="white" class="padding-8">data-emboss="8"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="9" data-background="white" class="padding-8">data-emboss="9"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="10" data-background="white" class="padding-8">data-emboss="10"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="11" data-background="white" class="padding-8">data-emboss="11"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="12" data-background="white" class="padding-8">data-emboss="12"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="16" data-background="white" class="padding-8">data-emboss="16"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="24" data-background="white" class="padding-8">data-emboss="24"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="26" data-background="white" class="padding-8">data-emboss="26"  </div>
+        </div>
+      </div>
+      <h1>Utility classes </h1>
+      <hr>
+      <div data-row-gutter class="margin-top-8">
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="2 hover-16" data-background="white" class="padding-8">data-elevation="2 hover-16"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-elevation="2 active-16" data-background="white" class="padding-8">data-elevation="2 active-16"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <input data-elevation="2 focus-16" value="data-elevation=&quot;2 focus-16&quot;">
+        </div>
+        <hr>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="2 hover-16" data-background="white" class="padding-8">data-emboss="2 hover-16"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <div data-emboss="2 active-16" data-background="white" class="padding-8">data-emboss="2 active-16"</div>
+        </div>
+        <div data-column="xlg-3 lg-4 md-6 sm-12">
+          <input data-emboss="2 focus-16" value="data-emboss=&quot;2 focus-16&quot;">
+        </div>
+      </div>
+    </article>
+    <article id="colors" class="page">
+      <h1>Colors</h1>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th data-background="primary">Primary
+              <div>data-background="primary"</div>
+            </th>
+            <th data-background="accent">Accent
+              <div>data-background="accent"</div>
+            </th>
+            <th data-background="info">Info
+              <div>data-background="info"</div>
+            </th>
+            <th data-background="success">Success
+              <div>data-background="success"</div>
+            </th>
+            <th data-background="warning">Warning
+              <div>data-background="warning"</div>
+            </th>
+            <th data-background="danger">Danger
+              <div>data-background="danger"</div>
+            </th>
+            <th data-background="default">Default
+              <div>data-background="default"</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-left">
+          <tr>
+            <td data-background="primary 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 50"</div>
+            </td>
+            <td data-background="accent 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 50"</div>
+            </td>
+            <td data-background="info 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 50"</div>
+            </td>
+            <td data-background="success 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 50"</div>
+            </td>
+            <td data-background="warning 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 50"</div>
+            </td>
+            <td data-background="danger 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 50"</div>
+            </td>
+            <td data-background="default 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 50"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 100"</div>
+            </td>
+            <td data-background="accent 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 100"</div>
+            </td>
+            <td data-background="info 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 100"</div>
+            </td>
+            <td data-background="success 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 100"</div>
+            </td>
+            <td data-background="warning 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 100"</div>
+            </td>
+            <td data-background="danger 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 100"</div>
+            </td>
+            <td data-background="default 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 100"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 200"</div>
+            </td>
+            <td data-background="accent 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 200"</div>
+            </td>
+            <td data-background="info 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 200"</div>
+            </td>
+            <td data-background="success 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 200"</div>
+            </td>
+            <td data-background="warning 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 200"</div>
+            </td>
+            <td data-background="danger 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 200"</div>
+            </td>
+            <td data-background="default 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 200"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 300"</div>
+            </td>
+            <td data-background="accent 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 300"</div>
+            </td>
+            <td data-background="info 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 300"</div>
+            </td>
+            <td data-background="success 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 300"</div>
+            </td>
+            <td data-background="warning 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 300"</div>
+            </td>
+            <td data-background="danger 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 300"</div>
+            </td>
+            <td data-background="default 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 300"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 400"</div>
+            </td>
+            <td data-background="accent 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 400"</div>
+            </td>
+            <td data-background="info 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 400"</div>
+            </td>
+            <td data-background="success 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 400"</div>
+            </td>
+            <td data-background="warning 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 400"</div>
+            </td>
+            <td data-background="danger 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 400"</div>
+            </td>
+            <td data-background="default 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 400"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 500"</div>
+            </td>
+            <td data-background="accent 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 500"</div>
+            </td>
+            <td data-background="info 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 500"</div>
+            </td>
+            <td data-background="success 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 500"</div>
+            </td>
+            <td data-background="warning 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 500"</div>
+            </td>
+            <td data-background="danger 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 500"</div>
+            </td>
+            <td data-background="default 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 500"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 600"</div>
+            </td>
+            <td data-background="accent 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 600"</div>
+            </td>
+            <td data-background="info 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 600"</div>
+            </td>
+            <td data-background="success 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 600"</div>
+            </td>
+            <td data-background="warning 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 600"</div>
+            </td>
+            <td data-background="danger 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 600"</div>
+            </td>
+            <td data-background="default 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 600"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 700"</div>
+            </td>
+            <td data-background="accent 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 700"</div>
+            </td>
+            <td data-background="info 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 700"</div>
+            </td>
+            <td data-background="success 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 700"</div>
+            </td>
+            <td data-background="warning 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 700"</div>
+            </td>
+            <td data-background="danger 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 700"</div>
+            </td>
+            <td data-background="default 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 700"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 800"</div>
+            </td>
+            <td data-background="accent 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 800"</div>
+            </td>
+            <td data-background="info 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 800"</div>
+            </td>
+            <td data-background="success 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 800"</div>
+            </td>
+            <td data-background="warning 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 800"</div>
+            </td>
+            <td data-background="danger 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 800"</div>
+            </td>
+            <td data-background="default 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 800"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary 900"</div>
+            </td>
+            <td data-background="accent 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent 900"</div>
+            </td>
+            <td data-background="info 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info 900"</div>
+            </td>
+            <td data-background="success 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success 900"</div>
+            </td>
+            <td data-background="warning 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning 900"</div>
+            </td>
+            <td data-background="danger 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger 900"</div>
+            </td>
+            <td data-background="default 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default 900"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary A100"</div>
+            </td>
+            <td data-background="accent A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent A100"</div>
+            </td>
+            <td data-background="info A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info A100"</div>
+            </td>
+            <td data-background="success A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success A100"</div>
+            </td>
+            <td data-background="warning A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning A100"</div>
+            </td>
+            <td data-background="danger A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger A100"</div>
+            </td>
+            <td data-background="default A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default A100"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary A200"</div>
+            </td>
+            <td data-background="accent A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent A200"</div>
+            </td>
+            <td data-background="info A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info A200"</div>
+            </td>
+            <td data-background="success A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success A200"</div>
+            </td>
+            <td data-background="warning A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning A200"</div>
+            </td>
+            <td data-background="danger A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger A200"</div>
+            </td>
+            <td data-background="default A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default A200"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary A400"</div>
+            </td>
+            <td data-background="accent A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent A400"</div>
+            </td>
+            <td data-background="info A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info A400"</div>
+            </td>
+            <td data-background="success A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success A400"</div>
+            </td>
+            <td data-background="warning A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning A400"</div>
+            </td>
+            <td data-background="danger A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger A400"</div>
+            </td>
+            <td data-background="default A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default A400"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-background="primary A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="primary A700"</div>
+            </td>
+            <td data-background="accent A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="accent A700"</div>
+            </td>
+            <td data-background="info A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="info A700"</div>
+            </td>
+            <td data-background="success A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="success A700"</div>
+            </td>
+            <td data-background="warning A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="warning A700"</div>
+            </td>
+            <td data-background="danger A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="danger A700"</div>
+            </td>
+            <td data-background="default A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-background="default A700"</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>Text Colors</h1>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th data-color="primary">Primary
+              <div>data-color="primary"</div>
+            </th>
+            <th data-color="accent">Accent
+              <div>data-color="accent"</div>
+            </th>
+            <th data-color="info">Info
+              <div>data-color="info"</div>
+            </th>
+            <th data-color="success">Success
+              <div>data-color="success"</div>
+            </th>
+            <th data-color="warning">Warning
+              <div>data-color="warning"</div>
+            </th>
+            <th data-color="danger">Danger
+              <div>data-color="danger"</div>
+            </th>
+            <th data-color="default">Default
+              <div>data-color="default"</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="text-left">
+          <tr>
+            <td data-color="primary 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 50"</div>
+            </td>
+            <td data-color="accent 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 50"</div>
+            </td>
+            <td data-color="info 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 50"</div>
+            </td>
+            <td data-color="success 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 50"</div>
+            </td>
+            <td data-color="warning 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 50"</div>
+            </td>
+            <td data-color="danger 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 50"</div>
+            </td>
+            <td data-color="default 50">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 50"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 100"</div>
+            </td>
+            <td data-color="accent 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 100"</div>
+            </td>
+            <td data-color="info 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 100"</div>
+            </td>
+            <td data-color="success 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 100"</div>
+            </td>
+            <td data-color="warning 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 100"</div>
+            </td>
+            <td data-color="danger 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 100"</div>
+            </td>
+            <td data-color="default 100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 100"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 200"</div>
+            </td>
+            <td data-color="accent 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 200"</div>
+            </td>
+            <td data-color="info 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 200"</div>
+            </td>
+            <td data-color="success 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 200"</div>
+            </td>
+            <td data-color="warning 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 200"</div>
+            </td>
+            <td data-color="danger 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 200"</div>
+            </td>
+            <td data-color="default 200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 200"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 300"</div>
+            </td>
+            <td data-color="accent 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 300"</div>
+            </td>
+            <td data-color="info 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 300"</div>
+            </td>
+            <td data-color="success 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 300"</div>
+            </td>
+            <td data-color="warning 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 300"</div>
+            </td>
+            <td data-color="danger 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 300"</div>
+            </td>
+            <td data-color="default 300">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 300"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 400"</div>
+            </td>
+            <td data-color="accent 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 400"</div>
+            </td>
+            <td data-color="info 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 400"</div>
+            </td>
+            <td data-color="success 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 400"</div>
+            </td>
+            <td data-color="warning 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 400"</div>
+            </td>
+            <td data-color="danger 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 400"</div>
+            </td>
+            <td data-color="default 400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 400"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 500"</div>
+            </td>
+            <td data-color="accent 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 500"</div>
+            </td>
+            <td data-color="info 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 500"</div>
+            </td>
+            <td data-color="success 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 500"</div>
+            </td>
+            <td data-color="warning 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 500"</div>
+            </td>
+            <td data-color="danger 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 500"</div>
+            </td>
+            <td data-color="default 500">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 500"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 600"</div>
+            </td>
+            <td data-color="accent 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 600"</div>
+            </td>
+            <td data-color="info 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 600"</div>
+            </td>
+            <td data-color="success 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 600"</div>
+            </td>
+            <td data-color="warning 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 600"</div>
+            </td>
+            <td data-color="danger 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 600"</div>
+            </td>
+            <td data-color="default 600">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 600"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 700"</div>
+            </td>
+            <td data-color="accent 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 700"</div>
+            </td>
+            <td data-color="info 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 700"</div>
+            </td>
+            <td data-color="success 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 700"</div>
+            </td>
+            <td data-color="warning 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 700"</div>
+            </td>
+            <td data-color="danger 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 700"</div>
+            </td>
+            <td data-color="default 700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 700"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 800"</div>
+            </td>
+            <td data-color="accent 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 800"</div>
+            </td>
+            <td data-color="info 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 800"</div>
+            </td>
+            <td data-color="success 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 800"</div>
+            </td>
+            <td data-color="warning 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 800"</div>
+            </td>
+            <td data-color="danger 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 800"</div>
+            </td>
+            <td data-color="default 800">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 800"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary 900"</div>
+            </td>
+            <td data-color="accent 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent 900"</div>
+            </td>
+            <td data-color="info 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info 900"</div>
+            </td>
+            <td data-color="success 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success 900"</div>
+            </td>
+            <td data-color="warning 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning 900"</div>
+            </td>
+            <td data-color="danger 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger 900"</div>
+            </td>
+            <td data-color="default 900">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default 900"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary A100"</div>
+            </td>
+            <td data-color="accent A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent A100"</div>
+            </td>
+            <td data-color="info A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info A100"</div>
+            </td>
+            <td data-color="success A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success A100"</div>
+            </td>
+            <td data-color="warning A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning A100"</div>
+            </td>
+            <td data-color="danger A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger A100"</div>
+            </td>
+            <td data-color="default A100">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default A100"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary A200"</div>
+            </td>
+            <td data-color="accent A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent A200"</div>
+            </td>
+            <td data-color="info A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info A200"</div>
+            </td>
+            <td data-color="success A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success A200"</div>
+            </td>
+            <td data-color="warning A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning A200"</div>
+            </td>
+            <td data-color="danger A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger A200"</div>
+            </td>
+            <td data-color="default A200">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default A200"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary A400"</div>
+            </td>
+            <td data-color="accent A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent A400"</div>
+            </td>
+            <td data-color="info A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info A400"</div>
+            </td>
+            <td data-color="success A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success A400"</div>
+            </td>
+            <td data-color="warning A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning A400"</div>
+            </td>
+            <td data-color="danger A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger A400"</div>
+            </td>
+            <td data-color="default A400">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default A400"</div>
+            </td>
+          </tr>
+          <tr>
+            <td data-color="primary A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="primary A700"</div>
+            </td>
+            <td data-color="accent A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="accent A700"</div>
+            </td>
+            <td data-color="info A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="info A700"</div>
+            </td>
+            <td data-color="success A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="success A700"</div>
+            </td>
+            <td data-color="warning A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="warning A700"</div>
+            </td>
+            <td data-color="danger A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="danger A700"</div>
+            </td>
+            <td data-color="default A700">
+              <div>Normal text</div>
+              <div> <b>Bold text</b></div>
+              <div>data-color="default A700"</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <article id="badges" class="page">
+      <h1>Badges</h1>
+      <hr>
+      <div class="text-center">
+        <div data-badge="1" class="material-icons margin-8">account_box</div>
+        <div data-badge="1" data-badge-color="default" class="material-icons margin-8">account_box</div>
+        <div data-badge="1" data-badge-color="primary" class="material-icons margin-8">account_box</div>
+        <div data-badge="1" data-badge-color="accent" class="material-icons margin-8">account_box</div>
+        <div data-badge="1" data-badge-color="info" class="material-icons margin-8">account_box</div>
+        <div data-badge="1" data-badge-color="warning" class="material-icons margin-8">account_box</div>
+        <div data-badge="1" data-badge-color="danger" class="material-icons margin-8">account_box</div>
+        <div data-badge="1" data-badge-color="success" class="material-icons margin-8">account_box</div>
+        <pre> &lt;element data-badge=&quot;1&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-badge=&quot;1&quot; data-badge-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
+      </div>
+    </article>
+    <article id="buttons" class="page">
+      <h1>Default Buttons</h1>
+      <button>Default Button</button>
+      <button data-button="default">data-button="default"</button>
+      <button data-button="primary">data-button="primary"</button>
+      <button data-button="accent">data-button="accent"</button>
+      <button data-button="info">data-button="info"</button>
+      <button data-button="warning">data-button="warning"</button>
+      <button data-button="success">data-button="success"</button>
+      <hr>
+      <h1>Raised Buttons</h1>
+      <button data-button="raised">data-button="raised"</button>
+      <button data-button="default raised">data-button="default raised"</button>
+      <button data-button="primary raised">data-button="primary raised"</button>
+      <button data-button="accent raised">data-button="accent raised"</button>
+      <button data-button="info raised">data-button="info raised"</button>
+      <button data-button="warning raised">data-button="warning raised"</button>
+      <button data-button="success raised">data-button="success raised"</button>
+      <hr>
+      <h1>Outlined Buttons</h1>
+      <button data-button="outline">data-button="outline"</button>
+      <button data-button="default outline">data-button="default outline"</button>
+      <button data-button="primary outline">data-button="primary outline"</button>
+      <button data-button="accent outline">data-button="accent outline"</button>
+      <button data-button="info outline">data-button="info outline"</button>
+      <button data-button="warning outline">data-button="warning outline"</button>
+      <button data-button="success outline">data-button="success outline"</button>
+      <hr>
+      <h1>FAB Buttons</h1>
+      <button data-fab="inline"><i class="material-icons">add</i></button>
+      <button data-fab="default inline"><i class="material-icons">add</i></button>
+      <button data-fab="primary inline"><i class="material-icons">add</i></button>
+      <button data-fab="accent inline"><i class="material-icons">add</i></button>
+      <button data-fab="info inline"><i class="material-icons">add</i></button>
+      <button data-fab="warning inline"><i class="material-icons">add</i></button>
+      <button data-fab="success inline"><i class="material-icons">add</i></button>
+      <hr>
+      <h1>Mini-FAB Buttons</h1>
+      <button data-fab="inline mini"><i class="material-icons">add</i></button>
+      <button data-fab="default inline mini"><i class="material-icons">add</i></button>
+      <button data-fab="primary inline mini"><i class="material-icons">add</i></button>
+      <button data-fab="accent inline mini"><i class="material-icons">add</i></button>
+      <button data-fab="info inline mini"><i class="material-icons">add</i></button>
+      <button data-fab="warning inline mini"><i class="material-icons">add</i></button>
+      <button data-fab="success inline mini"><i class="material-icons">add</i></button>
+    </article>
+    <article id="cards" class="page">
+      <h1>Cards</h1>
+      <h2>Simple card</h2>
+      <hr>
+      <div data-card>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+      </div>
+      <pre> &lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <h2>Card with footer</h2>
+      <hr>
+      <div data-card>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <footer>
+          <button data-button="primary">Get started</button>
+        </footer>
+      </div>
+      <pre> &lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      <h2>Card with header and footer</h2>
+      <hr>
+      <div data-card>
+        <header>
+          <h2>Title</h2>
+          <nav>
+            <button data-fab="inline mini"><i class="material-icons">share</i></button>
+          </nav>
+        </header>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <footer>
+          <button data-button="primary">Get started</button>
+        </footer>
+      </div>
+      <pre> &lt;div data-card&gt;<br>    &lt;header&gt;<br>        &lt;h2&gt;Title&lt;/h2&gt;<br>        &lt;nav&gt;<br>            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>        &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      <h2>Card with media</h2>
+      <hr>
+      <div data-card>
+        <div data-card-media>
+          <header>
+            <h2>Title</h2>
+            <nav>
+              <button data-fab="inline mini"><i class="material-icons">share</i></button>
+            </nav>
+          </header><img src="./img.jpeg">
+        </div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <footer>
+          <button data-button="primary">Get started</button>
+        </footer>
+      </div>
+      <pre> &lt;div data-card&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>  &lt;div&gt;Lorem ipsum...&lt;/div&gt;<br>  &lt;footer&gt;<br>    &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>  &lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      <h2>Card squared</h2>
+      <hr>
+      <div data-card="squared">
+        <div data-card-media>
+          <header>
+            <h2>Title</h2>
+            <nav>
+              <button data-fab="inline mini"><i class="material-icons">share</i></button>
+            </nav>
+          </header><img src="./img.jpeg">
+        </div>
+      </div>
+      <pre> &lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <h2>Card squared with text instead of media</h2>
+      <hr>
+      <div data-card="squared">
+        <div data-card-media>
+          <header>
+            <h2>Title</h2>
+            <nav>
+              <button data-fab="inline mini"><i class="material-icons">share</i></button>
+            </nav>
+          </header>
+          <div data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</div>
+        </div>
+      </div>
+      <pre> &lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div data-background=&quot;primary&quot;&gt;<br>      Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+    </article>
+    <article id="dialogs" class="page">
+      <h1>Dialogs</h1>
+      <hr>
+      <div class="text-center">
+        <input id="dialog-1" type="checkbox" class="dialog-trigger">
+        <label data-button for="dialog-1"><span>dialog-1</span>
+          <div class="overlay"></div>
+        </label>
+        <dialog>
+          <header>
+            <h2>Title</h2>
+            <nav>
+              <button data-fab="inline mini"><i class="material-icons">share</i></button>
+            </nav>
+          </header>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+          <footer>
+            <button data-button="primary">Get started</button>
+          </footer>
+        </dialog>
+        <input id="dialog-2" type="checkbox" class="dialog-trigger">
+        <label data-button for="dialog-2"><span>dialog-2</span>
+          <div class="overlay"></div>
+        </label>
+        <dialog>
+          <div data-dialog-media>
+            <header>
+              <h2>Title</h2>
+              <nav>
+                <button data-fab="inline mini"><i class="material-icons">share</i></button>
+              </nav>
+            </header><img src="./img.jpeg">
+          </div>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+          <footer>
+            <button data-button="primary">Get started</button>
+          </footer>
+        </dialog>
+        <input id="dialog-3" type="checkbox" class="dialog-trigger">
+        <label data-button for="dialog-3"><span>dialog-3</span>
+          <div class="overlay"></div>
+        </label>
+        <dialog data-dialog="squared">
+          <div data-dialog-media>
+            <header>
+              <h2>Title</h2>
+              <nav>
+                <button data-fab="inline mini"><i class="material-icons">share</i></button>
+              </nav>
+            </header><img src="./img.jpeg">
+          </div>
+        </dialog>
+        <input id="dialog-4" type="checkbox" class="dialog-trigger">
+        <label data-button for="dialog-4"><span>dialog-4</span>
+          <div class="overlay">  </div>
+        </label>
+        <dialog data-dialog="squared">
+          <div data-dialog-media>
+            <header>
+              <h2>Title</h2>
+              <nav>
+                <button data-fab="inline mini"><i class="material-icons">share</i></button>
+              </nav>
+            </header>
+            <div data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</div>
+          </div>
+        </dialog>
+      </div>
+    </article>
+    <article id="lists" class="page">
+      <h1>Lists</h1>
+      <hr>
+      <h2>Simple list with primary content</h2>
+      <hr>
+      <ul data-list>
+        <li> <a href="#">Bhryan Cranston</a></li>
+        <li> <a href="#">Aaron Paul</a></li>
+        <li> <a href="#">Bob Odenkirk</a></li>
+      </ul>
+      <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      <h2>List with primary and secondary content</h2>
+      <hr>
+      <ul data-list>
+        <li><a href="#">Bhryan Cranston    </a><a href="#"><i class="material-icons">star    </i></a></li>
+        <li><a href="#">Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
+        <li><a href="#">Bob Odenkirk      </a><a href="#"><i class="material-icons">star</i></a></li>
+        <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      </ul>
+      <h2>Simple list with primary content and icon</h2>
+      <hr>
+      <ul data-list>
+        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston</a></li>
+        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul  </a></li>
+        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk</a></li>
+      </ul>
+      <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      <h2>List with primary content and icon and secondary content</h2>
+      <hr>
+      <ul data-list>
+        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston    </a><a href="#"><i class="material-icons">star    </i></a></li>
+        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
+        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk      </a><a href="#"><i class="material-icons">star</i></a></li>
+        <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      </ul>
+      <h2>Two line list</h2>
+      <hr>
+      <ul data-list="two-line">
+        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston    <small>
+              Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
+              for playing Hal in Malcom in the Middle.    </small></a><a href="#"><i class="material-icons">star    </i></a></li>
+        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul        <small>
+              Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
+              the &quot;Need For Speed&quot; Movie.     </small></a><a href="#"><i class="material-icons">star   </i></a></li>
+        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk         <small>
+              Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
+              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      </small></a><a href="#"><i class="material-icons">star</i></a></li>
+        <pre>     &lt;ul data-list=&quot;two-line&quot;&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>                  &lt;small&gt;<br>                      Lorem ipsum...<br>                  &lt;/small&gt;<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      </ul>
+      <h2>Three line list</h2>
+      <hr>
+      <ul data-list="three-line">
+        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston    <small>
+              Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
+              for playing Hal in Malcom in the Middle.    </small></a><a href="#"><i class="material-icons">star    </i></a></li>
+        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul        <small>
+              Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
+              the &quot;Need For Speed&quot; Movie.     </small></a><a href="#"><i class="material-icons">star   </i></a></li>
+        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk         <small>
+              Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
+              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      </small></a><a href="#"><i class="material-icons">star</i></a></li>
+        <pre>     &lt;ul data-list=&quot;three-line&quot;&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>                  &lt;small&gt;<br>                      Lorem ipsum...<br>                  &lt;/small&gt;<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      </ul>
+    </article>
+    <article id="forms" class="page">
+      <h1>Forms</h1>
+      <hr>
+      <div data-card>
+        <div>
+          <div class="form-group">
+            <input type="text" placeholder="Label text">
+            <label>Label text</label>
+            <p class="help-block">This is a help-block</p>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Label text" value="Hola mundo">
+            <label>Label text</label>
+            <p class="help-block">This is a help-block</p>
+          </div>
+          <div class="form-group has-warning">
+            <input type="text" placeholder="Label text" value="Hola mundo">
+            <label>Label text</label>
+            <p class="help-block">This is input has a warning</p>
+          </div>
+          <div class="form-group has-success">
+            <input type="text" placeholder="Label text" value="Hola mundo">
+            <label>Label text</label>
+            <p class="help-block">This input has success</p>
+          </div>
+          <div class="form-group has-error">
+            <input type="text" placeholder="Label text" value="Hola mundo">
+            <label>Label text</label>
+            <p class="help-block">This input has an error</p>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Label text" cols="6"></textarea>
+            <label>Label text</label>
+            <p class="help-block">This is a help-block</p>
+          </div>
+          <div class="form-group">
+            <select placeholder="Label text">
+              <option value=""></option>
+              <option>val</option>
+              <option>val</option>
+              <option>val</option>
+              <option>val</option>
+              <option>val</option>
+            </select>
+            <label>Label text</label>
+            <p class="help-block">This is a help-block</p>
+          </div>
+        </div>
+      </div>
+      <pre>  &lt;div data-card&gt;<br>    &lt;div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-warning&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is input has a warning&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-success&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This input has success&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-error&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This input has an error&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;textarea placeholder=&quot;Label text&quot; cols=&quot;6&quot;&gt;&lt;/textarea&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;select placeholder=&quot;Label text&quot;&gt;<br>          &lt;option value=&quot;&quot;&gt;&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>        &lt;/select&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br></pre>
+    </article>
+    <article id="menus" class="page">
+      <h1>Menus</h1>
+      <hr>
+      <div class="text-center"><span class="menu-trigger">
+          <input id="menu-1" type="checkbox">
+          <label data-button for="menu-1"><span>Menu 1</span>
+            <div class="overlay"></div>
+          </label>
+          <menu>
+            <ul data-list>
+              <li><a href="#"><i data-background="default" class="material-icons">person</i>hryan Cranston	</a><a href="#"><i class="material-icons">star	</i></a></li>
+              <li><a href="#"><i data-background="primary" class="material-icons">person		 </i>Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
+              <li><a href="#"><i data-background="success" class="material-icons">person		  </i>Bob Odenkirk	  </a><a href="#"><i class="material-icons">star</i></a></li>
+            </ul>
+          </menu></span><span class="menu-trigger">
+          <input id="menu-2" type="checkbox">
+          <label data-button for="menu-2"><span>Menu 2</span>
+            <div class="overlay"></div>
+          </label>
+          <menu>
+            <ul data-list="two-line">
+              <li><a href="#"><i data-background="default" class="material-icons">person</i>hryan Cranston	<small>
+                    hryan Cranston played the role of Walter in hreaking Bad. He is also known
+                    for playing Hal in Malcom in the Middle.	</small></a><a href="#"><i class="material-icons">star	</i></a></li>
+              <li><a href="#"><i data-background="primary" class="material-icons">person		 </i>Aaron Paul		<small>
+                    Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
+                    the &quot;Need For Speed&quot; Movie.	 </small></a><a href="#"><i class="material-icons">star   </i></a></li>
+              <li><a href="#"><i data-background="success" class="material-icons">person		  </i>Bob Odenkirk		 <small>
+                    Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
+                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.	  </small></a><a href="#"><i class="material-icons">star</i></a></li>
+            </ul>
+          </menu></span><span class="menu-trigger">
+          <input id="menu-3" type="checkbox">
+          <label data-button for="menu-3"><span>Menu 3</span>
+            <div class="overlay"></div>
+          </label>
+          <menu>
+            <ul data-list="three-line">
+              <li><a href="#"><i data-background="default" class="material-icons">person</i>hryan Cranston	<small>
+                    hryan Cranston played the role of Walter in hreaking Bad. He is also known
+                    for playing Hal in Malcom in the Middle.	</small></a><a href="#"><i class="material-icons">star	</i></a></li>
+              <li><a href="#"><i data-background="primary" class="material-icons">person		 </i>Aaron Paul		<small>
+                    Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
+                    the &quot;Need For Speed&quot; Movie.	 </small></a><a href="#"><i class="material-icons">star   </i></a></li>
+              <li><a href="#"><i data-background="success" class="material-icons">person		  </i>Bob Odenkirk		 <small>
+                    Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
+                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.	  </small></a><a href="#"><i class="material-icons">star</i></a></li>
+            </ul>
+          </menu></span></div>
+    </article>
+    <article id="tables" class="page">
+      <h1>Tables</h1>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th class="text-left">Material</th>
+            <th>Quantity</th>
+            <th>Unit price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-left">Acrylic (Transparent)</td>
+            <td>25</td>
+            <td>$2.90</td>
+          </tr>
+          <tr>
+            <td class="text-left">Plywood (Birch)</td>
+            <td>50</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td class="text-left">Laminate (Gold on Blue)</td>
+            <td>10</td>
+            <td>$2.35</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre>  &lt;table&gt;<br>    &lt;thead&gt;<br>      &lt;tr&gt;<br>        &lt;th class=&quot;text-left&quot;&gt;Material&lt;/th&gt;<br>        &lt;th&gt;Quantity&lt;/th&gt;<br>        &lt;th&gt;Unit price&lt;/th&gt;<br>      &lt;/tr&gt;<br>    &lt;/thead&gt;<br>    &lt;tbody&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Acrylic (Transparent)&lt;/td&gt;<br>        &lt;td&gt;25&lt;/td&gt;<br>        &lt;td&gt;$2.90&lt;/td&gt;<br>      &lt;/tr&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Plywood (Birch)&lt;/td&gt;<br>        &lt;td&gt;50&lt;/td&gt;<br>        &lt;td&gt;$1.25&lt;/td&gt;<br>      &lt;/tr&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Laminate (Gold on Blue)&lt;/td&gt;<br>        &lt;td&gt;10&lt;/td&gt;<br>        &lt;td&gt;$2.35&lt;/td&gt;<br>      &lt;/tr&gt;<br>    &lt;/tbody&gt;<br>  &lt;/table&gt;</pre>
+    </article>
+    <article id="tool-bars" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="tabs" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="tooltips" class="page">
+      <h1>Tooltips</h1>
+      <hr>
+      <div class="text-center">
+        <div data-tooltip="This is a tooltip" class="material-icons margin-8">account_box</div>
+        <div data-tooltip="This is a tooltip" data-tooltip-color="default" class="material-icons margin-8">account_box</div>
+        <div data-tooltip="This is a tooltip" data-tooltip-color="primary" class="material-icons margin-8">account_box</div>
+        <div data-tooltip="This is a tooltip" data-tooltip-color="accent" class="material-icons margin-8">account_box</div>
+        <div data-tooltip="This is a tooltip" data-tooltip-color="info" class="material-icons margin-8">account_box</div>
+        <div data-tooltip="This is a tooltip" data-tooltip-color="warning" class="material-icons margin-8">account_box</div>
+        <div data-tooltip="This is a tooltip" data-tooltip-color="danger" class="material-icons margin-8">account_box</div>
+        <div data-tooltip="This is a tooltip" data-tooltip-color="success" class="material-icons margin-8">account_box</div>
+        <pre> &lt;element data-tooltip=&quot;Tooltip content&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
+      </div>
+    </article>
+    <article id="progress" class="page">
+      <h1>Progress</h1>
+      <hr>
+      <h3>Progress to 40%</h3>
+      <div data-progress>
+        <div style="width: 40%"></div>
+      </div>
+      <pre>&lt;div data-progress&gt;<br>   &lt;div style=&quot;width: 40%&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <hr>
+      <h3>Progress indeterminated</h3>
+      <div data-progress="indeterminated">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <hr>
+      <h3>Colors</h3>
+      <h4>Primary</h4>
+      <div data-progress="indeterminated primary">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated primary&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <h4>Accent</h4>
+      <div data-progress="indeterminated accent">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated accent&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <h4>Info</h4>
+      <div data-progress="indeterminated info">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated info&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <h4>Success</h4>
+      <div data-progress="indeterminated success">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated success&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <h4>Warning</h4>
+      <div data-progress="indeterminated warning">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated warning&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <h4>Danger</h4>
+      <div data-progress="indeterminated danger">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated danger&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <h4>Default</h4>
+      <div data-progress="indeterminated default">
+        <div></div>
+      </div>
+      <pre>&lt;div data-progress=&quot;indeterminated default&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+    </article>
+    <article id="spinner" class="page">
+      <h1>Spinners</h1>
+      <hr>
+      <div class="text-center">
+        <div data-spinner></div>
+        <div data-spinner="default"></div>
+        <div data-spinner="primary"></div>
+        <div data-spinner="accent"></div>
+        <div data-spinner="info"></div>
+        <div data-spinner="warning"></div>
+        <div data-spinner="danger"></div>
+        <div data-spinner="success"></div>
+        <pre>&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;<br>&lt;!-- Or --&gt;<br>&lt;div class=&quot;spinner spinner-{color}&quot;&gt;&lt;/div&gt;</pre>
+        <div data-spinner="mini"></div>
+        <pre>&lt;div data-spinner=&quot;mini&quot;&gt;&lt;/div&gt;</pre>
+        <div data-row>
+          <div data-column="5"></div>
+          <div data-column="2" class="relative">
+            <div data-spinner="full"></div>
+          </div>
+        </div>
+        <pre>&lt;div data-spinner=&quot;full&quot;&gt;&lt;/div&gt;</pre>
+        <button data-fab="inline info"><i class="material-icons">add</i>
+          <div data-spinner="success"></div>
+        </button>
+        <pre> &lt;div data-fab=&quot;inline info&quot;&gt;<br>     &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;<br>     &lt;div data-spinner=&quot;success&quot;&gt;&lt;/div&gt;<br> &lt;/div&gt;</pre>
+      </div>
+    </article>
+    <article id="sliders" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="toggles" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="notifications" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="chips" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="expansion-panels" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="bottom-navigation" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="bottom-sheets" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="steppers" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="search" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+    <article id="pickers" class="page">
+      <h1>In construction</h1>
+      <hr>
+    </article>
+  </body>
+</html>

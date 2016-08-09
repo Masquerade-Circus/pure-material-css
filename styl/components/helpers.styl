@@ -1,0 +1,56 @@
+/*** Helper classes Start ***/
+for size in 0 4 8 16 24 32 40 48 56 64 72 80
+    /* Padding */
+    .padding-{size}
+        padding: size px;
+    .padding-left-{size}
+        padding-left: size px;
+    .padding-right-{size}
+        padding-right: size px;
+    .padding-top-{size}
+        padding-top: size px;
+    .padding-bottom-{size}
+        padding-bottom: size px;
+
+    /* margin */
+    .margin-{size}
+        margin: size px;
+    .margin-left-{size}
+        margin-left: size px;
+    .margin-right-{size}
+        margin-right: size px;
+    .margin-top-{size}
+        margin-top: size px;
+    .margin-bottom-{size}
+        margin-bottom: size px;
+
+    /* font-size */
+    .font-{size}
+        font-size: size px;
+
+/* align */
+for val in left right center justify
+    .text-{val}
+        text-align: val;
+
+flexContainer(direction)
+    display: flex;
+    flex-direction: direction;
+    align-items: stretch;
+    overflow: hidden;
+
+.inline-block
+    position: relative;
+    display: inline-block;
+    top:auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    box-shadow: none;
+    vertical-align: middle;
+
+for val in relative static absolute fixed
+    .{val}
+        position: val;
+
+/*** Helper classes End ***/

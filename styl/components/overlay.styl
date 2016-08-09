@@ -1,0 +1,19 @@
+overlay()
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	transition: all 0.5s linear;
+	opacity: 0;
+	z-index: -10;
+	background: alpha(default-color-900,0.2)
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: opacity 0.5s linear;
+	cursor: pointer;
+	display: none;
+
+.overlay
+	overlay()

@@ -1,0 +1,32 @@
+article#spinner.page
+    h1 Spinners
+    hr
+    .text-center
+        div(data-spinner)
+        each val in ['default','primary','accent','info','warning','danger','success']
+            div(data-spinner=val)
+        pre
+            = '<div class="spinner"></div>'
+            br
+            = '<!-- Or -->'
+            br
+            = '<div class="spinner spinner-{color}"></div>'
+            
+        div(data-spinner="mini")
+        pre= '<div data-spinner="mini"></div>'
+        div(data-row)
+            div(data-column="5")
+            div(data-column="2").relative
+                div(data-spinner="full")
+        pre= '<div data-spinner="full"></div>'
+        button(data-fab="inline info")
+            i.material-icons add
+            div(data-spinner="success")
+        pre 
+            = '<div data-fab="inline info">'
+            br
+            = '     <i class="material-icons">add</i>'
+            br
+            = '     <div data-spinner="success"></div>'
+            br
+            = ' </div>'

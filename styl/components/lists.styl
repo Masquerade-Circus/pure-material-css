@@ -1,0 +1,56 @@
+[data-list]
+    list-style-type: none;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 16rem;
+    font-weight: 400;
+    & > li
+        flexContainer : row;
+        & > *
+            position: relative;
+            overflow: hidden;
+            padding: 16rem;
+            &:first-child
+                order: 0;
+                flex: 2 1 auto;
+                width: 100%;
+                & > small
+                    font-weight: 300;
+                    display: none;
+                    margin-top: 4rem;
+                    line-height: 1.42;
+                    opacity: 0.8;
+                    overflow: hidden;
+                & > [class*="icon"]
+                    height: 40rem;
+                    width: 40rem;
+                    border-radius: 50%;
+                    font-size: 30rem;
+                    line-height: 40rem;
+                    margin-right: 16rem;
+                    vertical-align: middle;
+                    text-align: center;
+                    & ~ small
+                        margin-left: 56rem;
+            &:last-child
+                order: 1;
+                flex: 0 1 auto;
+        & > a
+            color: inherit;
+
+[data-list="three-line"]>li>*:first-child>small,
+[data-list="three-line"]>li>*:first-child>[class*="icon"] ~ small
+    height: 32rem;
+    display: block;
+
+[data-list="two-line"]>li>*:first-child>small,
+[data-list="two-line"]>li>*:first-child>[class*="icon"] ~ small
+    height: 18rem;
+    display: block;
+
+[data-list="two-line"]>li>*:first-child>[class*="icon"],
+[data-list="three-line"]>li>*:first-child>[class*="icon"]
+    display: block;
+    float: left;

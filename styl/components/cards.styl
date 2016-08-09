@@ -1,0 +1,75 @@
+[data-card]
+    flexContainer : column;
+    text-align: left;
+    border-radius: 2rem;
+    max-width: 360rem; // TODO: 264 on mobile
+    margin: 0 auto;
+    margin-bottom: 16rem;
+    &>header
+        order: 1;
+        flex: 0 0 auto;
+        > h1, > h2, > h3, > h4, > h5, > h6
+            margin: 0;
+    &>div
+        order: 2;
+        flex: 1 1 auto;
+        padding: 16rem;
+        overflow: auto;
+        z-index: 0;
+    &>footer
+        order: 3;
+        flex: 0 1 auto;
+        padding: 8rem 0;
+    &>[data-card-media]
+        order: 0;
+        flex: 1 1 auto;
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding: 0 0 56% 0;
+        overflow: hidden;
+        border: 0;
+        &>header
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            top:0;
+            left:0;
+            right:0;
+            border: 0;
+            height: auto;
+            z-index: 1;
+            > h1, > h2, > h3, > h4, > h5, > h6
+                position: absolute;
+                bottom:0;
+                margin-left:0
+            nav
+                position: absolute;
+                top:0;
+                right: 0;
+        &>div
+            padding: 16rem;
+
+[data-card="squared"]
+    max-width: 256rem;
+    min-width: 256rem;
+    &>[data-card-media]
+        padding-bottom: 100%;
+        &>header
+            top: auto;
+            height: 60rem;
+            text-shadow: none;
+            > h1, > h2, > h3, > h4, > h5, > h6
+                position: static;
+            nav
+                position: static;
+        &>div
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 24px;
+            padding-right: 25%;
+            font-weight: 400;
+            margin: -1rem;

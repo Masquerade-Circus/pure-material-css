@@ -1,0 +1,18 @@
+.ripple,button,.fab,.button,.list>li>a
+	&::after
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 110%;
+		height: 0;
+		padding-bottom: 110%;
+		border-radius: 100%;
+		opacity: 0.6;
+		transform: scale(0) translate(-50%, -50%);
+		transform-origin: top left;
+	&:active::after,&:focus::after
+		animation-fill-mode: both;
+		animation: ripple 1.2s;
+		animation-timing-function: linear;

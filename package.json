@@ -1,0 +1,26 @@
+{
+  "name": "pure-css-material",
+  "version": "1.0.0",
+  "description": "Material Design Components with only css",
+  "main": "index.html",
+  "scripts": {},
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-kss": "0.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-stylus": "^2.3.1",
+    "jade": "^1.11.0"
+  },
+  "keywords": [
+    "material",
+    "design",
+    "css"
+  ],
+  "author": "Masquerade Circus",
+  "license": "ISC"
+}

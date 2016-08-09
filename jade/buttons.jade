@@ -1,0 +1,34 @@
+article.page#buttons
+    
+    h1 Default Buttons
+    button Default Button
+    each val in ['default','primary','accent','info','warning','success']
+        button(data-button=val) data-button="#{val}"
+        
+    hr
+    h1 Raised Buttons
+    button(data-button="raised") data-button="raised"
+    each val in ['default','primary','accent','info','warning','success']
+        button(data-button=val+" raised") data-button="#{val} raised"
+        
+    hr
+    h1 Outlined Buttons
+    button(data-button="outline") data-button="outline"
+    each val in ['default','primary','accent','info','warning','success']
+        button(data-button=val+" outline") data-button="#{val} outline"
+    
+    hr
+    h1 FAB Buttons
+    button(data-fab="inline")
+        i.material-icons add
+    each val in ['default','primary','accent','info','warning','success']
+        button(data-fab=val+" inline")
+            i.material-icons add
+            
+    hr
+    h1 Mini-FAB Buttons
+    button(data-fab="inline mini")
+        i.material-icons add
+    each val in ['default','primary','accent','info','warning','success']
+        button(data-fab=val+" inline mini")
+            i.material-icons add

@@ -1,0 +1,27 @@
+- var colors = [{name: 'Primary', class: 'primary'},{name: 'Accent', class: 'accent'},{name: 'Info', class: 'info'}, {name: 'Success', class: 'success'}, {name: 'Warning', class: 'warning'}, {name: 'Danger', class: 'danger'},{name: 'Default', class: 'default'}];
+article.page#progress
+    h1 Progress
+    hr
+    h3 Progress to 40%
+    div(data-progress)
+        div(style="width: 40%")
+    pre
+        =   '<div data-progress>'
+        br
+        =   '   <div style="width: 40%"></div>'
+        br
+        =   '</div>'
+    hr
+    h3 Progress indeterminated
+    div(data-progress="indeterminated")
+        div
+    pre
+        =   '<div data-progress="indeterminated"><div></div></div>'
+    hr
+    h3 Colors
+    each color in colors
+        h4 #{color.name}
+        div(data-progress="indeterminated "+color.class)
+            div
+        pre
+            =   '<div data-progress="indeterminated '+color.class+'"><div></div></div>'

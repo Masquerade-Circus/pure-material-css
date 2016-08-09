@@ -1,0 +1,42 @@
+html,body
+    height: 100%;
+
+h1,h2,h3,h4,h5
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+body
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    height: 100%;
+    flexContainer : column;
+    &>header
+        order: 1;
+        flex: 0 0 auto;
+        &>nav>a,&>nav>a.button
+            text-transform: none;
+    &>.flexible-bar
+        order: 2;
+        flex: 1 0 auto;
+    &>.tab-bar
+        order: 3;
+        flex: 0 0 auto;
+    &>article
+        order: 4;
+        flex: 1 1 auto;
+        padding: 16rem;
+        overflow: auto;
+        z-index: 0;
+
+.page
+    display: none;
+    width: 100%;
+    z-index:0;
+    position: relative;
+    &:target
+        display: initial;
+
+.page::after, .page::before
+    clear: both;
+    content: " ";
+    display: block;

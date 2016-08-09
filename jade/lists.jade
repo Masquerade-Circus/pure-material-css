@@ -1,0 +1,243 @@
+article.page#lists
+    h1 Lists
+    hr
+    h2 Simple list with primary content
+    hr 
+    ul(data-list)
+        li 
+            a(href="#") Bhryan Cranston
+        li 
+            a(href="#") Aaron Paul
+        li 
+            a(href="#") Bob Odenkirk
+    pre 
+        ='    <ul data-list>'
+        br
+        ='        <li>'
+        br
+        ='              <a href="#">...</a>'
+        br
+        ='        </li>'
+        br
+        ='    </ul>'
+    h2 List with primary and secondary content
+    hr
+    ul(data-list)
+        li
+            a(href='#') Bhryan Cranston    
+            a(href='#')
+                    i.material-icons star    
+        li
+            a(href='#') Aaron Paul
+            a(href='#')
+                    i.material-icons star   
+        li
+            a(href='#') Bob Odenkirk      
+            a(href='#')
+                    i.material-icons star
+        pre 
+            ='    <ul data-list>'
+            br
+            ='        <li>'
+            br
+            ='              <a href="#">...</a>'
+            br
+            ='              <a href="#">'
+            br
+            ='                  <i class="material-icons" data-background="default">person</i>'
+            br
+            ='              </a>'
+            br
+            ='        </li>'
+            br
+            ='    </ul>'
+    h2 Simple list with primary content and icon
+    hr 
+    ul(data-list)
+        li
+            a(href='#')
+                i.material-icons(data-background="default") person
+                | Bhryan Cranston
+        li
+            a(href='#')
+                i.material-icons(data-background="primary") person         
+                | Aaron Paul  
+        li
+            a(href='#')
+                i.material-icons(data-background="success") person          
+                | Bob Odenkirk
+    pre 
+        ='    <ul data-list>'
+        br
+        ='        <li>'
+        br
+        ='              <a href="#">'
+        br
+        ='                  <i class="material-icons" data-background="default">person</i>'
+        br
+        ='                  ...'
+        br
+        ='              </a>'
+        br
+        ='        </li>'
+        br
+        ='    </ul>'
+    h2 List with primary content and icon and secondary content
+    hr
+    ul(data-list)
+        li
+            a(href='#')
+                i.material-icons(data-background="default") person
+                | Bhryan Cranston    
+            a(href='#')
+                    i.material-icons star    
+        li
+            a(href='#')
+                i.material-icons(data-background="primary") person         
+                | Aaron Paul
+            a(href='#')
+                    i.material-icons star   
+        li
+            a(href='#')
+                i.material-icons(data-background="success") person          
+                | Bob Odenkirk      
+            a(href='#')
+                    i.material-icons star
+        pre 
+            ='    <ul data-list>'
+            br
+            ='        <li>'
+            br
+            ='              <a href="#">'
+            br
+            ='                  <i class="material-icons" data-background="default">person</i>'
+            br
+            ='                  ...'
+            br
+            ='              </a>'
+            br
+            ='              <a href="#">'
+            br
+            ='                  <i class="material-icons">star</i>'
+            br
+            ='              </a>'
+            br
+            ='        </li>'
+            br
+            ='    </ul>'
+    h2 Two line list
+    hr
+    ul(data-list="two-line")
+        li
+            a(href='#')
+                i.material-icons(data-background="default") person
+                | Bhryan Cranston    
+                small
+                    | Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
+                    | for playing Hal in Malcom in the Middle.    
+            a(href='#')
+                    i.material-icons star    
+        li
+            a(href='#')
+                i.material-icons(data-background="primary") person         
+                | Aaron Paul        
+                small
+                    | Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
+                    | the &quot;Need For Speed&quot; Movie.     
+            a(href='#')
+                    i.material-icons star   
+        li
+            a(href='#')
+                i.material-icons(data-background="success") person          
+                | Bob Odenkirk         
+                small
+                    | Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
+                    | character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      
+            a(href='#')
+                    i.material-icons star
+        pre 
+            ='    <ul data-list="two-line">'
+            br
+            ='        <li>'
+            br
+            ='              <a href="#">'
+            br
+            ='                  <i class="material-icons" data-background="default">person</i>'
+            br
+            ='                  ...'
+            br
+            ='                  <small>'
+            br
+            ='                      Lorem ipsum...'
+            br
+            ='                  </small>'
+            br
+            ='              </a>'
+            br
+            ='              <a href="#">'
+            br
+            ='                  <i class="material-icons">star</i>'
+            br
+            ='              </a>'
+            br
+            ='        </li>'
+            br
+            ='    </ul>'
+    h2 Three line list
+    hr
+    ul(data-list="three-line")
+        li
+            a(href='#')
+                i.material-icons(data-background="default") person
+                | Bhryan Cranston    
+                small
+                    | Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
+                    | for playing Hal in Malcom in the Middle.    
+            a(href='#')
+                    i.material-icons star    
+        li
+            a(href='#')
+                i.material-icons(data-background="primary") person         
+                | Aaron Paul        
+                small
+                    | Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
+                    | the &quot;Need For Speed&quot; Movie.     
+            a(href='#')
+                    i.material-icons star   
+        li
+            a(href='#')
+                i.material-icons(data-background="success") person          
+                | Bob Odenkirk         
+                small
+                    | Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
+                    | character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      
+            a(href='#')
+                    i.material-icons star
+        pre 
+            ='    <ul data-list="three-line">'
+            br
+            ='        <li>'
+            br
+            ='              <a href="#">'
+            br
+            ='                  <i class="material-icons" data-background="default">person</i>'
+            br
+            ='                  ...'
+            br
+            ='                  <small>'
+            br
+            ='                      Lorem ipsum...'
+            br
+            ='                  </small>'
+            br
+            ='              </a>'
+            br
+            ='              <a href="#">'
+            br
+            ='                  <i class="material-icons">star</i>'
+            br
+            ='              </a>'
+            br
+            ='        </li>'
+            br
+            ='    </ul>'

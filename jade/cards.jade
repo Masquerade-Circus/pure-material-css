@@ -1,0 +1,181 @@
+article.page#cards
+    h1 Cards
+    h2 Simple card
+    hr
+    div(data-card)
+        div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+    pre 
+        = '<div data-card>'
+        br
+        =    '    <div>Lorem ipsum ...</div>'
+        br
+        =    '</div>'
+    h2 Card with footer
+    hr
+    div(data-card)
+        div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+        footer
+            button(data-button="primary") Get started
+    pre 
+        = '<div data-card>'
+        br
+        =    '    <div>Lorem ipsum ...</div>'
+        br
+        =    '    <footer>'
+        br
+        =    '        <button data-button="primary">Get started</button>'
+        br
+        =    '    </footer>'
+        br
+        =    '</div>'
+    h2 Card with header and footer
+    hr
+    div(data-card)
+        header
+            h2 Title
+            nav
+                button(data-fab="inline mini")
+                    i.material-icons share
+        div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+        footer
+            button(data-button="primary") Get started
+    pre 
+        = '<div data-card>'
+        br
+        =    '    <header>'
+        br
+        =    '        <h2>Title</h2>'
+        br
+        =    '        <nav>'
+        br
+        =    '            <button data-fab="inline mini"><i class="material-icons">share</i></button>'
+        br
+        =    '        </nav>'
+        br
+        =    '    </header>'
+        br
+        =    '    <div>Lorem ipsum ...</div>'
+        br
+        =    '    <footer>'
+        br
+        =    '        <button data-button="primary">Get started</button>'
+        br
+        =    '    </footer>'
+        br
+        =    '</div>'
+    h2 Card with media
+    hr
+    div(data-card)
+        div(data-card-media)
+            header
+                h2 Title
+                nav
+                    button(data-fab="inline mini")
+                        i.material-icons share
+            img(src="./img.jpeg")
+        div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+        footer
+            button(data-button="primary") Get started
+    pre 
+        =   '<div data-card>'
+        br
+        =   '  <div data-card-media>'
+        br
+        =   '    <header>'
+        br
+        =   '      <h2>Title</h2>'
+        br
+        =   '      <nav>'
+        br
+        =   '        <button data-fab="inline mini"><i class="material-icons">share</i></button>'
+        br
+        =   '      </nav>'
+        br
+        =   '    </header>'
+        br
+        =   '    <img src="http://lorempixel.com/480/480/abstract/">'
+        br
+        =   '  </div>'
+        br
+        =   '  <div>Lorem ipsum...</div>'
+        br
+        =   '  <footer>'
+        br
+        =   '    <button data-button="primary">Get started</button>'
+        br
+        =   '  </footer>'
+        br
+        =   '</div>'
+    h2 Card squared
+    hr
+    div(data-card="squared")
+        div(data-card-media)
+            header
+                h2 Title
+                nav
+                    button(data-fab="inline mini")
+                        i.material-icons share
+            img(src="./img.jpeg")
+    pre 
+        =   '<div data-card="squared">'
+        br
+        =   '  <div data-card-media>'
+        br
+        =   '    <header>'
+        br
+        =   '      <h2>Title</h2>'
+        br
+        =   '      <nav>'
+        br
+        =   '        <button data-fab="inline mini"><i class="material-icons">share</i></button>'
+        br
+        =   '      </nav>'
+        br
+        =   '    </header>'
+        br
+        =   '    <img src="http://lorempixel.com/480/480/abstract/">'
+        br
+        =   '  </div>'
+        br
+        =   '</div>'
+    h2 Card squared with text instead of media
+    hr
+    div(data-card="squared")
+        div(data-card-media)
+            header
+                h2 Title
+                nav
+                    button(data-fab="inline mini")
+                        i.material-icons share
+            div(data-background="primary") Feautred event: <br> May 24, 2016 <br> 7-11pm
+    pre 
+        =   '<div data-card="squared">'
+        br
+        =   '  <div data-card-media>'
+        br
+        =   '    <header>'
+        br
+        =   '      <h2>Title</h2>'
+        br
+        =   '      <nav>'
+        br
+        =   '        <button data-fab="inline mini"><i class="material-icons">share</i></button>'
+        br
+        =   '      </nav>'
+        br
+        =   '    </header>'
+        br
+        =   '    <div data-background="primary">'
+        br
+        =   '      Featured event: <br> May 24, 2016 <br> 7-11pm'
+        br 
+        =   '    </div>'
+        br
+        =   '  </div>'
+        br
+        =   '</div>'
+            
+            
+    
+        
+    

@@ -1,0 +1,314 @@
+@import "color-definitions";
+
+/*** ColorPallete Start ***/
+tolerance = 67
+
+primary-color = 'Indigo'
+accent-color = 'Pink'
+
+info-color = 'Light Blue'
+success-color = 'Green'
+warning-color = 'Orange'
+danger-color = 'Red'
+
+default-color = 'Grey'
+white-color = #fff
+base-color = #ededed
+line-color = alpha(colors['Grey']['900'], 0.16)
+transparent-color = alpha(colors['Grey']['900'], 0.3)
+
+[data-color="white"]
+    color: white-color
+
+a
+    color: colors[primary-color]['500']
+
+button,[data-button],[data-fab]
+    background: transparent;
+    color: inherit;
+    &[disabled]
+        backgroun-color:colors[default-color]['50'];
+        color: colors[default-color]['500'];
+
+[data-background="white"],
+[data-button~="raised"],
+[data-badge]::after,
+[data-tooltip-color]::after
+    background-color: white-color;
+    color: colors[default-color]['900'];
+
+[data-button~="raised"]:hover,
+[data-fab]:hover
+    background-color: alpha(colors[default-color]['900'], 0.1);
+    color: alpha(colors[default-color]['900'],0.8)
+
+[data-progress]
+    &>div
+        background: colors[default-color]['500'];
+
+[data-tooltip-color]::before
+    border-color: white-color
+
+generateText(prefix, name)
+    define(prefix+'-color', colors[name]['500'], true)
+
+    for weight, shade in colors[name]
+        define(prefix+'-color-'+weight, shade, true)
+
+    [data-background={'"'+prefix+'"'}],
+    [data-button~={'"'+prefix+'"'}][data-button~="raised"],
+    [data-fab~={'"'+prefix+'"'}],
+    [data-badge-color={'"'+prefix+'"'}]::after,
+    [data-tooltip-color~={'"'+prefix+'"'}]::after,
+    [data-progress~={'"'+prefix+'"'}]>div
+        background-color: colors[name]['500'];
+        color: colors[name]['50'];
+
+    [data-button~={'"'+prefix+'"'}][data-button~="raised"]:hover,
+    [data-fab~={'"'+prefix+'"'}]:hover
+        background-color: colors[name]['300'];
+        color: colors[name]['50'];
+
+    [data-color~={'"'+prefix+'"'}],
+    a[data-color~={'"'+prefix+'"'}],
+    [data-button~={'"'+prefix+'"'}],
+    [data-spinner~={'"'+prefix+'"'}]::before
+        color: colors[name]['500']
+
+    a[data-color~={'"'+prefix+'"'}]:hover
+        color: colors[name]['700']
+
+    [data-tooltip-color~={'"'+prefix+'"'}]::before
+        border-color:colors[name]['500']
+
+    for weight, shade in colors[name]
+        [data-color~={'"'+prefix+'"'}][data-color~={'"'+weight+'"'}]
+            color: colors[name][weight];
+
+        [data-background~={'"'+prefix+'"'}][data-background~={'"'+weight+'"'}]
+            background-color: colors[name][weight];
+            color: lightness(colors[name][weight]) > tolerance ? colors[name]['900'] : colors[name]['50'];
+
+    [data-button~={'"'+prefix+'"'}][data-button~="outline"]:hover
+        border-color: colors[name]['300'];
+
+    [data-button~={'"'+prefix+'"'}][data-button~="outline"]:hover,
+    [data-button~={'"'+prefix+'"'}]:hover
+        background-color: colors[name]['50'];
+
+generateText('default', default-color)
+generateText('primary', primary-color)
+generateText('accent', accent-color)
+generateText('info', info-color)
+generateText('success', success-color)
+generateText('warning', warning-color)
+generateText('danger', danger-color)
+
+[data-button~="outline"]
+    background-color: white-color;
+    box-shadow: none;
+
+::-webkit-input-placeholder {color: inherit; opacity: 0; }
+:-moz-placeholder {color: inherit;  opacity: 0;}
+::-moz-placeholder {color: inherit;  opacity: 0;}
+:-ms-input-placeholder {  color: inherit;  opacity: 0;}
+
+/*** Ripple ***/
+.ripple,button,[data-button],[data-fab],[data-list]>li>a
+    &::after
+        background: alpha(default-color-900, 0.3);
+
+body
+    background: base-color;
+    color: default-color-900;
+    &>header
+        background: primary-color;
+        color: primary-color-50;
+        &>nav>a
+            color: white-color;
+    &>.flexible-bar
+        background: primary-color;
+        color: primary-color-50;
+    &>.tab-bar
+        background: primary-color;
+        color: primary-color-50;
+
+/*** Drawer ***/
+#drawer, #right-drawer
+    background: white-color;
+    color: default-color-900;
+    &::after
+        background: white-color;
+
+/*** Card ***/
+[data-card]
+    background: white-color;
+    color: default-color-900;
+    &>header
+        border-bottom: 1rem solid line-color;
+    &>footer
+        border-top: 1rem solid line-color;
+    a, button, [data-button], [data-fab], [class*="icon"]
+        box-shadow: none;
+
+[data-card="squared"]>[data-card-media]>header
+    background: transparent-color;
+    border-top: 1rem solid transparent-color;
+
+[data-card-media]>header
+    background: transparent-color;
+    color: white-color;
+    text-shadow: 1rem 1rem 2rem default-color-900;
+    a, button, [data-button], [data-fab], [class*="icon"]
+        color: white-color;
+
+/*** Dialog ***/
+dialog
+    background: white-color;
+    color: default-color-900;
+    &>header
+        border-bottom: 1rem solid line-color;
+    &>footer
+        border-top: 1rem solid line-color;
+    a, button, [data-button], [data-fab], [class*="icon"]
+        box-shadow: none;
+    &::after
+        background: white-color;
+
+[data-dialog="squared"]>[data-dialog-media]>header
+    background: transparent-color;
+    border-top: 1rem solid transparent-color;
+
+[data-dialog-media]>header
+    background: transparent;
+    color: white-color;
+    text-shadow: 1rem 1rem 2rem default-color-900;
+    a, button, [data-button], [data-fab], [class*="icon"]
+        color: white-color;
+
+/*** Flexible Bar ***/
+.flexible-bar
+    background: primary-color;
+    color: primary-color-50;
+    &>.flexible-bar-media
+        &>header
+            background: transparent-color;
+            color: white-color;
+            text-shadow: 1rem 1rem 2rem default-color-900;
+            a, button, .button, [class*="icon"]
+                color: white-color;
+    &>header
+        border-bottom: 1rem solid line-color;
+    &>footer
+        border-top: 1rem solid line-color;
+    &.flexible-bar-squared
+        &>.flexible-bar-media
+            &>header
+                background: transparent-color;
+                border-top: 1rem solid transparent-color;
+
+/*** Forms ***/
+label
+    color: inherit;
+
+.form-group
+    color: info-color;
+    >.help-block
+        color: default-color;
+    >.input-group
+        >.input-group-addon
+            background: white-color;
+            a
+                color: inherit;
+    >input,>select,>textarea
+        background: transparent;
+        color: default-color;
+        ~label
+            &::before
+                background: default-color-200;
+            &::after
+                background: info-color;
+        &:not(:focus)~label
+                color:default-color;
+        &[disabled]
+            background: white-color;
+            color: default-color-400;
+            border-color: line-color;
+
+    &.has-warning
+        color: warning-color;
+        .help-block
+            color: warning-color;
+        >input,>select,>textarea
+            ~label
+                color: warning-color;
+                &::after
+                    background-color: warning-color;
+                &::before
+                    background: warning-color-200;
+            &:focus~label
+                color: warning-color;
+
+    &.has-success
+        color: success-color;
+        .help-block
+            color: success-color;
+        >input,>select,>textarea
+            ~label
+                color: success-color;
+                &::after
+                    background-color: success-color;
+                &::before
+                    background: success-color-200;
+            &:focus~label
+                color: success-color;
+
+    &.has-error
+        color: danger-color;
+        .help-block
+            color: danger-color;
+        >input,>select,>textarea
+            ~label
+                color: danger-color;
+                &::after
+                    background-color: danger-color;
+                &::before
+                    background: danger-color-200;
+            &:focus~label
+                color: danger-color;
+
+/*** Menu ***/
+[data-menu], menu
+    background: white-color;
+.menu-trigger>input+label>.overlay
+    background: transparent;
+
+/*** Hr ***/
+hr
+    background: line-color;
+
+/*** Tables ***/
+table
+    background-color: white-color;
+    color: default-color-900;
+    border: 1rem solid line-color;
+    th
+        color: default-color;
+    td
+        border-top: 1rem solid line-color;
+        border-bottom: 1rem solid line-color;
+
+/*** Progress ***/
+[data-progress]::before
+    background: default-color-300;
+
+/*** List ***/
+[data-list]>li>a:hover
+    background: line-color;
+
+/*** Code ***/
+pre
+    background: default-color-300;
+    color: default-color-800;
+
+/*** ColorPallete End ***/

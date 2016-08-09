@@ -1,0 +1,40 @@
+- var colors = [{name: 'Primary', class: 'primary'},{name: 'Accent', class: 'accent'},{name: 'Info', class: 'info'}, {name: 'Success', class: 'success'}, {name: 'Warning', class: 'warning'}, {name: 'Danger', class: 'danger'},{name: 'Default', class: 'default'}];
+- var weights = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', 'A100', 'A200', 'A400', 'A700'];
+
+article.page#colors
+    h1 Colors
+    hr
+    table
+        thead
+            tr
+                each color in colors
+                    th(data-background=color.class)
+                        | #{color.name}
+                        div data-background="#{color.class}"
+        tbody.text-left
+            each weight in weights
+                tr
+                    each color in colors
+                        td(data-background=color.class+' '+weight)
+                            div Normal text
+                            div 
+                                b Bold text
+                            div data-background="#{color.class} #{weight}"
+    h1 Text Colors
+    hr
+    table
+        thead
+            tr
+                each color in colors
+                    th(data-color=color.class)
+                        | #{color.name}
+                        div data-color="#{color.class}"
+        tbody.text-left
+            each weight in weights
+                tr
+                    each color in colors
+                        td(data-color=color.class+' '+weight)
+                            div Normal text
+                            div 
+                                b Bold text
+                            div data-color="#{color.class} #{weight}"

@@ -1,0 +1,56 @@
+.flexible-bar
+    flexContainer : column;
+    text-align: left;
+    border-radius: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.15;
+    &>.flexible-bar-media
+        order: 0;
+        flex: 1 0 auto;
+        position: relative;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        &>header
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            top:0;
+            left:0;
+            right:0;
+            background: transparent-color;
+            border: 0;
+            height: auto;
+            z-index: 1;
+            top: auto;
+            height: 60rem;
+            text-shadow: none;
+            &~div
+                padding: 32rem 16rem 92rem;
+        &>div
+            padding: 32rem 16rem;
+            font-size: 24px;
+            padding-right: 25%;
+            font-weight: 400;
+            margin: -1rem;
+            &>*
+                margin: auto;
+    &>header
+        order: 1;
+        flex: 0 0 auto;
+        > h1, > h2, > h3, > h4, > h5, > h6
+            margin: 0;
+    &>div
+        order: 2;
+        flex: 1 1 auto;
+        padding: 16rem;
+        overflow: auto;
+        z-index: 0;
+    &>footer
+        order: 3;
+        flex: 0 1 auto;
+        padding: 8rem 0;
+    &.flexible-bar-squared
+        &>.flexible-bar-media
+            padding-bottom: 100%;

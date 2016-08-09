@@ -1,0 +1,27 @@
+
+checkboxHack(id,duration,iddefault,idactive,labeldefault,labelactive)
+    #{id}-input
+        position: absolute;
+        top: -9999rem;
+        left: -9999rem;
+
+    #{id}
+        animation-duration: (duration)s;
+        animation-fill-mode: both;
+        for prop,val in iddefault
+            {prop} : val
+
+    #{id}-input:checked ~ #{id}
+        for prop,val in idactive
+            {prop} : val
+
+    #{id}-label
+        animation-duration: (duration)s;
+        animation-fill-mode: both;
+        transition: all (duration)s linear;
+        for prop,val in labeldefault
+            {prop} : val
+
+    #{id}-input:checked ~ #{id}-label
+        for prop,val in labelactive
+            {prop} : val

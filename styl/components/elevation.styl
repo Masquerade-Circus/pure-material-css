@@ -1,0 +1,75 @@
+// Elevations
+.animated
+    transition: all .3s ease-in-out
+
+$shadow-key-umbra-opacity = 0.08;
+$shadow-key-penumbra-opacity = 0.16;
+$shadow-ambient-shadow-opacity = 0.32;
+
+elevation(base, isInset = false)
+    transition: all .3s ease-in-out
+    z-index base
+    if isInset
+        box-shadow: 0 (base)px (base*2)px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity) inset, 0 (base/3)px (base)px (0 - base)px rgba(0, 0, 0, $shadow-key-umbra-opacity) inset, 0 (base/3)px (base)px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity) inset;
+    else
+        box-shadow: 0 (base)px (base*2)px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity), 0 (base/3)px (base)px (0 - base)px rgba(0, 0, 0, $shadow-key-umbra-opacity), 0 (base/3)px (base)px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+
+for size in 1 2 3 4 6 8 9 10 11 12 16 24 26
+    [data-elevation~={'"focus-' + size + '"'}]:focus,
+    [data-elevation~={'"active-' + size + '"'}]:active,
+    [data-elevation~={'"hover-' + size + '"'}]:hover,
+    [data-elevation~={'"'+ size + '"'}]
+        elevation(size)
+
+for size in 1 2 3 4 6 8 9 10 11 12 16 24 26
+    [data-emboss~={'"focus-' + size + '"'}]:focus,
+    [data-emboss~={'"active-' + size + '"'}]:active,
+    [data-emboss~={'"hover-' + size + '"'}]:hover,
+    [data-emboss~={'"'+ size + '"'}]
+        elevation(size, true)
+
+dialog
+    elevation(0)
+
+.switch
+    elevation(1)
+
+[data-card], [data-button~="raised"] //quick-entry, search-bar
+    elevation(2)
+
+.refresh-indicator //quick-entry:active, quick-entry:focus, search-bar:active, search-bar:focus
+    elevation(3)
+
+body>header,
+body>.flexible-bar,
+body>.tab-bar
+    elevation(4)
+
+[data-fab], .snackbar
+    elevation(6)
+
+.bottom-bar, [data-card]:focus, [data-card].active, [data-button~="raised"]:active, [data-button~="raised"].active
+    elevation(8)
+
+[data-menu],menu
+    elevation(8)
+    [data-menu],menu
+        elevation(9)
+        [data-menu],menu
+            elevation(10)
+            [data-menu],menu
+                elevation(11)
+                [data-menu],menu
+                    elevation(12)
+
+[data-fab]:active,[data-fab].active
+    elevation(12)
+
+#drawer, #right-drawer, #modal-bottom-sheet
+    elevation(16)
+
+dialog[open], .picker
+    elevation(24)
+
+pre
+    elevation(2, true)

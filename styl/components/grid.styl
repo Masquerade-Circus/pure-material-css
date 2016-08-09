@@ -1,0 +1,35 @@
+grid(columns)
+    width (100 / columns)%
+
+generate(width, id)
+    @media only screen and (min-width width)
+        for size in 12 11 10 9 8 7 6 5 4 3 2 1
+            [data-column~={'"'+ id + "-" + size + '"'}]
+                grid(12/size)
+
+[data-column]
+    float: left;
+    min-height: 0.5rem;
+
+[data-row],[data-row-gutter]
+    clear: both;
+    &:after, &::before
+        clear both
+        content " "
+        display block
+
+[data-row-gutter]
+    margin-left -8rem
+    margin-right -8rem
+    &>[data-column]
+        padding 8rem
+
+for size in 12 11 10 9 8 7 6 5 4 3 2 1
+    [data-column~={'"' + size + '"'}]
+        grid(12/size)
+
+generate(0px, xs)
+generate(480px, sm)
+generate(840px, md)
+generate(1280px, lg)
+generate(1440px, xlg)
