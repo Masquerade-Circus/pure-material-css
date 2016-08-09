@@ -1,7 +1,7 @@
 {
-  "name": "pure-css-material",
+  "name": "pure-material-css",
   "version": "1.0.0",
-  "description": "Material Design Components with only css",
+  "description": "Material Design Components with only css and Html5",
   "main": "index.html",
   "scripts": {},
   "dependencies": {
