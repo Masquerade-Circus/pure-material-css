@@ -3,8 +3,11 @@
 /*** ColorPallete Start ***/
 tolerance = 67
 
-primary-color = 'Indigo'
-accent-color = 'Pink'
+if lookup('primary-color') == null
+    primary-color = 'Indigo'
+
+if lookup('accent-color') == null
+    accent-color = 'Pink'
 
 info-color = 'Light Blue'
 success-color = 'Green'
