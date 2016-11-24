@@ -10,67 +10,105 @@
   </head>
   <body>
     <header>
-      <input id="drawer-input" type="checkbox">
-      <label data-button for="drawer-input" id="drawer-label" class="nav-icon"><span class="material-icons">menu</span>
+      <button data-button data-drawer-button><span class="material-icons">menu</span></button>
+      <nav data-drawer="left">
         <div class="overlay"></div>
-      </label>
-      <nav id="drawer">
-        <div class="flexible-bar">
-          <div class="flexible-bar-media">
-            <div>
-              <h2>PURE MATERIAL CSS</h2>
+        <div data-drawer-content>
+          <div class="flexible-bar">
+            <div class="flexible-bar-media">
+              <div>
+                <h2>PURE MATERIAL CSS</h2>
+              </div>
             </div>
           </div>
+          <ul data-list>
+            <li><a href="#grid"><i class="material-icons" data-background="primary">line_style</i>Grid</a></li>
+            <li><a href="#elevations"><i class="material-icons" data-background="accent">layers</i>Elevations</a></li>
+            <li><a href="#colors"><i class="material-icons" data-background="info">group_work</i>Colors</a></li>
+            <li><a href="#badges"><i class="material-icons" data-background="success">chat_bubble</i>Badges</a></li>
+            <li><a href="#buttons"><i class="material-icons" data-background="warning">arrow_forward</i>Buttons</a></li>
+            <li><a href="#cards"><i class="material-icons" data-background="danger">video_label</i>Cards</a></li>
+            <li><a href="#dialogs"><i class="material-icons" data-background="primary">web_asset</i>Dialogs</a></li>
+            <li><a href="#lists"><i class="material-icons" data-background="accent">list</i>Lists</a></li>
+            <li><a href="#forms"><i class="material-icons" data-background="info">format_color_text</i>Forms</a></li>
+            <li><a href="#menus"><i class="material-icons" data-background="success">menu</i>Menus</a></li>
+            <li><a href="#tables"><i class="material-icons" data-background="warning">view_list</i>Tables</a></li>
+            <li><a href="#tool-bars"><i class="material-icons" data-background="default">add</i>Toolbars</a></li>
+            <li><a href="#tabs"><i class="material-icons" data-background="default">add</i>Tabs</a></li>
+            <li><a href="#tooltips"><i class="material-icons" data-background="accent">label</i>Tooltips</a></li>
+            <li><a href="#progress"><i class="material-icons" data-background="info">trending_flat</i>Progress</a></li>
+            <li><a href="#spinner"><i class="material-icons" data-background="success">refresh</i>Spinner</a></li>
+            <li><a href="#sliders"><i class="material-icons" data-background="default">add</i>Sliders</a></li>
+            <li><a href="#toggles"><i class="material-icons" data-background="default">add</i>Toggles</a></li>
+            <li><a href="#notifications"><i class="material-icons" data-background="default">add</i>Notifications</a></li>
+            <li><a href="#chips"><i class="material-icons" data-background="default">add</i>Chips</a></li>
+            <li><a href="#expansion-panels"><i class="material-icons" data-background="default">add</i>Expansion panels</a></li>
+            <li><a href="#bottom-navigation"><i class="material-icons" data-background="default">add</i>Bottom navigation</a></li>
+            <li><a href="#bottom-sheets"><i class="material-icons" data-background="default">add</i>Bottom sheets</a></li>
+            <li><a href="#steppers"><i class="material-icons" data-background="default">add</i>Steppers</a></li>
+            <li><a href="#search"><i class="material-icons" data-background="default">add</i>Search</a></li>
+            <li><a href="#pickers"><i class="material-icons" data-background="default">add</i>Pickers</a></li>
+          </ul>
         </div>
-        <ul data-list>
-          <li><a href="#grid"> <i data-background="primary" class="material-icons">line_style </i>Grid</a></li>
-          <li><a href="#elevations"> <i data-background="accent" class="material-icons">layers </i>Elevations</a></li>
-          <li><a href="#colors"> <i data-background="info" class="material-icons">group_work </i>Colors</a></li>
-          <li><a href="#badges"> <i data-background="success" class="material-icons">chat_bubble </i>Badges</a></li>
-          <li><a href="#buttons"> <i data-background="warning" class="material-icons">arrow_forward </i>Buttons</a></li>
-          <li><a href="#cards"> <i data-background="danger" class="material-icons">video_label </i>Cards</a></li>
-          <li><a href="#dialogs"> <i data-background="primary" class="material-icons">web_asset </i>Dialogs</a></li>
-          <li><a href="#lists"> <i data-background="accent" class="material-icons">list </i>Lists</a></li>
-          <li><a href="#forms"> <i data-background="info" class="material-icons">format_color_text </i>Forms</a></li>
-          <li><a href="#menus"> <i data-background="success" class="material-icons">menu </i>Menus</a></li>
-          <li><a href="#tables"> <i data-background="warning" class="material-icons">view_list </i>Tables</a></li>
-          <li><a href="#tool-bars"> <i data-background="default" class="material-icons">add</i>Toolbars</a></li>
-          <li><a href="#tabs"> <i data-background="default" class="material-icons">add</i>Tabs</a></li>
-          <li><a href="#tooltips"> <i data-background="accent" class="material-icons">label </i>Tooltips</a></li>
-          <li><a href="#progress"> <i data-background="info" class="material-icons">trending_flat </i>Progress</a></li>
-          <li><a href="#spinner"> <i data-background="success" class="material-icons">refresh </i>Spinner</a></li>
-          <li><a href="#sliders"> <i data-background="default" class="material-icons">add</i>Sliders</a></li>
-          <li><a href="#toggles"> <i data-background="default" class="material-icons">add</i>Toggles</a></li>
-          <li><a href="#notifications"> <i data-background="default" class="material-icons">add</i>Notifications</a></li>
-          <li><a href="#chips"> <i data-background="default" class="material-icons">add</i>Chips</a></li>
-          <li><a href="#expansion-panels"> <i data-background="default" class="material-icons">add</i>Expansion panels</a></li>
-          <li><a href="#bottom-navigation"> <i data-background="default" class="material-icons">add</i>Bottom navigation</a></li>
-          <li><a href="#bottom-sheets"> <i data-background="default" class="material-icons">add</i>Bottom sheets</a></li>
-          <li><a href="#steppers"> <i data-background="default" class="material-icons">add</i>Steppers</a></li>
-          <li><a href="#search"> <i data-background="default" class="material-icons">add</i>Search</a></li>
-          <li><a href="#pickers"> <i data-background="default" class="material-icons">add</i>Pickers</a></li>
-        </ul>
       </nav>
       <h1>PURE MATERIAL CSS</h1>
       <nav><a href="#about" data-button>About</a><a href="#getting-started" data-button>Getting started</a><a href="#" data-button>Github</a><a href="#" data-button>Download</a></nav>
       <div class="menu-icon"></div>
+      <button data-button data-drawer-button><span class="material-icons">menu</span></button>
+      <nav data-drawer="right">
+        <div class="overlay"></div>
+        <div data-drawer-content>
+          <div class="flexible-bar">
+            <div class="flexible-bar-media">
+              <div>
+                <h2>PURE MATERIAL CSS</h2>
+              </div>
+            </div>
+          </div>
+          <ul data-list>
+            <li><a href="#grid"><i class="material-icons" data-background="primary">line_style</i>Grid</a></li>
+            <li><a href="#elevations"><i class="material-icons" data-background="accent">layers</i>Elevations</a></li>
+            <li><a href="#colors"><i class="material-icons" data-background="info">group_work</i>Colors</a></li>
+            <li><a href="#badges"><i class="material-icons" data-background="success">chat_bubble</i>Badges</a></li>
+            <li><a href="#buttons"><i class="material-icons" data-background="warning">arrow_forward</i>Buttons</a></li>
+            <li><a href="#cards"><i class="material-icons" data-background="danger">video_label</i>Cards</a></li>
+            <li><a href="#dialogs"><i class="material-icons" data-background="primary">web_asset</i>Dialogs</a></li>
+            <li><a href="#lists"><i class="material-icons" data-background="accent">list</i>Lists</a></li>
+            <li><a href="#forms"><i class="material-icons" data-background="info">format_color_text</i>Forms</a></li>
+            <li><a href="#menus"><i class="material-icons" data-background="success">menu</i>Menus</a></li>
+            <li><a href="#tables"><i class="material-icons" data-background="warning">view_list</i>Tables</a></li>
+            <li><a href="#tool-bars"><i class="material-icons" data-background="default">add</i>Toolbars</a></li>
+            <li><a href="#tabs"><i class="material-icons" data-background="default">add</i>Tabs</a></li>
+            <li><a href="#tooltips"><i class="material-icons" data-background="accent">label</i>Tooltips</a></li>
+            <li><a href="#progress"><i class="material-icons" data-background="info">trending_flat</i>Progress</a></li>
+            <li><a href="#spinner"><i class="material-icons" data-background="success">refresh</i>Spinner</a></li>
+            <li><a href="#sliders"><i class="material-icons" data-background="default">add</i>Sliders</a></li>
+            <li><a href="#toggles"><i class="material-icons" data-background="default">add</i>Toggles</a></li>
+            <li><a href="#notifications"><i class="material-icons" data-background="default">add</i>Notifications</a></li>
+            <li><a href="#chips"><i class="material-icons" data-background="default">add</i>Chips</a></li>
+            <li><a href="#expansion-panels"><i class="material-icons" data-background="default">add</i>Expansion panels</a></li>
+            <li><a href="#bottom-navigation"><i class="material-icons" data-background="default">add</i>Bottom navigation</a></li>
+            <li><a href="#bottom-sheets"><i class="material-icons" data-background="default">add</i>Bottom sheets</a></li>
+            <li><a href="#steppers"><i class="material-icons" data-background="default">add</i>Steppers</a></li>
+            <li><a href="#search"><i class="material-icons" data-background="default">add</i>Search</a></li>
+            <li><a href="#pickers"><i class="material-icons" data-background="default">add</i>Pickers</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <div class="flexible-bar"></div>
     <div class="tab-bar"></div>
-    <article id="about" class="page">
+    <article class="page" id="about">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="getting-started" class="page">
+    <article class="page" id="getting-started">
       <h1>In construction</h1>
       <hr>
     </article>
     <!-- Components-->
-    <article id="grid" class="page"> 
-      <h1>
-         
-        Simple row<small>(Columns without gutters)</small>
-      </h1>
+    <article class="page" id="grid">
+      <h1>Simple row<small>(Columns without gutters)</small></h1>
       <hr>
       <div data-row>
         <div data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
@@ -116,12 +154,9 @@
         <div data-column="12" data-background="white" data-elevation="2">data-column="12"</div>
       </div>
       <pre>&lt;div data-row&gt;<br>   &lt;div data-column=&quot;{size}&quot;&gt;&lt;/div&gt;<br>   &lt;!-- Or --&gt;<br>   &lt;div data-column=&quot;{screen}-{size}&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
-      <h1>
-         
-        Row guttered<small>(Columns with gutters)</small>
-      </h1>
+      <h1>Row guttered<small>(Columns with gutters)</small></h1>
       <hr>
-      <div data-row-gutter>
+      <div data-row="gutters">
         <div data-column="1">
           <div data-elevation="2" data-background="white">data-column="1"</div>
         </div>
@@ -246,12 +281,12 @@
           <div data-elevation="2" data-background="white">data-column="12"</div>
         </div>
       </div>
-      <pre>&lt;div data-row-gutter&gt;<br>   &lt;div data-column=&quot;{size}&quot;&gt;&lt;/div&gt;<br>   &lt;!-- Or --&gt;<br>   &lt;div data-column=&quot;{screen}-{size}&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
-      <h1>Screen sizes </h1>
+      <pre>&lt;div data-row=&quot;gutters&quot;&gt;<br>   &lt;div data-column=&quot;{size}&quot;&gt;&lt;/div&gt;<br>   &lt;!-- Or --&gt;<br>   &lt;div data-column=&quot;{screen}-{size}&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <h1>Screen sizes</h1>
       <hr>
-      <table> 
+      <table>
         <thead>
-          <tr> 
+          <tr>
             <th>Device</th>
             <th>Class Prefix</th>
             <th>Screen size</th>
@@ -263,22 +298,22 @@
             <td>data-column="xs-{size}"</td>
             <td>Phones (<480px)</td>
           </tr>
-          <tr> 
-            <td>Small devices </td>
+          <tr>
+            <td>Small devices</td>
             <td>data-column="sm-{size}"</td>
             <td>Tablets (<840px)</td>
           </tr>
-          <tr> 
-            <td>Medium devices </td>
+          <tr>
+            <td>Medium devices</td>
             <td>data-column="md-{size}"</td>
             <td>Desktops (<1280px)</td>
           </tr>
-          <tr> 
-            <td>Large devices </td>
+          <tr>
+            <td>Large devices</td>
             <td>data-column="lg-{size}"</td>
             <td>Desktops (<1440px)</td>
           </tr>
-          <tr> 
+          <tr>
             <td>Extra large devices</td>
             <td>data-column="xlg-{size}"</td>
             <td>Desktops (>1440px)</td>
@@ -287,7 +322,7 @@
       </table>
       <h1>Responsive columns</h1>
       <hr>
-      <div data-row-gutter>
+      <div data-row="gutters">
         <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">
           <div data-elevation="2" data-background="white">&nbsp</div>
         </div>
@@ -309,118 +344,118 @@
       </div>
       <pre>&lt;div data-row-gutter&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>&lt;/div&gt;<br></pre>
     </article>
-    <article id="elevations" class="page">
+    <article class="page" id="elevations">
       <h1>Elevations</h1>
       <hr>
-      <div data-row-gutter>
+      <div data-row="gutters">
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="1" data-background="white" class="padding-8">data-elevation="1"</div>
+          <div class="padding-8" data-elevation="1" data-background="white">data-elevation="1"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="2" data-background="white" class="padding-8">data-elevation="2"</div>
+          <div class="padding-8" data-elevation="2" data-background="white">data-elevation="2"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="3" data-background="white" class="padding-8">data-elevation="3"</div>
+          <div class="padding-8" data-elevation="3" data-background="white">data-elevation="3"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="4" data-background="white" class="padding-8">data-elevation="4"</div>
+          <div class="padding-8" data-elevation="4" data-background="white">data-elevation="4"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="6" data-background="white" class="padding-8">data-elevation="6"</div>
+          <div class="padding-8" data-elevation="6" data-background="white">data-elevation="6"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="8" data-background="white" class="padding-8">data-elevation="8"</div>
+          <div class="padding-8" data-elevation="8" data-background="white">data-elevation="8"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="9" data-background="white" class="padding-8">data-elevation="9"</div>
+          <div class="padding-8" data-elevation="9" data-background="white">data-elevation="9"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="10" data-background="white" class="padding-8">data-elevation="10"</div>
+          <div class="padding-8" data-elevation="10" data-background="white">data-elevation="10"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="11" data-background="white" class="padding-8">data-elevation="11"</div>
+          <div class="padding-8" data-elevation="11" data-background="white">data-elevation="11"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="12" data-background="white" class="padding-8">data-elevation="12"</div>
+          <div class="padding-8" data-elevation="12" data-background="white">data-elevation="12"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="16" data-background="white" class="padding-8">data-elevation="16"</div>
+          <div class="padding-8" data-elevation="16" data-background="white">data-elevation="16"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="24" data-background="white" class="padding-8">data-elevation="24"</div>
+          <div class="padding-8" data-elevation="24" data-background="white">data-elevation="24"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="26" data-background="white" class="padding-8">data-elevation="26"</div>
+          <div class="padding-8" data-elevation="26" data-background="white">data-elevation="26"</div>
         </div>
       </div>
       <h1>Embosses</h1>
       <hr>
-      <div data-row-gutter>
+      <div data-row="gutters">
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="1" data-background="white" class="padding-8">data-emboss="1"</div>
+          <div class="padding-8" data-emboss="1" data-background="white">data-emboss="1"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="2" data-background="white" class="padding-8">data-emboss="2"</div>
+          <div class="padding-8" data-emboss="2" data-background="white">data-emboss="2"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="3" data-background="white" class="padding-8">data-emboss="3"</div>
+          <div class="padding-8" data-emboss="3" data-background="white">data-emboss="3"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="4" data-background="white" class="padding-8">data-emboss="4"</div>
+          <div class="padding-8" data-emboss="4" data-background="white">data-emboss="4"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="6" data-background="white" class="padding-8">data-emboss="6"</div>
+          <div class="padding-8" data-emboss="6" data-background="white">data-emboss="6"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="8" data-background="white" class="padding-8">data-emboss="8"</div>
+          <div class="padding-8" data-emboss="8" data-background="white">data-emboss="8"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="9" data-background="white" class="padding-8">data-emboss="9"</div>
+          <div class="padding-8" data-emboss="9" data-background="white">data-emboss="9"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="10" data-background="white" class="padding-8">data-emboss="10"</div>
+          <div class="padding-8" data-emboss="10" data-background="white">data-emboss="10"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="11" data-background="white" class="padding-8">data-emboss="11"</div>
+          <div class="padding-8" data-emboss="11" data-background="white">data-emboss="11"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="12" data-background="white" class="padding-8">data-emboss="12"</div>
+          <div class="padding-8" data-emboss="12" data-background="white">data-emboss="12"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="16" data-background="white" class="padding-8">data-emboss="16"</div>
+          <div class="padding-8" data-emboss="16" data-background="white">data-emboss="16"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="24" data-background="white" class="padding-8">data-emboss="24"</div>
+          <div class="padding-8" data-emboss="24" data-background="white">data-emboss="24"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="26" data-background="white" class="padding-8">data-emboss="26"  </div>
+          <div class="padding-8" data-emboss="26" data-background="white">data-emboss="26"</div>
         </div>
       </div>
-      <h1>Utility classes </h1>
+      <h1>Utility classes</h1>
       <hr>
-      <div data-row-gutter class="margin-top-8">
+      <div class="margin-top-8" data-row="gutters">
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="2 hover-16" data-background="white" class="padding-8">data-elevation="2 hover-16"</div>
+          <div class="padding-8" data-elevation="2 hover-16" data-background="white">data-elevation="2 hover-16"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-elevation="2 active-16" data-background="white" class="padding-8">data-elevation="2 active-16"</div>
+          <div class="padding-8" data-elevation="2 active-16" data-background="white">data-elevation="2 active-16"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
           <input data-elevation="2 focus-16" value="data-elevation=&quot;2 focus-16&quot;">
         </div>
         <hr>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="2 hover-16" data-background="white" class="padding-8">data-emboss="2 hover-16"</div>
+          <div class="padding-8" data-emboss="2 hover-16" data-background="white">data-emboss="2 hover-16"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
-          <div data-emboss="2 active-16" data-background="white" class="padding-8">data-emboss="2 active-16"</div>
+          <div class="padding-8" data-emboss="2 active-16" data-background="white">data-emboss="2 active-16"</div>
         </div>
         <div data-column="xlg-3 lg-4 md-6 sm-12">
           <input data-emboss="2 focus-16" value="data-emboss=&quot;2 focus-16&quot;">
         </div>
       </div>
     </article>
-    <article id="colors" class="page">
+    <article class="page" id="colors">
       <h1>Colors</h1>
       <hr>
       <table>
@@ -1520,22 +1555,22 @@
         </tbody>
       </table>
     </article>
-    <article id="badges" class="page">
+    <article class="page" id="badges">
       <h1>Badges</h1>
       <hr>
       <div class="text-center">
-        <div data-badge="1" class="material-icons margin-8">account_box</div>
-        <div data-badge="1" data-badge-color="default" class="material-icons margin-8">account_box</div>
-        <div data-badge="1" data-badge-color="primary" class="material-icons margin-8">account_box</div>
-        <div data-badge="1" data-badge-color="accent" class="material-icons margin-8">account_box</div>
-        <div data-badge="1" data-badge-color="info" class="material-icons margin-8">account_box</div>
-        <div data-badge="1" data-badge-color="warning" class="material-icons margin-8">account_box</div>
-        <div data-badge="1" data-badge-color="danger" class="material-icons margin-8">account_box</div>
-        <div data-badge="1" data-badge-color="success" class="material-icons margin-8">account_box</div>
+        <div class="material-icons margin-8" data-badge="1">account_box</div>
+        <div class="material-icons margin-8" data-badge="1" data-badge-color="default">account_box</div>
+        <div class="material-icons margin-8" data-badge="1" data-badge-color="primary">account_box</div>
+        <div class="material-icons margin-8" data-badge="1" data-badge-color="accent">account_box</div>
+        <div class="material-icons margin-8" data-badge="1" data-badge-color="info">account_box</div>
+        <div class="material-icons margin-8" data-badge="1" data-badge-color="warning">account_box</div>
+        <div class="material-icons margin-8" data-badge="1" data-badge-color="danger">account_box</div>
+        <div class="material-icons margin-8" data-badge="1" data-badge-color="success">account_box</div>
         <pre> &lt;element data-badge=&quot;1&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-badge=&quot;1&quot; data-badge-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
       </div>
     </article>
-    <article id="buttons" class="page">
+    <article class="page" id="buttons">
       <h1>Default Buttons</h1>
       <button>Default Button</button>
       <button data-button="default">data-button="default"</button>
@@ -1581,7 +1616,7 @@
       <button data-fab="warning inline mini"><i class="material-icons">add</i></button>
       <button data-fab="success inline mini"><i class="material-icons">add</i></button>
     </article>
-    <article id="cards" class="page">
+    <article class="page" id="cards">
       <h1>Cards</h1>
       <h2>Simple card</h2>
       <hr>
@@ -1658,11 +1693,11 @@
       </div>
       <pre> &lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div data-background=&quot;primary&quot;&gt;<br>      Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
     </article>
-    <article id="dialogs" class="page">
+    <article class="page" id="dialogs">
       <h1>Dialogs</h1>
       <hr>
       <div class="text-center">
-        <input id="dialog-1" type="checkbox" class="dialog-trigger">
+        <input class="dialog-trigger" id="dialog-1" type="checkbox">
         <label data-button for="dialog-1"><span>dialog-1</span>
           <div class="overlay"></div>
         </label>
@@ -1678,7 +1713,7 @@
             <button data-button="primary">Get started</button>
           </footer>
         </dialog>
-        <input id="dialog-2" type="checkbox" class="dialog-trigger">
+        <input class="dialog-trigger" id="dialog-2" type="checkbox">
         <label data-button for="dialog-2"><span>dialog-2</span>
           <div class="overlay"></div>
         </label>
@@ -1696,7 +1731,7 @@
             <button data-button="primary">Get started</button>
           </footer>
         </dialog>
-        <input id="dialog-3" type="checkbox" class="dialog-trigger">
+        <input class="dialog-trigger" id="dialog-3" type="checkbox">
         <label data-button for="dialog-3"><span>dialog-3</span>
           <div class="overlay"></div>
         </label>
@@ -1710,7 +1745,7 @@
             </header><img src="./img.jpeg">
           </div>
         </dialog>
-        <input id="dialog-4" type="checkbox" class="dialog-trigger">
+        <input class="dialog-trigger" id="dialog-4" type="checkbox">
         <label data-button for="dialog-4"><span>dialog-4</span>
           <div class="overlay">  </div>
         </label>
@@ -1727,7 +1762,7 @@
         </dialog>
       </div>
     </article>
-    <article id="lists" class="page">
+    <article class="page" id="lists">
       <h1>Lists</h1>
       <hr>
       <h2>Simple list with primary content</h2>
@@ -1749,29 +1784,29 @@
       <h2>Simple list with primary content and icon</h2>
       <hr>
       <ul data-list>
-        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston</a></li>
-        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul  </a></li>
-        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk</a></li>
+        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a></li>
+        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul  </a></li>
+        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk</a></li>
       </ul>
       <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
       <h2>List with primary content and icon and secondary content</h2>
       <hr>
       <ul data-list>
-        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston    </a><a href="#"><i class="material-icons">star    </i></a></li>
-        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
-        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk      </a><a href="#"><i class="material-icons">star</i></a></li>
+        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston    </a><a href="#"><i class="material-icons">star    </i></a></li>
+        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
+        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk      </a><a href="#"><i class="material-icons">star</i></a></li>
         <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
       </ul>
       <h2>Two line list</h2>
       <hr>
       <ul data-list="two-line">
-        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston    <small>
+        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston    <small>
               Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
               for playing Hal in Malcom in the Middle.    </small></a><a href="#"><i class="material-icons">star    </i></a></li>
-        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul        <small>
+        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul        <small>
               Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
               the &quot;Need For Speed&quot; Movie.     </small></a><a href="#"><i class="material-icons">star   </i></a></li>
-        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk         <small>
+        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk         <small>
               Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
               character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      </small></a><a href="#"><i class="material-icons">star</i></a></li>
         <pre>     &lt;ul data-list=&quot;two-line&quot;&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>                  &lt;small&gt;<br>                      Lorem ipsum...<br>                  &lt;/small&gt;<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
@@ -1779,19 +1814,19 @@
       <h2>Three line list</h2>
       <hr>
       <ul data-list="three-line">
-        <li><a href="#"><i data-background="default" class="material-icons">person</i>Bhryan Cranston    <small>
+        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston    <small>
               Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
               for playing Hal in Malcom in the Middle.    </small></a><a href="#"><i class="material-icons">star    </i></a></li>
-        <li><a href="#"><i data-background="primary" class="material-icons">person         </i>Aaron Paul        <small>
+        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul        <small>
               Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
               the &quot;Need For Speed&quot; Movie.     </small></a><a href="#"><i class="material-icons">star   </i></a></li>
-        <li><a href="#"><i data-background="success" class="material-icons">person          </i>Bob Odenkirk         <small>
+        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk         <small>
               Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
               character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      </small></a><a href="#"><i class="material-icons">star</i></a></li>
         <pre>     &lt;ul data-list=&quot;three-line&quot;&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>                  &lt;small&gt;<br>                      Lorem ipsum...<br>                  &lt;/small&gt;<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
       </ul>
     </article>
-    <article id="forms" class="page">
+    <article class="page" id="forms">
       <h1>Forms</h1>
       <hr>
       <div data-card>
@@ -1842,57 +1877,79 @@
       </div>
       <pre>  &lt;div data-card&gt;<br>    &lt;div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-warning&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is input has a warning&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-success&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This input has success&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-error&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This input has an error&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;textarea placeholder=&quot;Label text&quot; cols=&quot;6&quot;&gt;&lt;/textarea&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;select placeholder=&quot;Label text&quot;&gt;<br>          &lt;option value=&quot;&quot;&gt;&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>        &lt;/select&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br></pre>
     </article>
-    <article id="menus" class="page">
+    <article class="page" id="menus">
       <h1>Menus</h1>
       <hr>
-      <div class="text-center"><span class="menu-trigger">
-          <input id="menu-1" type="checkbox">
-          <label data-button for="menu-1"><span>Menu 1</span>
-            <div class="overlay"></div>
-          </label>
+      <div class="text-center">
+        <div data-menu>
+          <button data-menu-trigger>Menu 1</button>
           <menu>
             <ul data-list>
-              <li><a href="#"><i data-background="default" class="material-icons">person</i>hryan Cranston	</a><a href="#"><i class="material-icons">star	</i></a></li>
-              <li><a href="#"><i data-background="primary" class="material-icons">person		 </i>Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
-              <li><a href="#"><i data-background="success" class="material-icons">person		  </i>Bob Odenkirk	  </a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="primary">person</i>Aaron Paul</a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a><a href="#"><i class="material-icons">star</i></a></li>
             </ul>
-          </menu></span><span class="menu-trigger">
-          <input id="menu-2" type="checkbox">
-          <label data-button for="menu-2"><span>Menu 2</span>
-            <div class="overlay"></div>
-          </label>
+          </menu>
+        </div>
+        <div data-menu>
+          <button data-menu-trigger>Menu 2</button>
           <menu>
             <ul data-list="two-line">
-              <li><a href="#"><i data-background="default" class="material-icons">person</i>hryan Cranston	<small>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston<small>
                     hryan Cranston played the role of Walter in hreaking Bad. He is also known
-                    for playing Hal in Malcom in the Middle.	</small></a><a href="#"><i class="material-icons">star	</i></a></li>
-              <li><a href="#"><i data-background="primary" class="material-icons">person		 </i>Aaron Paul		<small>
+                    for playing Hal in Malcom in the Middle.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
                     Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-                    the &quot;Need For Speed&quot; Movie.	 </small></a><a href="#"><i class="material-icons">star   </i></a></li>
-              <li><a href="#"><i data-background="success" class="material-icons">person		  </i>Bob Odenkirk		 <small>
+                    the &quot;Need For Speed&quot; Movie.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
                     Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.	  </small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href="#"><i class="material-icons">star</i></a></li>
             </ul>
-          </menu></span><span class="menu-trigger">
-          <input id="menu-3" type="checkbox">
-          <label data-button for="menu-3"><span>Menu 3</span>
-            <div class="overlay"></div>
-          </label>
+          </menu>
+        </div>
+        <div data-menu>
+          <button data-menu-trigger>Menu 2</button>
           <menu>
             <ul data-list="three-line">
-              <li><a href="#"><i data-background="default" class="material-icons">person</i>hryan Cranston	<small>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston<small>
                     hryan Cranston played the role of Walter in hreaking Bad. He is also known
-                    for playing Hal in Malcom in the Middle.	</small></a><a href="#"><i class="material-icons">star	</i></a></li>
-              <li><a href="#"><i data-background="primary" class="material-icons">person		 </i>Aaron Paul		<small>
+                    for playing Hal in Malcom in the Middle.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
                     Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-                    the &quot;Need For Speed&quot; Movie.	 </small></a><a href="#"><i class="material-icons">star   </i></a></li>
-              <li><a href="#"><i data-background="success" class="material-icons">person		  </i>Bob Odenkirk		 <small>
+                    the &quot;Need For Speed&quot; Movie.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
                     Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.	  </small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href="#"><i class="material-icons">star</i></a></li>
             </ul>
-          </menu></span></div>
+          </menu>
+        </div>
+        <div data-menu="right">
+          <button data-menu-trigger>Menu Right</button>
+          <menu>
+            <ul data-list>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
+            </ul>
+          </menu>
+        </div>
+        <div data-menu="bottom">
+          <button data-menu-trigger>Menu Bottom</button>
+          <menu>
+            <ul data-list>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
+            </ul>
+          </menu>
+        </div>
+        <div data-menu="bottom-right">
+          <button data-menu-trigger>Menu Right Bottom</button>
+          <menu>
+            <ul data-list>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
+            </ul>
+          </menu>
+        </div>
+      </div>
     </article>
-    <article id="tables" class="page">
+    <article class="page" id="tables">
       <h1>Tables</h1>
       <hr>
       <table>
@@ -1923,30 +1980,30 @@
       </table>
       <pre>  &lt;table&gt;<br>    &lt;thead&gt;<br>      &lt;tr&gt;<br>        &lt;th class=&quot;text-left&quot;&gt;Material&lt;/th&gt;<br>        &lt;th&gt;Quantity&lt;/th&gt;<br>        &lt;th&gt;Unit price&lt;/th&gt;<br>      &lt;/tr&gt;<br>    &lt;/thead&gt;<br>    &lt;tbody&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Acrylic (Transparent)&lt;/td&gt;<br>        &lt;td&gt;25&lt;/td&gt;<br>        &lt;td&gt;$2.90&lt;/td&gt;<br>      &lt;/tr&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Plywood (Birch)&lt;/td&gt;<br>        &lt;td&gt;50&lt;/td&gt;<br>        &lt;td&gt;$1.25&lt;/td&gt;<br>      &lt;/tr&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Laminate (Gold on Blue)&lt;/td&gt;<br>        &lt;td&gt;10&lt;/td&gt;<br>        &lt;td&gt;$2.35&lt;/td&gt;<br>      &lt;/tr&gt;<br>    &lt;/tbody&gt;<br>  &lt;/table&gt;</pre>
     </article>
-    <article id="tool-bars" class="page">
+    <article class="page" id="tool-bars">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="tabs" class="page">
+    <article class="page" id="tabs">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="tooltips" class="page">
+    <article class="page" id="tooltips">
       <h1>Tooltips</h1>
       <hr>
       <div class="text-center">
-        <div data-tooltip="This is a tooltip" class="material-icons margin-8">account_box</div>
-        <div data-tooltip="This is a tooltip" data-tooltip-color="default" class="material-icons margin-8">account_box</div>
-        <div data-tooltip="This is a tooltip" data-tooltip-color="primary" class="material-icons margin-8">account_box</div>
-        <div data-tooltip="This is a tooltip" data-tooltip-color="accent" class="material-icons margin-8">account_box</div>
-        <div data-tooltip="This is a tooltip" data-tooltip-color="info" class="material-icons margin-8">account_box</div>
-        <div data-tooltip="This is a tooltip" data-tooltip-color="warning" class="material-icons margin-8">account_box</div>
-        <div data-tooltip="This is a tooltip" data-tooltip-color="danger" class="material-icons margin-8">account_box</div>
-        <div data-tooltip="This is a tooltip" data-tooltip-color="success" class="material-icons margin-8">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="default">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="primary">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="accent">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="info">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="warning">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="danger">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="success">account_box</div>
         <pre> &lt;element data-tooltip=&quot;Tooltip content&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
       </div>
     </article>
-    <article id="progress" class="page">
+    <article class="page" id="progress">
       <h1>Progress</h1>
       <hr>
       <h3>Progress to 40%</h3>
@@ -1998,7 +2055,7 @@
       </div>
       <pre>&lt;div data-progress=&quot;indeterminated default&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
     </article>
-    <article id="spinner" class="page">
+    <article class="page" id="spinner">
       <h1>Spinners</h1>
       <hr>
       <div class="text-center">
@@ -2015,7 +2072,7 @@
         <pre>&lt;div data-spinner=&quot;mini&quot;&gt;&lt;/div&gt;</pre>
         <div data-row>
           <div data-column="5"></div>
-          <div data-column="2" class="relative">
+          <div class="relative" data-column="2">
             <div data-spinner="full"></div>
           </div>
         </div>
@@ -2026,43 +2083,43 @@
         <pre> &lt;div data-fab=&quot;inline info&quot;&gt;<br>     &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;<br>     &lt;div data-spinner=&quot;success&quot;&gt;&lt;/div&gt;<br> &lt;/div&gt;</pre>
       </div>
     </article>
-    <article id="sliders" class="page">
+    <article class="page" id="sliders">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="toggles" class="page">
+    <article class="page" id="toggles">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="notifications" class="page">
+    <article class="page" id="notifications">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="chips" class="page">
+    <article class="page" id="chips">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="expansion-panels" class="page">
+    <article class="page" id="expansion-panels">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="bottom-navigation" class="page">
+    <article class="page" id="bottom-navigation">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="bottom-sheets" class="page">
+    <article class="page" id="bottom-sheets">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="steppers" class="page">
+    <article class="page" id="steppers">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="search" class="page">
+    <article class="page" id="search">
       <h1>In construction</h1>
       <hr>
     </article>
-    <article id="pickers" class="page">
+    <article class="page" id="pickers">
       <h1>In construction</h1>
       <hr>
     </article>

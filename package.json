@@ -10,11 +10,12 @@
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
-    "gulp-jade": "^1.1.0",
     "gulp-kss": "0.0.2",
     "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
     "gulp-stylus": "^2.3.1",
-    "jade": "^1.11.0"
+    "pug": "^2.0.0-beta6",
+    "stylus": "^0.54.5"
   },
   "keywords": [
     "material",
@@ -22,5 +23,23 @@
     "css"
   ],
   "author": "Masquerade Circus",
-  "license": "ISC"
+  "license": "ISC",
+  "jscsConfig": {
+    "preset": "crockford",
+    "requireCurlyBraces": false,
+    "disallowDanglingUnderscores": false,
+    "requireMultipleVarDecl": false,
+    "requireVarDeclFirst": false
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "ignoreDelimiters": [
+      {
+        "start": "start-non-standard",
+        "end": "end-non-standard"
+      }
+    ],
+    "-W058": true,
+    "expr": true
+  }
 }

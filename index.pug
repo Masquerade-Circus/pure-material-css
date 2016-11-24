@@ -1,0 +1,88 @@
+-   var menu = [['grid','Grid','primary','line_style'],['elevations','Elevations','accent','layers'],['colors','Colors','info','group_work'],['badges','Badges','success','chat_bubble'],['buttons','Buttons','warning','arrow_forward'],['cards','Cards','danger','video_label'],['dialogs','Dialogs','primary','web_asset'],['lists','Lists','accent','list'],['forms','Forms','info','format_color_text'],['menus','Menus','success','menu'],['tables','Tables','warning','view_list'],['tool-bars', 'Toolbars', 'danger', 'add'],['tabs','Tabs','primary','add'],['tooltips','Tooltips','accent','label'],['progress','Progress','info','trending_flat'],['spinner','Spinner','success','refresh'],['sliders','Sliders','warning','add'],['toggles','Toggles','danger','add'],['notifications','Notifications','primary','add'],['chips','Chips','accent','add'],['expansion-panels','Expansion panels','info','add'],['bottom-navigation','Bottom navigation','success','add'],['bottom-sheets','Bottom sheets','warning','add'],['steppers','Steppers','danger','add'],['search', 'Search','primary','add'],['pickers', 'Pickers', 'accent', 'add']];
+doctype html
+html(lang="en")
+    head
+        title="Pure Material CSS"
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(href="./fonts/roboto/stylesheet.css", rel="stylesheet")
+        link(href="./node_modules/normalize.css/normalize.css", rel="stylesheet")
+        link(href="./css/pure-material.css", rel="stylesheet")
+        link(href="./fonts/material-icons/material-icons.css", rel="stylesheet")
+    body
+        header
+            button(data-button, data-drawer-button)
+                span.material-icons menu
+            nav(data-drawer="left")
+                .overlay
+                div(data-drawer-content)
+                    .flexible-bar
+                        .flexible-bar-media
+                            div
+                                h2 PURE MATERIAL CSS
+                    ul(data-list)
+                        each item in menu
+                            li
+                                a(href="#"+item[0])
+                                    if item[3] === 'add'
+                                        i.material-icons(data-background="default") #{item[3]}
+                                    else
+                                        i.material-icons(data-background=item[2]) #{item[3]}
+                                    | #{item[1]}
+
+            h1 PURE MATERIAL CSS
+            nav
+                a(href="#about", data-button) About
+                a(href="#getting-started", data-button) Getting started
+                a(href="#", data-button) Github
+                a(href="#", data-button) Download
+            .menu-icon
+            button(data-button, data-drawer-button)
+                span.material-icons menu
+            nav(data-drawer="right")
+                .overlay
+                div(data-drawer-content)
+                    .flexible-bar
+                        .flexible-bar-media
+                            div
+                                h2 PURE MATERIAL CSS
+                    ul(data-list)
+                        each item in menu
+                            li
+                                a(href="#"+item[0])
+                                    if item[3] === 'add'
+                                        i.material-icons(data-background="default") #{item[3]}
+                                    else
+                                        i.material-icons(data-background=item[2]) #{item[3]}
+                                    | #{item[1]}
+        .flexible-bar
+        .tab-bar
+        include pug/about.pug
+        include pug/getting-started.pug
+
+        // Components
+        include pug/grid.pug
+        include pug/elevations.pug
+        include pug/colors.pug
+        include pug/badges.pug
+        include pug/buttons.pug
+        include pug/cards.pug
+        include pug/dialogs.pug
+        include pug/lists.pug
+        include pug/forms.pug
+        include pug/menus.pug
+        include pug/tables.pug
+        include pug/tool-bars.pug
+        include pug/tabs.pug
+        include pug/tooltips.pug
+        include pug/progress.pug
+        include pug/spinner.pug
+        include pug/sliders.pug
+        include pug/toggles.pug
+        include pug/notifications.pug
+        include pug/chips.pug
+        include pug/expansion-panels.pug
+        include pug/bottom-navigation.pug
+        include pug/bottom-sheets.pug
+        include pug/steppers.pug
+        include pug/search.pug
+        include pug/pickers.pug

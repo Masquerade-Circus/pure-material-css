@@ -2,10 +2,13 @@
 var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     browserSync = require('browser-sync'),
+    stylus = require('stylus'),
     gulpStylus = require('gulp-stylus'),
-    jade = require('jade'),
-    gulpJade = require('gulp-jade'),
+    pug = require('pug'),
+    gulpPug = require('gulp-pug'),
     fs = require('fs');
+
+gulpStylus.stylus = stylus;
 
 gulp.task('connect', function () {
     browserSync.init({
@@ -27,25 +30,24 @@ gulp.task('stylus', function () {
         .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('jade', function () {
-    return gulp.src('./**.jade')
+gulp.task('pug', function () {
+    return gulp.src('./**.pug')
         .pipe(plumber())
-        .pipe(gulpJade({
-            jade: jade,
+        .pipe(gulpPug({
+            pug: pug,
             pretty: true
         }))
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('watch', ['connect', 'stylus', 'jade'], function () {
+gulp.task('watch', ['connect', 'stylus', 'pug'], function () {
     gulp.watch('./**/*.styl', ['stylus']);
-    gulp.watch('./**/*.jade', ['jade']);
+    gulp.watch('./**/*.pug', ['pug']);
     gulp.watch('./**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('build', function () {
-    var stylus = gulpStylus.stylus,
-        colors = [
+    var colors = [
             'Red',
             'Pink',
             'Purple',
@@ -73,7 +75,7 @@ gulp.task('build', function () {
             }
 
             return split.join('-');
-        }
+        };
 
 
     for (let i = 0; i < colors.length; i++) {
@@ -87,11 +89,16 @@ gulp.task('build', function () {
                     .define('accent-color', accent)
                     .include('./styl')
                     .render(function (err, css) {
-                        if (err) {
+                        if (err)
                             console.log(err);
-                        }
 
-                        fs.writeFile('./css/pure-material-' + toSnake(primary) + '-' + toSnake(accent) + '.css', css, {encoding : 'utf8'});
+                        let fileName = './css/pure-material-' + toSnake(primary) + '-' + toSnake(accent) + '.css';
+                        fs.writeFile(fileName, css, {encoding : 'utf8'}, function (err) {
+                            if (err)
+                                console.log(err);
+
+                            console.log('Writed ' + fileName);
+                        });
                     });
             }
         }

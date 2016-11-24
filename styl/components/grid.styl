@@ -11,14 +11,14 @@ generate(width, id)
     float: left;
     min-height: 0.5rem;
 
-[data-row],[data-row-gutter]
+[data-row]
     clear: both;
     &:after, &::before
         clear both
         content " "
         display block
 
-[data-row-gutter]
+[data-row="gutters"]
     margin-left -8rem
     margin-right -8rem
     &>[data-column]

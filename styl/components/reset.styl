@@ -19,8 +19,6 @@ nav,
 .bottom-bar,
 [data-menu],
 menu,
-#drawer,
-#right-drawer,
 #modal-bottom-sheet,
 dialog,
 .picker,
@@ -35,7 +33,7 @@ dialog,
 [class*="icon"],
 .inline-block,
 input, select, textarea, label,.help-block,
-#drawer [data-list]>li>*, #right-drawer [data-list]>li>*
+[data-drawer] [data-list]>li>*
     display: block;
     box-sizing: border-box;
 
@@ -56,7 +54,7 @@ nav:empty,
 .bottom-bar:empty,
 [data-menu]:empty,
 menu:empty,
-#drawer:empty,
+[data-drawer]:empty,
 #right-drawer:empty,
 #modal-bottom-sheet:empty,
 dialog:empty,

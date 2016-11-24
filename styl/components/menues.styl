@@ -1,4 +1,4 @@
-menu,[data-menu]
+menu
     position: absolute;
     z-index: -1;
     opacity: 0;
@@ -12,24 +12,45 @@ menu,[data-menu]
     transform: scale(0);
     transform-origin: top left;
 
-.menu-trigger
+[data-menu]
     position: relative;
     display: inline-block;
-.menu-trigger>input
-    position: absolute;
-    top: -9999rem;
-    left: -9999rem;
 
-.menu-trigger>input:checked+label>.overlay
-    opacity: 1;
-    z-index: 8;
-    display: block;
+[data-menu="bottom"] menu
+    transform-origin: bottom left;
+    top: -200%;
 
-.menu-trigger>input:checked+label+[data-menu],
-.menu-trigger>input:checked+label+menu,
-[data-menu][open],
-menu[open]
+[data-menu="right"] menu
+    transform-origin: top right;
+
+[data-menu="bottom-right"] menu
+    transform-origin: bottom right;
+    top: -200%;
+
+[data-menu-trigger]:focus+menu,menu[open]
     display: block;
     opacity: 1;
     z-index: 8;
     transform: scale(1);
+
+// .menu-trigger
+//     position: relative;
+//     display: inline-block;
+// .menu-trigger>input
+//     position: absolute;
+//     top: -9999rem;
+//     left: -9999rem;
+//
+// .menu-trigger>input:checked+label>.overlay
+//     opacity: 1;
+//     z-index: 8;
+//     display: block;
+//
+// .menu-trigger>input:checked+label+[data-menu],
+// .menu-trigger>input:checked+label+menu,
+// [data-menu][open],
+// menu[open]
+//     display: block;
+//     opacity: 1;
+//     z-index: 8;
+//     transform: scale(1);

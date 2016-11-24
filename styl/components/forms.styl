@@ -1,77 +1,77 @@
 input,select,textarea
-	outline: 0;
-	padding:8rem;
-	transition: all .3s ease-in-out;
-	height: 32rem;
-	line-height: 32rem;
-	border:0;
-	z-index: 1;
-	position: relative;
-	border-radius: 2rem;
+    outline: 0;
+    padding:8rem;
+    transition: all .3s ease-in-out;
+    height: 32rem;
+    line-height: 32rem;
+    border:0;
+    z-index: 1;
+    position: relative;
+    border-radius: 2rem;
 
 .form-group
-	margin-bottom: 32rem;
-	position: relative;
-	padding-top: 16rem;
-	>*
-		width: 100%;
-	.help-block
-		font-size: 13rem;
-		margin-top: 8rem;
-		opacity: 0.6;
-		position: absolute;
-	>.input-group
-		display: flex;
-		>.help-block
-			position: absolute;
-			left: 0;
-			margin-top: 30rem;
-		>input,>select,>textarea
-			flex: 1 1 auto;
-			order: 0;
-		>.input-group-addon
-			padding: 0;
-			line-height: 32rem;
-			height: 32rem;
-			flex: 0 1 auto;
-			order: 1;
-			width: auto;
-			margin-left: -1rem;
-			z-index: 2;
-	>input,>select,>textarea
-		border-radius: 0;
-		~label
-			transition: all .3s ease-in-out
-			position: absolute;
-			top:0;
-			left:0;
-			font-size: 13rem;
-			z-index: 0;
-			opacity: 0.6;
-			height: 100%
-			width: 100%
-			padding: 0;
-			&::after,&::before
-				transition: all .3s ease-in-out;
-				content: ' ';
-				position: absolute;
-				bottom: 0;
-				width: 100%;
-				left: 0;
-				height: 2rem;
-			&::after
-				width: 0%;
-				left: 50%;
-				transform: translate(-50%);
-		&:placeholder-shown~label
-			padding:24rem 8rem 0;
-			font-size: 16rem;
-		&:focus
-			outline: 0;
-			&~label
-				padding: 0;
-				font-size: 13rem;
-				&::after
-					width: 100%;
-	>textarea
-		height: auto;
+    margin-bottom: 32rem;
+    position: relative;
+    padding-top: 16rem;
+    >*
+        width: 100%;
+    .help-block
+        font-size: 13rem;
+        margin-top: 8rem;
+        opacity: 0.6;
+        position: absolute;
+    >.input-group
+        display: flex;
+        >.help-block
+            position: absolute;
+            left: 0;
+            margin-top: 30rem;
+        >input,>select,>textarea
+            flex: 1 1 auto;
+            order: 0;
+        >.input-group-addon
+            padding: 0;
+            line-height: 32rem;
+            height: 32rem;
+            flex: 0 1 auto;
+            order: 1;
+            width: auto;
+            margin-left: -1rem;
+            z-index: 2;
+    >input,>select,>textarea
+        border-radius: 0;
+        ~label
+            transition: all .3s ease-in-out
+            position: absolute;
+            top:0;
+            left:0;
+            font-size: 13rem;
+            z-index: 0;
+            opacity: 0.6;
+            height: 100%
+            width: 100%
+            padding: 0;
+            &::after,&::before
+                transition: all .3s ease-in-out;
+                content: ' ';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                height: 2rem;
+            &::after
+                width: 0%;
+                left: 50%;
+                transform: translate(-50%);
+        &:placeholder-shown~label
+            padding:24rem 8rem 0;
+            font-size: 16rem;
+        &:focus
+            outline: 0;
+            &~label
+                padding: 0;
+                font-size: 13rem;
+                &::after
+                    width: 100%;
+    >textarea
+        height: auto;

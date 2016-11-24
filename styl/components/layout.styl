@@ -13,8 +13,13 @@ body
     &>header
         order: 1;
         flex: 0 0 auto;
-        &>nav>a,&>nav>a.button
-            text-transform: none;
+        &>nav
+            padding-right: 0;
+            >a,&>nav>a[data-button]
+                text-transform: none;
+        > h1, > h2, > h3, > h4, > h5, > h6
+            padding-left: 0;
+
     &>.flexible-bar
         order: 2;
         flex: 1 0 auto;

@@ -1,33 +1,27 @@
-#drawer, #right-drawer
+[data-drawer]
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding: 0;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-name: drawerclose;
+
+[data-drawer-content]
     flexContainer: column;
     animation-duration: .5s;
     animation-fill-mode: both;
-    position: fixed;
-    height: 100%;
-    width: calc(100% - 56rem)
+    width: calc(100% - 56rem);
     max-width: 320rem; // TODO: on mobile 280rem
     padding: 0; // TODO: on mobile 16rem;
     top: 0;
-    &::before
-        content: ' ';
-        overlay()
-        width: 9999rem;
-        height: 9999rem;
-        margin: -3333rem 0 0 -3333rem;
-    &[open]::before
-        display: block;
-        opacity: 1;
-    &::after
-        content: ' ';
-        z-index: -1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    &>[data-list]
+    left:0;
+    animation-name: slideOutLeft;
+    height: 100%;
+    position: absolute;
+    >[data-list]
         flex: 1 1 0;
-    [data-list]
         overflow: auto;
         >li
             width: 100%;
@@ -36,36 +30,23 @@
             >*:last-child
                 padding-right: 40rem;
 
-#drawer
-    left: 0;
-    animation-name: slideOutLeft;
-
-#right-drawer
-    right: 0;
+[data-drawer="right"] [data-drawer-content]
+    right:0;
+    left: auto;
     animation-name: slideOutRight;
 
-#drawer-input,
-#right-drawer-input
-    position: absolute;
-    top: -9999rem;
-    left: -9999rem;
+[data-drawer-button]:focus+[data-drawer],[data-drawer][open]
+    animation-name: draweropen;
+    z-index: 1;
+    >.overlay
+        opacity: 1;
+        z-index: -2;
+        display: block;
 
-#drawer-input+label>.overlay,
-#right-drawer-input+label>.overlay
-    top: -3333rem;
-    left: -3333rem;
-    width: 9999rem;
-    bottom: -3333rem;
-    right: auto;
+[data-drawer-button]:focus+[data-drawer="left"],[data-drawer="left"][open]
+    >[data-drawer-content]
+        animation-name: slideInLeft;
 
-#drawer-input:checked+label>.overlay,
-#right-drawer-input:checked+label>.overlay
-    opacity: 1;
-    z-index: 16;
-    display: block;
-
-#drawer-input:checked+label+#drawer,#drawer[open]
-    animation-name: slideInLeft;
-
-#right-drawer-input:checked+label+#right-drawer, #right-drawer[open]
-    animation-name: slideInRight;
+[data-drawer-button]:focus+[data-drawer="right"],[data-drawer="right"][open]
+    >[data-drawer-content]
+        animation-name: slideInRight;

@@ -21,10 +21,10 @@ line-color = alpha(colors['Grey']['900'], 0.16)
 transparent-color = alpha(colors['Grey']['900'], 0.3)
 
 [data-color="white"]
-    color: white-color
+    color: white-color;
 
 a
-    color: colors[primary-color]['500']
+    color: colors[primary-color]['500'];
 
 button,[data-button],[data-fab]
     background: transparent;
@@ -36,9 +36,9 @@ button,[data-button],[data-fab]
 [data-background="white"],
 [data-button~="raised"],
 [data-badge]::after,
-[data-tooltip-color]::after
-    background-color: white-color;
-    color: colors[default-color]['900'];
+[data-tooltip]::after,[data-tooltip-color]::after
+    background-color: colors[default-color]['50'];
+    color: colors[default-color]['500'];
 
 [data-button~="raised"]:hover,
 [data-fab]:hover
@@ -49,8 +49,8 @@ button,[data-button],[data-fab]
     &>div
         background: colors[default-color]['500'];
 
-[data-tooltip-color]::before
-    border-color: white-color
+[data-tooltip]::before,[data-tooltip-color]::before
+    border-color: colors[default-color]['50'];
 
 generateText(prefix, name)
     define(prefix+'-color', colors[name]['500'], true)
@@ -137,11 +137,10 @@ body
         color: primary-color-50;
 
 /*** Drawer ***/
-#drawer, #right-drawer
-    background: white-color;
-    color: default-color-900;
-    &::after
+[data-drawer]
+    [data-drawer-content]
         background: white-color;
+        color: default-color-900;
 
 /*** Card ***/
 [data-card]
@@ -281,10 +280,8 @@ label
                 color: danger-color;
 
 /*** Menu ***/
-[data-menu], menu
+menu
     background: white-color;
-.menu-trigger>input+label>.overlay
-    background: transparent;
 
 /*** Hr ***/
 hr

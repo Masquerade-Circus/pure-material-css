@@ -1,74 +1,74 @@
 @keyframes slideInLeft
-	0%
-		transform: translate(-100%, 0%);
-		visibility: hidden;
-	0%
-		transform: translate(-100%, 0%);
-		visibility: visible;
-	100%
-		transform: translate(0%, 0%);
-		visibility: visible;
+    0%
+        transform: translate(-100%, 0%);
+    0%
+        transform: translate(-100%, 0%);
+    100%
+        transform: translate(0%, 0%);
 .slideInLeft
-	animation-name: slideInLeft;
+    animation-name: slideInLeft;
 
 
 @keyframes slideOutLeft
-	0%
-		transform: translate(0%, 0%);
-		visibility: visible;
-	99%
-		transform: translate(-100%, 0%);
-		visibility: visible;
-	100%
-		transform: translate(-100%, 0%);
-		visibility: hidden;
+    0%
+        transform: translate(0%, 0%);
+    100%
+        transform: translate(-100%, 0%);
+    100%
+        transform: translate(-100%, 0%);
 .slideOutLeft
-	animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
+
 
 @keyframes slideInRight
-	0%
-		transform: translate(100%, 0%);
-		visibility: hidden;
-	0%
-		transform: translate(100%, 0%);
-		visibility: visible;
-	100%
-		transform: translate(0%, 0%);
-		visibility: visible;
+    0%
+        transform: translate(100%, 0%);
+    0%
+        transform: translate(100%, 0%);
+    100%
+        transform: translate(0%, 0%);
 .slideInLeft
-	animation-name: slideInLeft;
+    animation-name: slideInLeft;
 
 
 @keyframes slideOutRight
-	0%
-		transform: translate(0%, 0%);
-		visibility: visible;
-	99%
-		transform: translate(100%, 0%);
-		visibility: visible;
-	100%
-		transform: translate(100%, 0%);
-		visibility: hidden;
+    0%
+        transform: translate(0%, 0%);
+    100%
+        transform: translate(100%, 0%);
+    100%
+        transform: translate(100%, 0%);
 .slideOutLeft
-	animation-name: slideOutLeft;
+    animation-name: slideOutLeft;
 
 
 @keyframes progressIndeterminate
-	0%
-		left: 0;
-		width: 0%;
-	50%
-		left: 25%;
-		width: 75%;
-	100%
-		left: 100%;
-		width: 0%;
+    0%
+        left: 0;
+        width: 0%;
+    50%
+        left: 25%;
+        width: 75%;
+    100%
+        left: 100%;
+        width: 0%;
 
 @keyframes ripple
-	0%
-		transform: scale(0) translate(-50%, -50%);
-	20%
-		transform: scale(1) translate(-50%, -50%);
-	100%
-		opacity: 0;
-		transform: scale(1) translate(-50%, -50%);
+    0%
+        transform: scale(0) translate(-50%, -50%);
+    20%
+        transform: scale(1) translate(-50%, -50%);
+    100%
+        opacity: 0;
+        transform: scale(1) translate(-50%, -50%);
+
+@keyframes drawerclose
+    0%
+        top: 0;
+        z-index: 1;
+    99%
+        top: 0;
+        z-index: 1;
+    100%
+        top: -100%;
+        z-index: -1;
