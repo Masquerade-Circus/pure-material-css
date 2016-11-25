@@ -10,15 +10,12 @@ body
     font-weight: 300;
     height: 100%;
     flexContainer : column;
-    &>header
+    &>header,&>footer
         order: 1;
         flex: 0 0 auto;
         &>nav
-            padding-right: 0;
-            >a,&>nav>a[data-button]
+            >a,>a[data-button]
                 text-transform: none;
-        > h1, > h2, > h3, > h4, > h5, > h6
-            padding-left: 0;
 
     &>.flexible-bar
         order: 2;
@@ -32,6 +29,8 @@ body
         padding: 16rem;
         overflow: auto;
         z-index: 0;
+    &>footer
+        order: 5
 
 .page
     display: none;

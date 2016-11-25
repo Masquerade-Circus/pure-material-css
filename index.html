@@ -1623,16 +1623,18 @@
       <div data-card>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
       </div>
-      <pre> &lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre>&lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>&lt;/div&gt;</pre>
       <h2>Card with footer</h2>
       <hr>
       <div data-card>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
         <footer>
-          <button data-button="primary">Get started</button>
+          <nav>
+            <button data-button="primary">Get started</button>
+          </nav>
         </footer>
       </div>
-      <pre> &lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      <pre>&lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;&lt;nav&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
       <h2>Card with header and footer</h2>
       <hr>
       <div data-card>
@@ -1644,10 +1646,12 @@
         </header>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
         <footer>
-          <button data-button="primary">Get started</button>
+          <nav>
+            <button data-button="primary">Get started</button>
+          </nav>
         </footer>
       </div>
-      <pre> &lt;div data-card&gt;<br>    &lt;header&gt;<br>        &lt;h2&gt;Title&lt;/h2&gt;<br>        &lt;nav&gt;<br>            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>        &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      <pre>&lt;div data-card&gt;<br>    &lt;header&gt;<br>        &lt;h2&gt;Title&lt;/h2&gt;<br>        &lt;nav&gt;<br>            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>        &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;&lt;nav&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
       <h2>Card with media</h2>
       <hr>
       <div data-card>
@@ -1661,10 +1665,12 @@
         </div>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
         <footer>
-          <button data-button="primary">Get started</button>
+          <nav>
+            <button data-button="primary">Get started</button>
+          </nav>
         </footer>
       </div>
-      <pre> &lt;div data-card&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>  &lt;div&gt;Lorem ipsum...&lt;/div&gt;<br>  &lt;footer&gt;<br>    &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>  &lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      <pre>&lt;div data-card&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>  &lt;div&gt;Lorem ipsum...&lt;/div&gt;<br>  &lt;footer&gt;&lt;nav&gt;<br>    &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>  &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
       <h2>Card squared</h2>
       <hr>
       <div data-card="squared">
@@ -1677,7 +1683,7 @@
           </header><img src="./img.jpeg">
         </div>
       </div>
-      <pre> &lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre>&lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
       <h2>Card squared with text instead of media</h2>
       <hr>
       <div data-card="squared">
@@ -1691,7 +1697,24 @@
           <div data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</div>
         </div>
       </div>
-      <pre> &lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div data-background=&quot;primary&quot;&gt;<br>      Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre>&lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div data-background=&quot;primary&quot;&gt;<br>      Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <h2>Full width card</h2>
+      <hr>
+      <div data-card="full-width">
+        <header>
+          <h2>Title</h2>
+          <nav>
+            <button data-fab="inline mini"><i class="material-icons">share</i></button>
+          </nav>
+        </header>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <footer>
+          <nav>
+            <button data-button="primary">Get started</button>
+          </nav>
+        </footer>
+      </div>
+      <pre>&lt;div data-card=&quot;full-width&quot;&gt;<br>    &lt;header&gt;<br>        &lt;h2&gt;Title&lt;/h2&gt;<br>        &lt;nav&gt;<br>            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>        &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;&lt;nav&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
     </article>
     <article class="page" id="dialogs">
       <h1>Dialogs</h1>
@@ -2123,5 +2146,8 @@
       <h1>In construction</h1>
       <hr>
     </article>
+    <footer>
+      <h1>PURE MATERIAL CSS</h1>
+    </footer>
   </body>
 </html>

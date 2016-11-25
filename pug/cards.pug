@@ -4,7 +4,7 @@ article.page#cards
     hr
     div(data-card)
         div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
-    pre 
+    pre
         = '<div data-card>'
         br
         =    '    <div>Lorem ipsum ...</div>'
@@ -15,17 +15,18 @@ article.page#cards
     div(data-card)
         div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
         footer
-            button(data-button="primary") Get started
-    pre 
+            nav
+                button(data-button="primary") Get started
+    pre
         = '<div data-card>'
         br
         =    '    <div>Lorem ipsum ...</div>'
         br
-        =    '    <footer>'
+        =    '    <footer><nav>'
         br
         =    '        <button data-button="primary">Get started</button>'
         br
-        =    '    </footer>'
+        =    '    </nav></footer>'
         br
         =    '</div>'
     h2 Card with header and footer
@@ -38,8 +39,9 @@ article.page#cards
                     i.material-icons share
         div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
         footer
-            button(data-button="primary") Get started
-    pre 
+            nav
+                button(data-button="primary") Get started
+    pre
         = '<div data-card>'
         br
         =    '    <header>'
@@ -56,11 +58,11 @@ article.page#cards
         br
         =    '    <div>Lorem ipsum ...</div>'
         br
-        =    '    <footer>'
+        =    '    <footer><nav>'
         br
         =    '        <button data-button="primary">Get started</button>'
         br
-        =    '    </footer>'
+        =    '    </nav></footer>'
         br
         =    '</div>'
     h2 Card with media
@@ -75,8 +77,9 @@ article.page#cards
             img(src="./img.jpeg")
         div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
         footer
-            button(data-button="primary") Get started
-    pre 
+            nav
+                button(data-button="primary") Get started
+    pre
         =   '<div data-card>'
         br
         =   '  <div data-card-media>'
@@ -99,11 +102,11 @@ article.page#cards
         br
         =   '  <div>Lorem ipsum...</div>'
         br
-        =   '  <footer>'
+        =   '  <footer><nav>'
         br
         =   '    <button data-button="primary">Get started</button>'
         br
-        =   '  </footer>'
+        =   '  </nav></footer>'
         br
         =   '</div>'
     h2 Card squared
@@ -116,7 +119,7 @@ article.page#cards
                     button(data-fab="inline mini")
                         i.material-icons share
             img(src="./img.jpeg")
-    pre 
+    pre
         =   '<div data-card="squared">'
         br
         =   '  <div data-card-media>'
@@ -148,7 +151,7 @@ article.page#cards
                     button(data-fab="inline mini")
                         i.material-icons share
             div(data-background="primary") Feautred event: <br> May 24, 2016 <br> 7-11pm
-    pre 
+    pre
         =   '<div data-card="squared">'
         br
         =   '  <div data-card-media>'
@@ -168,14 +171,46 @@ article.page#cards
         =   '    <div data-background="primary">'
         br
         =   '      Featured event: <br> May 24, 2016 <br> 7-11pm'
-        br 
+        br
         =   '    </div>'
         br
         =   '  </div>'
         br
         =   '</div>'
-            
-            
-    
-        
-    
+
+    h2 Full width card
+    hr
+    div(data-card="full-width")
+        header
+            h2 Title
+            nav
+                button(data-fab="inline mini")
+                    i.material-icons share
+        div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+        footer
+            nav
+                button(data-button="primary") Get started
+    pre
+        = '<div data-card="full-width">'
+        br
+        =    '    <header>'
+        br
+        =    '        <h2>Title</h2>'
+        br
+        =    '        <nav>'
+        br
+        =    '            <button data-fab="inline mini"><i class="material-icons">share</i></button>'
+        br
+        =    '        </nav>'
+        br
+        =    '    </header>'
+        br
+        =    '    <div>Lorem ipsum ...</div>'
+        br
+        =    '    <footer><nav>'
+        br
+        =    '        <button data-button="primary">Get started</button>'
+        br
+        =    '    </nav></footer>'
+        br
+        =    '</div>'
