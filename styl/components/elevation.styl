@@ -49,21 +49,15 @@ body>footer
 [data-fab], .snackbar
     elevation(6)
 
-.bottom-bar, [data-card]:focus, [data-card].active, [data-button~="raised"]:active, [data-button~="raised"].active
+.bottom-bar, [data-card~="active"], [data-button~="raised"]:active, [data-button*="raised active"]
     elevation(8)
 
 menu
     elevation(8)
     menu
         elevation(9)
-        menu
-            elevation(10)
-            menu
-                elevation(11)
-                menu
-                    elevation(12)
 
-[data-fab]:active,[data-fab].active
+[data-fab]:active,[data-fab~="active"]
     elevation(12)
 
 [data-drawer-content], #modal-bottom-sheet

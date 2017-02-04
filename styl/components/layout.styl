@@ -10,13 +10,13 @@ body
     font-weight: 300;
     height: 100%;
     flexContainer : column;
+    justify-content: space-between;
     &>header,&>footer
         order: 1;
         flex: 0 0 auto;
         &>nav
             >a,>a[data-button]
                 text-transform: none;
-
     &>.flexible-bar
         order: 2;
         flex: 1 0 auto;
@@ -27,10 +27,11 @@ body
         order: 4;
         flex: 1 1 auto;
         padding: 16rem;
-        overflow: auto;
+        overflow-x: hidden;
         z-index: 0;
     &>footer
         order: 5
+        z-index: 3;
 
 .page
     display: none;

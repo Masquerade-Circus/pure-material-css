@@ -23,9 +23,9 @@ gulp.task('connect', function () {
 });
 
 gulp.task('stylus', function () {
-    return gulp.src('./styl/pure-material.styl')
+    return gulp.src('./styl/**/*.styl')
         .pipe(plumber())
-        .pipe(gulpStylus({ compress: false }))
+        .pipe(gulpStylus({ compress: true, sourcemap: true }))
         .pipe(gulp.dest('./css/'))
         .pipe(browserSync.reload({ stream: true }));
 });

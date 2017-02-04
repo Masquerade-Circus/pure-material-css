@@ -6,7 +6,7 @@ article.page#dialogs
         label(data-button for="dialog-1")
             span dialog-1
             .overlay
-        dialog
+        dialog(data-card)
             header
                 h2 Title
                 nav
@@ -15,50 +15,46 @@ article.page#dialogs
             div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
             footer
                 button(data-button="primary") Get started
-                
+
         input.dialog-trigger#dialog-2(type="checkbox")
         label(data-button for="dialog-2")
             span dialog-2
             .overlay
-        dialog
-            div(data-dialog-media)
-                header
-                    h2 Title
-                    nav
-                        button(data-fab="inline mini")
-                            i.material-icons share
-                img(src="./img.jpeg")    
-            div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
-            footer
-                button(data-button="primary") Get started
-        
-        input.dialog-trigger#dialog-3(type="checkbox")
-        label(data-button for="dialog-3")
-            span dialog-3
-            .overlay
-        dialog(data-dialog="squared")
-            div(data-dialog-media)
+        dialog(data-card)
+            div(data-card-media)
                 header
                     h2 Title
                     nav
                         button(data-fab="inline mini")
                             i.material-icons share
                 img(src="./img.jpeg")
-                
-        
+            div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+            footer
+                button(data-button="primary") Get started
+
+        input.dialog-trigger#dialog-3(type="checkbox")
+        label(data-button for="dialog-3")
+            span dialog-3
+            .overlay
+        dialog(data-card="squared")
+            div(data-card-media)
+                header
+                    h2 Title
+                    nav
+                        button(data-fab="inline mini")
+                            i.material-icons share
+                img(src="./img.jpeg")
+
+
         input.dialog-trigger#dialog-4(type="checkbox")
         label(data-button for="dialog-4")
             span dialog-4
-            .overlay   
-        dialog(data-dialog="squared")
-            div(data-dialog-media)
+            .overlay
+        dialog(data-card="squared")
+            div(data-card-media)
                 header
                     h2 Title
                     nav
                         button(data-fab="inline mini")
                             i.material-icons share
                 div(data-background="primary") Feautred event: <br> May 24, 2016 <br> 7-11pm
-                
-        
-            
-        
