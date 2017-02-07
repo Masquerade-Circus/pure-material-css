@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Material Design Components with only css and Html5",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+      "start": "gulp watch"
+  },
   "dependencies": {
     "normalize.css": "^4.2.0"
   },

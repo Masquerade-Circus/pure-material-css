@@ -92,7 +92,7 @@ gulp.task('build', function () {
                         if (err)
                             console.log(err);
 
-                        let fileName = './css/pure-material-' + toSnake(primary) + '-' + toSnake(accent) + '.css';
+                        let fileName = './build_styles/pure-material-' + toSnake(primary) + '-' + toSnake(accent) + '.css';
                         fs.writeFile(fileName, css, {encoding : 'utf8'}, function (err) {
                             if (err)
                                 console.log(err);
