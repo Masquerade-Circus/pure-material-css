@@ -9,35 +9,32 @@
         font-weight: bold;
         left: 50%;
         top: 100%;
-        transform: translate(-50%, 11rem) scale(0);
+        transform: translate(-50%) scale(0);
         font-family: 'Roboto', sans-serif;
         elevation(2);
         opacity: 0;
         padding: 0 6rem;
         transform-origin: top center;
-    &::before
-        content: ' ';
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        width: 0;
-        height: 0;
-        transform: translate(-50%) scale(0);
-        border-width: 6rem;
-        border-style: solid;
-        border-left-color:transparent;
-        border-right-color:transparent;
-        border-top-color:transparent;
-        transition: all .3s ease-in-out;
-        opacity: 0;
-        z-index: 2;
-        transform-origin: bottom center;
     &:hover
         &::after
             display: block;
             opacity: 1;
-            transform: translate(-50%, 11rem) scale(1);
-        &::before
-            display: block;
-            opacity: 1;
             transform: translate(-50%) scale(1);
+
+[data-tooltip-position="top"]::after
+    transform-origin: bottom center;
+    top: -100%;
+
+[data-tooltip-position="left"]::after
+        transform-origin: right center;
+        top: 0;
+        left: -200%;
+
+[data-tooltip-position="right"]
+    &::after
+        transform-origin: left center;
+        top: 0;
+        left: 100%;
+        transform: translate(0) scale(0);
+    &:hover::after
+        transform: translate(0) scale(1);

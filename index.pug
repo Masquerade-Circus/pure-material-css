@@ -18,7 +18,7 @@ html(lang="en")
                     .flexible-bar
                         .flexible-bar-media
                             div
-                                h2 PURE MATERIAL CSS
+                                h2 PURE MATERIAL
                     ul(data-list)
                         each item in menu
                             li
@@ -28,35 +28,12 @@ html(lang="en")
                                     else
                                         i.material-icons(data-background=item[2]) #{item[3]}
                                     | #{item[1]}
-                    footer
-                        div
-                            h2 PURE MATERIAL CSS
 
-            h1 PURE MATERIAL CSS
+            h1 PURE MATERIAL
             nav
                 a(href="#about", data-button) About
-                a(href="#getting-started", data-button) Getting started
-                a(href="#", data-button) Github
-                a(href="#", data-button) Download
-            .menu-icon
-            button(data-button, data-drawer-button)
-                span.material-icons menu
-            nav(data-drawer="right")
-                .overlay
-                div(data-drawer-content)
-                    .flexible-bar
-                        .flexible-bar-media
-                            div
-                                h2 PURE MATERIAL CSS
-                    ul(data-list)
-                        each item in menu
-                            li
-                                a(href="#"+item[0])
-                                    if item[3] === 'add'
-                                        i.material-icons(data-background="default") #{item[3]}
-                                    else
-                                        i.material-icons(data-background=item[2]) #{item[3]}
-                                    | #{item[1]}
+                a(href="https://github.com/Masquerade-Circus/pure-material-css", data-button, target="_blank") Github
+                a(href="https://github.com/Masquerade-Circus/pure-material-css/tree/master/css", data-button, target="_blank") Download
         .flexible-bar
         .tab-bar
         include pug/about.pug
@@ -91,4 +68,4 @@ html(lang="en")
         include pug/pickers.pug
 
         footer
-            h1 PURE MATERIAL CSS
+            h1 PURE MATERIAL

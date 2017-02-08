@@ -23,23 +23,26 @@ transparent-color = alpha(colors['Grey']['900'], 0.3)
 [data-color="white"]
     color: white-color;
 
-[data-background="white"]
+button,[data-button],[data-fab]
+    background: transparent;
+    color: inherit;
+
+[data-background="white"],
+[data-badge]::after,
+[data-button*="raised"],
+[data-tooltip]::after
     background-color: white-color;
     color: colors[default-color]['900'];
 
 a
     color: colors[primary-color]['500'];
 
-button,[data-button],[data-fab]
-    background: transparent;
-    color: inherit;
-
 [data-progress]
     &>div
         background: colors[default-color]['500'];
 
 [data-tooltip]::before,[data-tooltip-color]::before
-    border-color: colors[default-color]['50'];
+    border-color: white-color;
 
 generateText(prefix, name)
     define(prefix+'-color', colors[name]['500'], true)

@@ -3,7 +3,7 @@ header,footer
     overflow: visible;
     height: 56rem;
     >*
-        padding: 8rem 16rem;
+        padding: 8rem;
     >[data-button]
         flex: 0 0 auto;
         padding: 16rem;
@@ -16,13 +16,14 @@ header,footer
         line-height: 1;
         padding: 20rem 16rem;
     nav
-        flexContainer : row;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         flex-wrap: nowrap;
         justify-content: flex-end;
         flex: 1 1 auto;
         overflow: visible;
-        padding-right: 0;
-        padding-left: 0;
         > [data-fab~="mini"]
             margin-top: 6rem;
             margin-right: 8rem;
+            box-shadow: none;

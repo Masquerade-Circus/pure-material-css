@@ -1,2 +1,107 @@
 article#about.page
-    include in_construction.pug
+    h1 Pure Material
+    hr
+    h2 What is Pure Material?
+    | It's a css framework whose sole purpose is to make extremely simple to build applications with the appearance of material design by using simple HTML5.
+    br
+    br
+    | So, you just write HTML5 and get Material Design. No javascript, just pure css. Take this very site as an example.
+    br
+    br
+    hr
+    h2 What are the rules?
+    ul(data-list)
+        li
+            span Don't style with classes. Classes must be only helpers or utility classes.
+        li
+            span Try to use only pseudo selectors like ::before and ::after to add styles.
+        li
+            span Use additional markup only when it's strictly necessary.
+        li
+            span Use real html tags or attributes for components that already exists on the w3c specification.
+        li
+            span Use css transitions and animations instead of javascript plugins.
+        li
+            span In fact, don't use javascript at all.
+    br
+    br
+    hr
+    h2 Why is Pure Material framework friendly?
+    | Pure Material css isn't based on css conventions like OOCSS, SMACSS or BEM, instead it tries to be html5 compilant without overpopulating your html with a bunch of css classes. To do this it takes a different aproach of styling components.
+    br
+    br
+    | Each component, except of those who already have an html tag like "menu" or "dialog", is declared with a data attribute. This gives you the feedom to style, toggle or remove any css class that you want, leaving the path free to any framework you use without getting in the way of the Pure Material styles.
+    br
+    br
+    | All animations can be activated by toggling a simple param on the data atribute without the need of third party javascript plugins. Just use your famework to add or remove a property.
+    br
+    br
+    | Consider the following example of creating a card with Pure Material and compare it with the same <a href="https://getmdl.io/components/index.html#cards-section" target="_blank"> MDL component </a>:
+    br
+    br
+    div.text-center
+        div
+            section(data-card data-elevation="hover-16")
+                div(data-card-media, style="background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)")
+                    header
+                        h2 Welcome
+                        nav
+                            button(data-fab="inline mini")
+                                i.material-icons share
+                div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
+                footer
+                    nav
+                        button(data-button="primary") Get started
+            pre.text-left.
+                &#x3C;section data-card data-elevation=&#x22;hover-16&#x22;&#x3E;
+                    &#x3C;div data-card-media style=&#x22;background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)&#x22;&#x3E;
+                        &#x3C;header&#x3E;
+                            &#x3C;h2&#x3E;Welcome&#x3C;/h2&#x3E;
+                            &#x3C;nav&#x3E;
+                                &#x3C;button data-fab=&#x22;inline mini&#x22;&#x3E;
+                                    &#x3C;i class=&#x22;material-icons&#x22;&#x3E;share&#x3C;/i&#x3E;
+                                &#x3C;/button&#x3E;
+                            &#x3C;/nav&#x3E;
+                        &#x3C;/header&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div&#x3E;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Mauris sagittis pellentesque lacus eleifend lacinia...
+                    &#x3C;/div&#x3E;
+                    &#x3C;footer&#x3E;
+                        &#x3C;nav&#x3E;
+                            &#x3C;button data-button=&#x22;primary&#x22;&#x3E;Get started&#x3C;/button&#x3E;
+                        &#x3C;/nav&#x3E;
+                    &#x3C;/footer&#x3E;
+                &#x3C;/section&#x3E;
+    br
+    br
+    hr
+    h2 Why are you doing this? Why not Google's MDL?
+    | Because write and markup an app should be as simple as write plain html and nothing more.
+    br
+    br
+    | I'm not in war with google's mdl. If you like the way it works, if you depend on a component that has not yet been integrated here, if you use want to use it because it's Google, then, use MDL.
+    br
+    br
+    | This framework is not for all developers. And certainly it's not a must to have to every project.
+    br
+    br
+    | But, if you have very little time to make a good looking app, if you just want a quick prototype, if you want to have your app framework friendly and third party plugin's free and want to keep your code clean, then, give Pure Material a try.
+    br
+    br
+    hr
+    h2 And who are you?
+    | My name is Christian César Robledo López aka <a href="http://masquerade-circus.net" target="_blank"> Masquerade Circus</a>.
+    br
+    br
+    | I'm just a developer like any other one. I started to write code since i was fourteen years old. And i just like to build and invent new things.
+    br
+    br
+    | If interested, you can visit my github account at <a href="https://github.com/Masquerade-Circus" >https://github.com/Masquerade-Circus</a>
+    br
+    br
+    br
+    br
+    br
+    br

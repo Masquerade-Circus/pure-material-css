@@ -17,56 +17,7 @@
           <div class="flexible-bar">
             <div class="flexible-bar-media">
               <div>
-                <h2>PURE MATERIAL CSS</h2>
-              </div>
-            </div>
-          </div>
-          <ul data-list>
-            <li><a href="#grid"><i class="material-icons" data-background="primary">line_style</i>Grid</a></li>
-            <li><a href="#elevations"><i class="material-icons" data-background="accent">layers</i>Elevations</a></li>
-            <li><a href="#colors"><i class="material-icons" data-background="info">group_work</i>Colors</a></li>
-            <li><a href="#badges"><i class="material-icons" data-background="success">chat_bubble</i>Badges</a></li>
-            <li><a href="#buttons"><i class="material-icons" data-background="warning">arrow_forward</i>Buttons</a></li>
-            <li><a href="#cards"><i class="material-icons" data-background="danger">video_label</i>Cards</a></li>
-            <li><a href="#dialogs"><i class="material-icons" data-background="primary">web_asset</i>Dialogs</a></li>
-            <li><a href="#lists"><i class="material-icons" data-background="accent">list</i>Lists</a></li>
-            <li><a href="#forms"><i class="material-icons" data-background="info">format_color_text</i>Forms</a></li>
-            <li><a href="#menus"><i class="material-icons" data-background="success">menu</i>Menus</a></li>
-            <li><a href="#tables"><i class="material-icons" data-background="warning">view_list</i>Tables</a></li>
-            <li><a href="#tool-bars"><i class="material-icons" data-background="default">add</i>Toolbars</a></li>
-            <li><a href="#tabs"><i class="material-icons" data-background="default">add</i>Tabs</a></li>
-            <li><a href="#tooltips"><i class="material-icons" data-background="accent">label</i>Tooltips</a></li>
-            <li><a href="#progress"><i class="material-icons" data-background="info">trending_flat</i>Progress</a></li>
-            <li><a href="#spinner"><i class="material-icons" data-background="success">refresh</i>Spinner</a></li>
-            <li><a href="#sliders"><i class="material-icons" data-background="default">add</i>Sliders</a></li>
-            <li><a href="#toggles"><i class="material-icons" data-background="default">add</i>Toggles</a></li>
-            <li><a href="#notifications"><i class="material-icons" data-background="default">add</i>Notifications</a></li>
-            <li><a href="#chips"><i class="material-icons" data-background="default">add</i>Chips</a></li>
-            <li><a href="#expansion-panels"><i class="material-icons" data-background="default">add</i>Expansion panels</a></li>
-            <li><a href="#bottom-navigation"><i class="material-icons" data-background="default">add</i>Bottom navigation</a></li>
-            <li><a href="#bottom-sheets"><i class="material-icons" data-background="default">add</i>Bottom sheets</a></li>
-            <li><a href="#steppers"><i class="material-icons" data-background="default">add</i>Steppers</a></li>
-            <li><a href="#search"><i class="material-icons" data-background="default">add</i>Search</a></li>
-            <li><a href="#pickers"><i class="material-icons" data-background="default">add</i>Pickers</a></li>
-          </ul>
-          <footer>
-            <div>
-              <h2>PURE MATERIAL CSS</h2>
-            </div>
-          </footer>
-        </div>
-      </nav>
-      <h1>PURE MATERIAL CSS</h1>
-      <nav><a href="#about" data-button>About</a><a href="#getting-started" data-button>Getting started</a><a href="#" data-button>Github</a><a href="#" data-button>Download</a></nav>
-      <div class="menu-icon"></div>
-      <button data-button data-drawer-button><span class="material-icons">menu</span></button>
-      <nav data-drawer="right">
-        <div class="overlay"></div>
-        <div data-drawer-content>
-          <div class="flexible-bar">
-            <div class="flexible-bar-media">
-              <div>
-                <h2>PURE MATERIAL CSS</h2>
+                <h2>PURE MATERIAL</h2>
               </div>
             </div>
           </div>
@@ -100,12 +51,72 @@
           </ul>
         </div>
       </nav>
+      <h1>PURE MATERIAL</h1>
+      <nav><a href="#about" data-button>About</a><a href="https://github.com/Masquerade-Circus/pure-material-css" data-button target="_blank">Github</a><a href="https://github.com/Masquerade-Circus/pure-material-css/tree/master/css" data-button target="_blank">Download</a></nav>
     </header>
     <div class="flexible-bar"></div>
     <div class="tab-bar"></div>
     <article class="page" id="about">
-      <h1>In construction</h1>
+      <h1>Pure Material</h1>
       <hr>
+      <h2>What is Pure Material?</h2>It's a css framework whose sole purpose is to make extremely simple to build applications with the appearance of material design by using simple HTML5.<br><br>So, you just write HTML5 and get Material Design. No javascript, just pure css. Take this very site as an example.<br><br>
+      <hr>
+      <h2>What are the rules?</h2>
+      <ul data-list>
+        <li><span>Don't style with classes. Classes must be only helpers or utility classes.</span></li>
+        <li><span>Try to use only pseudo selectors like ::before and ::after to add styles.</span></li>
+        <li><span>Use additional markup only when it's strictly necessary.</span></li>
+        <li><span>Use real html tags or attributes for components that already exists on the w3c specification.</span></li>
+        <li><span>Use css transitions and animations instead of javascript plugins.</span></li>
+        <li><span>In fact, don't use javascript at all.</span></li>
+      </ul><br><br>
+      <hr>
+      <h2>Why is Pure Material framework friendly?</h2>Pure Material css isn't based on css conventions like OOCSS, SMACSS or BEM, instead it tries to be html5 compilant without overpopulating your html with a bunch of css classes. To do this it takes a different aproach of styling components.<br><br>Each component, except of those who already have an html tag like "menu" or "dialog", is declared with a data attribute. This gives you the feedom to style, toggle or remove any css class that you want, leaving the path free to any framework you use without getting in the way of the Pure Material styles.<br><br>All animations can be activated by toggling a simple param on the data atribute without the need of third party javascript plugins. Just use your famework to add or remove a property.<br><br>Consider the following example of creating a card with Pure Material and compare it with the same <a href="https://getmdl.io/components/index.html#cards-section" target="_blank"> MDL component </a>:<br><br>
+      <div class="text-center">
+        <div>
+          <section data-card data-elevation="hover-16">
+            <div data-card-media style="background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)">
+              <header>
+                <h2>Welcome</h2>
+                <nav>
+                  <button data-fab="inline mini"><i class="material-icons">share</i></button>
+                </nav>
+              </header>
+            </div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+            <footer>
+              <nav>
+                <button data-button="primary">Get started</button>
+              </nav>
+            </footer>
+          </section>
+          <pre class="text-left">&#x3C;section data-card data-elevation=&#x22;hover-16&#x22;&#x3E;
+    &#x3C;div data-card-media style=&#x22;background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)&#x22;&#x3E;
+        &#x3C;header&#x3E;
+            &#x3C;h2&#x3E;Welcome&#x3C;/h2&#x3E;
+            &#x3C;nav&#x3E;
+                &#x3C;button data-fab=&#x22;inline mini&#x22;&#x3E;
+                    &#x3C;i class=&#x22;material-icons&#x22;&#x3E;share&#x3C;/i&#x3E;
+                &#x3C;/button&#x3E;
+            &#x3C;/nav&#x3E;
+        &#x3C;/header&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div&#x3E;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris sagittis pellentesque lacus eleifend lacinia...
+    &#x3C;/div&#x3E;
+    &#x3C;footer&#x3E;
+        &#x3C;nav&#x3E;
+            &#x3C;button data-button=&#x22;primary&#x22;&#x3E;Get started&#x3C;/button&#x3E;
+        &#x3C;/nav&#x3E;
+    &#x3C;/footer&#x3E;
+&#x3C;/section&#x3E;</pre>
+        </div>
+      </div><br><br>
+      <hr>
+      <h2>Why are you doing this? Why not Google's MDL?</h2>Because write and markup an app should be as simple as write plain html and nothing more.<br><br>I'm not in war with google's mdl. If you like the way it works, if you depend on a component that has not yet been integrated here, if you use want to use it because it's Google, then, use MDL.<br><br>This framework is not for all developers. And certainly it's not a must to have to every project.<br><br>But, if you have very little time to make a good looking app, if you just want a quick prototype, if you want to have your app framework friendly and third party plugin's free and want to keep your code clean, then, give Pure Material a try.<br><br>
+      <hr>
+      <h2>And who are you?</h2>My name is Christian César Robledo López aka <a href="http://masquerade-circus.net" target="_blank"> Masquerade Circus</a>.<br><br>I'm just a developer like any other one. I started to write code since i was fourteen years old. And i just like to build and invent new things.<br><br>If interested, you can visit my github account at <a href="https://github.com/Masquerade-Circus" >https://github.com/Masquerade-Circus</a><br><br><br><br><br><br>
     </article>
     <article class="page" id="getting-started">
       <h1>In construction</h1>
@@ -1572,7 +1583,7 @@
         <div class="material-icons margin-8" data-badge="1" data-badge-color="warning">account_box</div>
         <div class="material-icons margin-8" data-badge="1" data-badge-color="danger">account_box</div>
         <div class="material-icons margin-8" data-badge="1" data-badge-color="success">account_box</div>
-        <pre> &lt;element data-badge=&quot;1&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-badge=&quot;1&quot; data-badge-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
+        <pre>&lt;element data-badge=&quot;1&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-badge=&quot;1&quot; data-badge-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
       </div>
     </article>
     <article class="page" id="buttons">
@@ -1936,7 +1947,7 @@
           </menu>
         </div>
         <div data-menu>
-          <button data-menu-trigger>Menu 2</button>
+          <button data-menu-trigger>Menu 3</button>
           <menu>
             <ul data-list="three-line">
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston<small>
@@ -1959,16 +1970,16 @@
             </ul>
           </menu>
         </div>
-        <div data-menu="bottom">
-          <button data-menu-trigger>Menu Bottom</button>
+        <div data-menu="top">
+          <button data-menu-trigger>Menu Top</button>
           <menu>
             <ul data-list>
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
             </ul>
           </menu>
         </div>
-        <div data-menu="bottom-right">
-          <button data-menu-trigger>Menu Right Bottom</button>
+        <div data-menu="top-right">
+          <button data-menu-trigger>Menu Top-Right</button>
           <menu>
             <ul data-list>
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
@@ -2028,7 +2039,15 @@
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="warning">account_box</div>
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="danger">account_box</div>
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="success">account_box</div>
-        <pre> &lt;element data-tooltip=&quot;Tooltip content&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
+        <pre>&lt;element data-tooltip=&quot;Tooltip content&quot;&gt;...&lt;/element&gt;<br>&lt;!-- Or --&gt;<br>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
+      </div><br>
+      <h2>Position</h2>
+      <hr>
+      <div class="text-center">
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-position="top">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-position="left">account_box</div>
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-position="right">account_box</div>
+        <pre>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;top&quot;&gt;...&lt;/element&gt;<br>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;left&quot;&gt;...&lt;/element&gt;<br>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;right&quot;&gt;...&lt;/element&gt;</pre>
       </div>
     </article>
     <article class="page" id="progress">
@@ -2152,7 +2171,7 @@
       <hr>
     </article>
     <footer>
-      <h1>PURE MATERIAL CSS</h1>
+      <h1>PURE MATERIAL</h1>
     </footer>
   </body>
 </html>

@@ -16,41 +16,21 @@ menu
     position: relative;
     display: inline-block;
 
-[data-menu="bottom"] menu
+[data-menu="top"] menu
     transform-origin: bottom left;
     top: -200%;
 
 [data-menu="right"] menu
     transform-origin: top right;
+    right: 0;
 
-[data-menu="bottom-right"] menu
+[data-menu="top-right"] menu
     transform-origin: bottom right;
     top: -200%;
+    right: 0;
 
 [data-menu-trigger]:focus+menu,menu[open]
     display: block;
     opacity: 1;
     z-index: 8;
     transform: scale(1);
-
-// .menu-trigger
-//     position: relative;
-//     display: inline-block;
-// .menu-trigger>input
-//     position: absolute;
-//     top: -9999rem;
-//     left: -9999rem;
-//
-// .menu-trigger>input:checked+label>.overlay
-//     opacity: 1;
-//     z-index: 8;
-//     display: block;
-//
-// .menu-trigger>input:checked+label+[data-menu],
-// .menu-trigger>input:checked+label+menu,
-// [data-menu][open],
-// menu[open]
-//     display: block;
-//     opacity: 1;
-//     z-index: 8;
-//     transform: scale(1);

@@ -5,9 +5,23 @@ article#tooltips.page
         .material-icons.margin-8(data-tooltip="This is a tooltip") account_box
         each val in ['default','primary','accent','info','warning','danger','success']
             .material-icons.margin-8(data-tooltip="This is a tooltip" data-tooltip-color=val) account_box
-        pre 
+        pre
             = '<element data-tooltip="Tooltip content">...</element>'
-            br 
-            = ' <!-- Or -->'
-            br 
-            = ' <element data-tooltip="Tooltip content" data-tooltip-color="{color}">...</element>'
+            br
+            = '<!-- Or -->'
+            br
+            = '<element data-tooltip="Tooltip content" data-tooltip-color="{color}">...</element>'
+    br
+    h2 Position
+    hr
+    .text-center
+        .material-icons.margin-8(data-tooltip="This is a tooltip", data-tooltip-position="top") account_box
+        .material-icons.margin-8(data-tooltip="This is a tooltip", data-tooltip-position="left") account_box
+        .material-icons.margin-8(data-tooltip="This is a tooltip", data-tooltip-position="right") account_box
+
+        pre
+            = '<element data-tooltip="Tooltip content" data-tooltip-position="top">...</element>'
+            br
+            = '<element data-tooltip="Tooltip content" data-tooltip-position="left">...</element>'
+            br
+            = '<element data-tooltip="Tooltip content" data-tooltip-position="right">...</element>'

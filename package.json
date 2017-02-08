@@ -6,6 +6,10 @@
   "scripts": {
       "start": "gulp watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Masquerade-Circus/pure-material-css.git"
+  },
   "dependencies": {
     "normalize.css": "^4.2.0"
   },
@@ -22,10 +26,21 @@
   "keywords": [
     "material",
     "design",
-    "css"
+    "css",
+    "pure",
+    "framework",
+    "styles"
   ],
-  "author": "Masquerade Circus",
-  "license": "ISC",
+  "author": {
+    "name": "Masquerade Circus",
+    "email": "christian@masquerade-circus.net",
+    "url": "http://masquerade-circus.net"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Masquerade-Circus/pure-material-css/issues"
+  },
+  "homepage": "https://masquerade-circus.github.io/pure-material-css/#about",
   "jscsConfig": {
     "preset": "crockford",
     "requireCurlyBraces": false,
