@@ -4,7 +4,8 @@
   "description": "Material Design Components with only css and Html5",
   "main": "index.html",
   "scripts": {
-      "start": "gulp watch"
+      "start": "gulp watch",
+      "build": "gulp build"
   },
   "repository": {
     "type": "git",

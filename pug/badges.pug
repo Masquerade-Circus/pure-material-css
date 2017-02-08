@@ -6,8 +6,7 @@ article.page#badges
         each val in ['default','primary','accent','info','warning','danger','success']
             .material-icons.margin-8(data-badge="1" data-badge-color=val) account_box
         pre
-            = '<element data-badge="1">...</element>'
-            br
-            = ' <!-- Or -->'
-            br
-            = ' <element data-badge="1" data-badge-color="{color}">...</element>'
+            code.language-html.
+                &lt;element data-badge=&quot;1&quot;&gt;...&lt;/element&gt;
+                &lt;!-- Or --&gt; 
+                &lt;element data-badge=&quot;1&quot; data-badge-color=&quot;{color}&quot;&gt;...&lt;/element&gt;

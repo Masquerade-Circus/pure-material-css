@@ -1,5 +1,10 @@
 html
     font-size: 1px;
+    box-sizing: border-box;
+
+*, *:before, *:after
+    box-sizing: inherit;
+
 
 article,
 .switch,
@@ -35,8 +40,8 @@ dialog,
 input, select, textarea, label,.help-block,
 [data-drawer] [data-list]>li>*
     display: block;
-    box-sizing: border-box;
 
+/*
 .switch:empty,
 [data-card]:empty,
 button:empty,
@@ -68,6 +73,7 @@ dialog:empty,
 .inline-block:empty,
 .help-block:empty
     display: none;
+*/
 
 [class*="icon"],
 .inline-block,
@@ -81,6 +87,7 @@ button,
 
 body
     font-size: 16rem;
+    line-height: 1.618;
 
 a, img
     outline: 0;

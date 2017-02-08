@@ -1,5 +1,5 @@
 /*** Same as Card ***/
-pre
+pre, code
     text-align: left;
     border-radius: 4rem;
     padding: 16rem;
@@ -7,9 +7,9 @@ pre
     overflow: auto;
     font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
     clear: both;
-    &:after, &::before
-        clear both
-        content " "
-        display block
-    &.pre-scrollable
-        max-height: 360rem;
+    display: block;
+    font-size: 13rem;
+
+pre>code
+    padding: 0;
+    margin: 0;

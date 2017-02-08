@@ -37,12 +37,11 @@ button,[data-button],[data-fab]
 a
     color: colors[primary-color]['500'];
 
-[data-progress]
-    &>div
-        background: colors[default-color]['500'];
-
 [data-tooltip]::before,[data-tooltip-color]::before
     border-color: white-color;
+
+[data-progress]::after
+    background: colors[default-color]['500'];
 
 generateText(prefix, name)
     define(prefix+'-color', colors[name]['500'], true)
@@ -62,7 +61,7 @@ generateText(prefix, name)
     [data-fab~={'"'+prefix+'"'}],
     [data-badge-color={'"'+prefix+'"'}]::after,
     [data-tooltip-color~={'"'+prefix+'"'}]::after,
-    [data-progress~={'"'+prefix+'"'}]>div
+    [data-progress~={'"'+prefix+'"'}]::after
         background-color: colors[name]['500'];
         color: colors[name]['50'];
 
@@ -245,11 +244,18 @@ table
     background: default-color-300;
 
 /*** List ***/
-[data-list]>li>a:hover
-    background: line-color;
+[data-list]>li
+    border-bottom: 1rem solid line-color;
+    &:last-child
+        border-bottom: none;
+    &>*
+        background: white-color;
+        &:hover
+            background: line-color;
+
 
 /*** Code ***/
-pre
+pre, code
     background: default-color-300;
     color: default-color-800;
 

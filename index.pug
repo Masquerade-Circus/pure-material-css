@@ -8,12 +8,13 @@ html(lang="en")
         link(href="./node_modules/normalize.css/normalize.css", rel="stylesheet")
         link(href="./css/pure-material.css", rel="stylesheet")
         link(href="./fonts/material-icons/material-icons.css", rel="stylesheet")
+        link(href="./css/diagnostic-styles.css", rel="stylesheet")
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css" />
     body
         header
             button(data-button, data-drawer-button)
                 span.material-icons menu
             nav(data-drawer="left")
-                .overlay
                 div(data-drawer-content)
                     .flexible-bar
                         .flexible-bar-media
@@ -34,8 +35,8 @@ html(lang="en")
                 a(href="#about", data-button) About
                 a(href="https://github.com/Masquerade-Circus/pure-material-css", data-button, target="_blank") Github
                 a(href="https://github.com/Masquerade-Circus/pure-material-css/tree/master/css", data-button, target="_blank") Download
-        .flexible-bar
-        .tab-bar
+        //.flexible-bar
+        //.tab-bar
         include pug/about.pug
         include pug/getting-started.pug
 
@@ -69,3 +70,4 @@ html(lang="en")
 
         footer
             h1 PURE MATERIAL
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>

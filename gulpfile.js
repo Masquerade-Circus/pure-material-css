@@ -48,25 +48,25 @@ gulp.task('watch', ['connect', 'stylus', 'pug'], function () {
 
 gulp.task('build', function () {
     var colors = [
-            'Red',
-            'Pink',
-            'Purple',
-            'Deep Purple',
-            'Indigo',
+            'Amber',
+            'Blue Grey',
             'Blue',
-            'Light Blue',
+            'Brown',
             'Cyan',
-            'Teal',
+            'Deep Orange',
+            'Deep Purple',
             'Green',
+            'Grey',
+            'Indigo',
+            'Light Blue',
             'Light Green',
             'Lime',
-            'Yellow',
-            'Amber',
             'Orange',
-            'Deep Orange',
-            'Brown',
-            'Grey',
-            'Blue Grey'
+            'Pink',
+            'Purple',
+            'Teal',
+            'Yellow',
+            'Red'
         ],
         toSnake = function (string) {
             var split = string.split(' ');
@@ -78,11 +78,11 @@ gulp.task('build', function () {
         };
 
 
-    for (let i = 0; i < colors.length; i++) {
-        let primary = colors[i];
+    for (let primary; primary = colors.shift(), primary;) {
         for (let c = 0; c < colors.length; c++) {
             let accent = colors[c];
             if (primary !== accent) {
+                console.log(primary, accent);
                 stylus(fs.readFileSync('./styl/pure-material.styl', 'utf-8'))
                     .set('compress', true)
                     .define('primary-color', primary)

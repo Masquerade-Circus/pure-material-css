@@ -2,10 +2,9 @@ article.page#dialogs
     h1 Dialogs
     hr
     .text-center
-        input.dialog-trigger#dialog-1(type="checkbox")
+        input#dialog-1(type="checkbox", data-dialog-trigger)
         label(data-button for="dialog-1")
             span dialog-1
-            .overlay
         dialog(data-card)
             header
                 h2 Title
@@ -16,10 +15,9 @@ article.page#dialogs
             footer
                 button(data-button="primary") Get started
 
-        input.dialog-trigger#dialog-2(type="checkbox")
+        input#dialog-2(type="checkbox", data-dialog-trigger)
         label(data-button for="dialog-2")
             span dialog-2
-            .overlay
         dialog(data-card)
             div(data-card-media)
                 header
@@ -32,10 +30,9 @@ article.page#dialogs
             footer
                 button(data-button="primary") Get started
 
-        input.dialog-trigger#dialog-3(type="checkbox")
+        input#dialog-3(type="checkbox", data-dialog-trigger)
         label(data-button for="dialog-3")
             span dialog-3
-            .overlay
         dialog(data-card="squared")
             div(data-card-media)
                 header
@@ -46,10 +43,9 @@ article.page#dialogs
                 img(src="./img.jpeg")
 
 
-        input.dialog-trigger#dialog-4(type="checkbox")
+        input#dialog-4(type="checkbox", data-dialog-trigger)
         label(data-button for="dialog-4")
             span dialog-4
-            .overlay
         dialog(data-card="squared")
             div(data-card-media)
                 header

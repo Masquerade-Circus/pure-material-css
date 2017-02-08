@@ -1,0 +1,9 @@
+div:empty:not([data-background]):not([data-progress]):not([data-spinner]),
+span:empty,
+li:empty,
+p:empty,
+td:empty,
+th:empty {padding: 0.5em; background: yellow;}
+
+*[style]:not([data-background]):not([data-card-media]), font, center {outline: 5px solid red;}
+*[class=""], *[id=""] {outline: 5px dotted red;}

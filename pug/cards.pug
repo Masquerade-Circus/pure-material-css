@@ -2,36 +2,33 @@ article.page#cards
     h1 Cards
     h2 Simple card
     hr
-    div(data-card)
+    section(data-card)
         div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
     pre
-        = '<div data-card>'
-        br
-        =    '    <div>Lorem ipsum ...</div>'
-        br
-        =    '</div>'
+        code.language-html.
+            &lt;section data-card&gt;
+                &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+            &lt;/section&gt;
     h2 Card with footer
     hr
-    div(data-card)
+    section(data-card)
         div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
         footer
             nav
                 button(data-button="primary") Get started
     pre
-        = '<div data-card>'
-        br
-        =    '    <div>Lorem ipsum ...</div>'
-        br
-        =    '    <footer><nav>'
-        br
-        =    '        <button data-button="primary">Get started</button>'
-        br
-        =    '    </nav></footer>'
-        br
-        =    '</div>'
+        code.language-html.
+            &lt;section data-card&gt;
+                &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+                &lt;footer&gt;
+                    &lt;nav&gt;
+                        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+                    &lt;/nav&gt;
+                &lt;/footer&gt;
+            &lt;/section&gt;
     h2 Card with header and footer
     hr
-    div(data-card)
+    section(data-card)
         header
             h2 Title
             nav
@@ -42,105 +39,73 @@ article.page#cards
             nav
                 button(data-button="primary") Get started
     pre
-        = '<div data-card>'
-        br
-        =    '    <header>'
-        br
-        =    '        <h2>Title</h2>'
-        br
-        =    '        <nav>'
-        br
-        =    '            <button data-fab="inline mini"><i class="material-icons">share</i></button>'
-        br
-        =    '        </nav>'
-        br
-        =    '    </header>'
-        br
-        =    '    <div>Lorem ipsum ...</div>'
-        br
-        =    '    <footer><nav>'
-        br
-        =    '        <button data-button="primary">Get started</button>'
-        br
-        =    '    </nav></footer>'
-        br
-        =    '</div>'
+        code.language-html.
+            &lt;section data-card&gt;
+                &lt;header&gt;
+                    &lt;h2&gt;Title&lt;/h2&gt;
+                    &lt;nav&gt;
+                        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+                    &lt;/nav&gt;
+                &lt;/header&gt;
+                &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+                &lt;footer&gt;
+                    &lt;nav&gt;
+                        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+                    &lt;/nav&gt;
+                &lt;/footer&gt;
+            &lt;/section&gt;
     h2 Card with media
     hr
-    div(data-card)
-        div(data-card-media)
+    section(data-card)
+        div(data-card-media, style="background-image: url(./img.jpeg)")
             header
                 h2 Title
                 nav
                     button(data-fab="inline mini")
                         i.material-icons share
-            img(src="./img.jpeg")
         div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...
         footer
             nav
                 button(data-button="primary") Get started
     pre
-        =   '<div data-card>'
-        br
-        =   '  <div data-card-media>'
-        br
-        =   '    <header>'
-        br
-        =   '      <h2>Title</h2>'
-        br
-        =   '      <nav>'
-        br
-        =   '        <button data-fab="inline mini"><i class="material-icons">share</i></button>'
-        br
-        =   '      </nav>'
-        br
-        =   '    </header>'
-        br
-        =   '    <img src="http://lorempixel.com/480/480/abstract/">'
-        br
-        =   '  </div>'
-        br
-        =   '  <div>Lorem ipsum...</div>'
-        br
-        =   '  <footer><nav>'
-        br
-        =   '    <button data-button="primary">Get started</button>'
-        br
-        =   '  </nav></footer>'
-        br
-        =   '</div>'
+        code.language-html.
+            &lt;section data-card&gt;
+                &lt;section data-card-media style=&quot;background-image: url(http://lorempixel.com/480/480/abstract/)&quot;&gt;
+                    &lt;header&gt;
+                        &lt;h2&gt;Title&lt;/h2&gt;
+                        &lt;nav&gt;
+                            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+                        &lt;/nav&gt;
+                    &lt;/header&gt;
+                &lt;/section&gt;
+                &lt;div&gt;Lorem ipsum...&lt;/section&gt;
+                &lt;footer&gt;
+                    &lt;nav&gt;
+                        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+                    &lt;/nav&gt;
+                &lt;/footer&gt;
+            &lt;/section&gt;
     h2 Card squared
     hr
     div(data-card="squared")
-        div(data-card-media)
+        div(data-card-media, style="background-image: url(./img.jpeg)")
             header
                 h2 Title
                 nav
                     button(data-fab="inline mini")
                         i.material-icons share
-            img(src="./img.jpeg")
     pre
-        =   '<div data-card="squared">'
-        br
-        =   '  <div data-card-media>'
-        br
-        =   '    <header>'
-        br
-        =   '      <h2>Title</h2>'
-        br
-        =   '      <nav>'
-        br
-        =   '        <button data-fab="inline mini"><i class="material-icons">share</i></button>'
-        br
-        =   '      </nav>'
-        br
-        =   '    </header>'
-        br
-        =   '    <img src="http://lorempixel.com/480/480/abstract/">'
-        br
-        =   '  </div>'
-        br
-        =   '</div>'
+        code.language-html.
+            &lt;section data-card=&quot;squared&quot; style=&quot;background-image: url(http://lorempixel.com/480/480/abstract/)&quot;&gt;
+                &lt;section data-card-media&gt;
+                    &lt;header&gt;
+                        &lt;h2&gt;Title&lt;/h2&gt;
+                        &lt;nav&gt;
+                            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+                        &lt;/nav&gt;
+                    &lt;/header&gt;
+                &lt;/section&gt;
+            &lt;/section&gt;
     h2 Card squared with text instead of media
     hr
     div(data-card="squared")
@@ -152,31 +117,20 @@ article.page#cards
                         i.material-icons share
             div(data-background="primary") Feautred event: <br> May 24, 2016 <br> 7-11pm
     pre
-        =   '<div data-card="squared">'
-        br
-        =   '  <div data-card-media>'
-        br
-        =   '    <header>'
-        br
-        =   '      <h2>Title</h2>'
-        br
-        =   '      <nav>'
-        br
-        =   '        <button data-fab="inline mini"><i class="material-icons">share</i></button>'
-        br
-        =   '      </nav>'
-        br
-        =   '    </header>'
-        br
-        =   '    <div data-background="primary">'
-        br
-        =   '      Featured event: <br> May 24, 2016 <br> 7-11pm'
-        br
-        =   '    </div>'
-        br
-        =   '  </div>'
-        br
-        =   '</div>'
+        code.language-html.
+            &lt;section data-card=&quot;squared&quot;&gt;
+                &lt;section data-card-media&gt;
+                    &lt;header&gt;
+                        &lt;h2&gt;Title&lt;/h2&gt;
+                        &lt;nav&gt;
+                            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+                        &lt;/nav&gt;
+                    &lt;/header&gt;
+                    &lt;div data-background=&quot;primary&quot;&gt;
+                        Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm
+                    &lt;/section&gt;
+                &lt;/section&gt;
+            &lt;/section&gt;
 
     h2 Full width card
     hr
@@ -191,26 +145,18 @@ article.page#cards
             nav
                 button(data-button="primary") Get started
     pre
-        = '<div data-card="full-width">'
-        br
-        =    '    <header>'
-        br
-        =    '        <h2>Title</h2>'
-        br
-        =    '        <nav>'
-        br
-        =    '            <button data-fab="inline mini"><i class="material-icons">share</i></button>'
-        br
-        =    '        </nav>'
-        br
-        =    '    </header>'
-        br
-        =    '    <div>Lorem ipsum ...</div>'
-        br
-        =    '    <footer><nav>'
-        br
-        =    '        <button data-button="primary">Get started</button>'
-        br
-        =    '    </nav></footer>'
-        br
-        =    '</div>'
+        code.language-html.
+            &lt;section data-card=&quot;full-width&quot;&gt;
+                &lt;header&gt;
+                    &lt;h2&gt;Title&lt;/h2&gt;
+                    &lt;nav&gt;
+                        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+                    &lt;/nav&gt;
+                &lt;/header&gt;
+                &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+                &lt;footer&gt;
+                    &lt;nav&gt;
+                        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+                    &lt;/nav&gt;
+                &lt;/footer&gt;
+            &lt;/section&gt;

@@ -57,15 +57,13 @@ article.page#grid
 
         div(data-column="12" data-background="white", class="padding-8" data-elevation="2") data-column="12"
     pre
-        =   '<div data-grid>'
-        br
-        =   '   <div data-column="{size}"></div>'
-        br
-        =   '   <!-- Or -->'
-        br
-        =   '   <div data-column="{screen}-{size}"></div>'
-        br
-        =   '</div>'
+        code.language-html.
+            &#x3C;div data-grid&#x3E;
+                &#x3C;div data-column=&#x22;{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;!-- Or --&#x3E;
+                &#x3C;div data-column=&#x22;{screen}-{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+
     h1
         | Row guttered
         small (Columns with gutters)
@@ -164,17 +162,14 @@ article.page#grid
 
         div(data-column="12")
             div(data-elevation="2", data-background="white", class="padding-8") data-column="12"
-
     pre
-        =   '<div data-grid="gutters">'
-        br
-        =   '   <div data-column="{size}"></div>'
-        br
-        =   '   <!-- Or -->'
-        br
-        =   '   <div data-column="{screen}-{size}"></div>'
-        br
-        =   '</div>'
+        code.language-html.
+            &#x3C;div data-grid=&#x22;gutters&#x22;&#x3E;
+                &#x3C;div data-column=&#x22;{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;!-- Or --&#x3E;
+                &#x3C;div data-column=&#x22;{screen}-{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+
 
 
     h1 Screen sizes
@@ -183,7 +178,7 @@ article.page#grid
         thead
             tr
                 th Device
-                th Class Prefix
+                th Class code.language-htmlfix
                 th Screen size
         tbody.text-left
             tr
@@ -222,43 +217,24 @@ article.page#grid
         div(data-column="xs-12 sm-6 md-4 lg-3 xlg-2")
             div(data-elevation="2", data-background="white", class="padding-8") &nbsp
     pre
-        = '<div data-grid-gutter>'
-        br
-        = '    <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">'
-        br
-        = '        <div data-elevation="2" data-background="white", class="padding-8">&nbsp;</div>'
-        br
-        = '    </div>'
-        br
-        = '    <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">'
-        br
-        = '        <div data-elevation="2" data-background="white", class="padding-8">&nbsp;</div>'
-        br
-        = '    </div>'
-        br
-        = '    <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">'
-        br
-        = '        <div data-elevation="2" data-background="white", class="padding-8">&nbsp;</div>'
-        br
-        = '    </div>'
-        br
-        = '    <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">'
-        br
-        = '        <div data-elevation="2" data-background="white", class="padding-8">&nbsp;</div>'
-        br
-        = '    </div>'
-        br
-        = '    <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">'
-        br
-        = '        <div data-elevation="2" data-background="white", class="padding-8">&nbsp;</div>'
-        br
-        = '    </div>'
-        br
-        = '    <div data-column="xs-12 sm-6 md-4 lg-3 xlg-2">'
-        br
-        = '        <div data-elevation="2" data-background="white", class="padding-8">&nbsp;</div>'
-        br
-        = '    </div>'
-        br
-        = '</div>'
-        br
+        code.language-html.
+            &lt;div data-grid-gutter&gt;
+                &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+                    &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+                    &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+                    &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+                    &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+                    &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+                    &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;

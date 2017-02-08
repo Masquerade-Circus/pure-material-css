@@ -7,12 +7,12 @@
     <link href="./node_modules/normalize.css/normalize.css" rel="stylesheet">
     <link href="./css/pure-material.css" rel="stylesheet">
     <link href="./fonts/material-icons/material-icons.css" rel="stylesheet">
+    <link href="./css/diagnostic-styles.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css" />
   </head>
   <body>
     <header>
       <button data-button data-drawer-button><span class="material-icons">menu</span></button>
       <nav data-drawer="left">
-        <div class="overlay"></div>
         <div data-drawer-content>
           <div class="flexible-bar">
             <div class="flexible-bar-media">
@@ -54,8 +54,8 @@
       <h1>PURE MATERIAL</h1>
       <nav><a href="#about" data-button>About</a><a href="https://github.com/Masquerade-Circus/pure-material-css" data-button target="_blank">Github</a><a href="https://github.com/Masquerade-Circus/pure-material-css/tree/master/css" data-button target="_blank">Download</a></nav>
     </header>
-    <div class="flexible-bar"></div>
-    <div class="tab-bar"></div>
+    <!--.flexible-bar-->
+    <!--.tab-bar-->
     <article class="page" id="about">
       <h1>Pure Material</h1>
       <hr>
@@ -90,7 +90,7 @@
               </nav>
             </footer>
           </section>
-          <pre class="text-left">&#x3C;section data-card data-elevation=&#x22;hover-16&#x22;&#x3E;
+          <pre><code class="language-html">&#x3C;section data-card data-elevation=&#x22;hover-16&#x22;&#x3E;
     &#x3C;div data-card-media style=&#x22;background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)&#x22;&#x3E;
         &#x3C;header&#x3E;
             &#x3C;h2&#x3E;Welcome&#x3C;/h2&#x3E;
@@ -110,7 +110,7 @@
             &#x3C;button data-button=&#x22;primary&#x22;&#x3E;Get started&#x3C;/button&#x3E;
         &#x3C;/nav&#x3E;
     &#x3C;/footer&#x3E;
-&#x3C;/section&#x3E;</pre>
+&#x3C;/section&#x3E;</code></pre>
         </div>
       </div><br><br>
       <hr>
@@ -169,7 +169,12 @@
         <div class="padding-8" data-column="1" data-background="white" data-elevation="2">data-column="1"</div>
         <div class="padding-8" data-column="12" data-background="white" data-elevation="2">data-column="12"</div>
       </div>
-      <pre>&lt;div data-grid&gt;<br>   &lt;div data-column=&quot;{size}&quot;&gt;&lt;/div&gt;<br>   &lt;!-- Or --&gt;<br>   &lt;div data-column=&quot;{screen}-{size}&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre><code class="language-html">&#x3C;div data-grid&#x3E;
+    &#x3C;div data-column=&#x22;{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;!-- Or --&#x3E;
+    &#x3C;div data-column=&#x22;{screen}-{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</code></pre>
       <h1>Row guttered<small>(Columns with gutters)</small></h1>
       <hr>
       <div data-grid="gutters">
@@ -297,14 +302,21 @@
           <div class="padding-8" data-elevation="2" data-background="white">data-column="12"</div>
         </div>
       </div>
-      <pre>&lt;div data-grid=&quot;gutters&quot;&gt;<br>   &lt;div data-column=&quot;{size}&quot;&gt;&lt;/div&gt;<br>   &lt;!-- Or --&gt;<br>   &lt;div data-column=&quot;{screen}-{size}&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre><code class="language-html">&#x3C;div data-grid=&#x22;gutters&#x22;&#x3E;
+    &#x3C;div data-column=&#x22;{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;!-- Or --&#x3E;
+    &#x3C;div data-column=&#x22;{screen}-{size}&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+
+
+</code></pre>
       <h1>Screen sizes</h1>
       <hr>
       <table>
         <thead>
           <tr>
             <th>Device</th>
-            <th>Class Prefix</th>
+            <th>Class code.language-htmlfix</th>
             <th>Screen size</th>
           </tr>
         </thead>
@@ -358,7 +370,26 @@
           <div class="padding-8" data-elevation="2" data-background="white">&nbsp</div>
         </div>
       </div>
-      <pre>&lt;div data-grid-gutter&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;, class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;, class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;, class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;, class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;, class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;<br>        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot;, class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;<br>    &lt;/div&gt;<br>&lt;/div&gt;<br></pre>
+      <pre><code class="language-html">&lt;div data-grid-gutter&gt;
+    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
+        &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </article>
     <article class="page" id="elevations">
       <h1>Elevations</h1>
@@ -1583,7 +1614,9 @@
         <div class="material-icons margin-8" data-badge="1" data-badge-color="warning">account_box</div>
         <div class="material-icons margin-8" data-badge="1" data-badge-color="danger">account_box</div>
         <div class="material-icons margin-8" data-badge="1" data-badge-color="success">account_box</div>
-        <pre>&lt;element data-badge=&quot;1&quot;&gt;...&lt;/element&gt;<br> &lt;!-- Or --&gt;<br> &lt;element data-badge=&quot;1&quot; data-badge-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
+        <pre><code class="language-html">&lt;element data-badge=&quot;1&quot;&gt;...&lt;/element&gt;
+&lt;!-- Or --&gt; 
+&lt;element data-badge=&quot;1&quot; data-badge-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</code></pre>
       </div>
     </article>
     <article class="page" id="buttons">
@@ -1636,24 +1669,33 @@
       <h1>Cards</h1>
       <h2>Simple card</h2>
       <hr>
-      <div data-card>
+      <section data-card>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
-      </div>
-      <pre>&lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      </section>
+      <pre><code class="language-html">&lt;section data-card&gt;
+    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+&lt;/section&gt;</code></pre>
       <h2>Card with footer</h2>
       <hr>
-      <div data-card>
+      <section data-card>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
         <footer>
           <nav>
             <button data-button="primary">Get started</button>
           </nav>
         </footer>
-      </div>
-      <pre>&lt;div data-card&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;&lt;nav&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      </section>
+      <pre><code class="language-html">&lt;section data-card&gt;
+    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+    &lt;footer&gt;
+        &lt;nav&gt;
+            &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;</code></pre>
       <h2>Card with header and footer</h2>
       <hr>
-      <div data-card>
+      <section data-card>
         <header>
           <h2>Title</h2>
           <nav>
@@ -1666,18 +1708,31 @@
             <button data-button="primary">Get started</button>
           </nav>
         </footer>
-      </div>
-      <pre>&lt;div data-card&gt;<br>    &lt;header&gt;<br>        &lt;h2&gt;Title&lt;/h2&gt;<br>        &lt;nav&gt;<br>            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>        &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;&lt;nav&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      </section>
+      <pre><code class="language-html">&lt;section data-card&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Title&lt;/h2&gt;
+        &lt;nav&gt;
+            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+    &lt;footer&gt;
+        &lt;nav&gt;
+            &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;</code></pre>
       <h2>Card with media</h2>
       <hr>
-      <div data-card>
-        <div data-card-media>
+      <section data-card>
+        <div data-card-media style="background-image: url(./img.jpeg)">
           <header>
             <h2>Title</h2>
             <nav>
               <button data-fab="inline mini"><i class="material-icons">share</i></button>
             </nav>
-          </header><img src="./img.jpeg">
+          </header>
         </div>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
         <footer>
@@ -1685,21 +1740,45 @@
             <button data-button="primary">Get started</button>
           </nav>
         </footer>
-      </div>
-      <pre>&lt;div data-card&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>  &lt;div&gt;Lorem ipsum...&lt;/div&gt;<br>  &lt;footer&gt;&lt;nav&gt;<br>    &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>  &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      </section>
+      <pre><code class="language-html">&lt;section data-card&gt;
+    &lt;section data-card-media style=&quot;background-image: url(http://lorempixel.com/480/480/abstract/)&quot;&gt;
+        &lt;header&gt;
+            &lt;h2&gt;Title&lt;/h2&gt;
+            &lt;nav&gt;
+                &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+    &lt;/section&gt;
+    &lt;div&gt;Lorem ipsum...&lt;/section&gt;
+    &lt;footer&gt;
+        &lt;nav&gt;
+            &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;</code></pre>
       <h2>Card squared</h2>
       <hr>
       <div data-card="squared">
-        <div data-card-media>
+        <div data-card-media style="background-image: url(./img.jpeg)">
           <header>
             <h2>Title</h2>
             <nav>
               <button data-fab="inline mini"><i class="material-icons">share</i></button>
             </nav>
-          </header><img src="./img.jpeg">
+          </header>
         </div>
       </div>
-      <pre>&lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;img src=&quot;http://lorempixel.com/480/480/abstract/&quot;&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre><code class="language-html">&lt;section data-card=&quot;squared&quot; style=&quot;background-image: url(http://lorempixel.com/480/480/abstract/)&quot;&gt;
+    &lt;section data-card-media&gt;
+        &lt;header&gt;
+            &lt;h2&gt;Title&lt;/h2&gt;
+            &lt;nav&gt;
+                &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+    &lt;/section&gt;
+&lt;/section&gt;</code></pre>
       <h2>Card squared with text instead of media</h2>
       <hr>
       <div data-card="squared">
@@ -1713,7 +1792,20 @@
           <div data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</div>
         </div>
       </div>
-      <pre>&lt;div data-card=&quot;squared&quot;&gt;<br>  &lt;div data-card-media&gt;<br>    &lt;header&gt;<br>      &lt;h2&gt;Title&lt;/h2&gt;<br>      &lt;nav&gt;<br>        &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>      &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div data-background=&quot;primary&quot;&gt;<br>      Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre><code class="language-html">&lt;section data-card=&quot;squared&quot;&gt;
+    &lt;section data-card-media&gt;
+        &lt;header&gt;
+            &lt;h2&gt;Title&lt;/h2&gt;
+            &lt;nav&gt;
+                &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;div data-background=&quot;primary&quot;&gt;
+            Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm
+        &lt;/section&gt;
+    &lt;/section&gt;
+&lt;/section&gt;
+</code></pre>
       <h2>Full width card</h2>
       <hr>
       <div data-card="full-width">
@@ -1730,16 +1822,27 @@
           </nav>
         </footer>
       </div>
-      <pre>&lt;div data-card=&quot;full-width&quot;&gt;<br>    &lt;header&gt;<br>        &lt;h2&gt;Title&lt;/h2&gt;<br>        &lt;nav&gt;<br>            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;<br>        &lt;/nav&gt;<br>    &lt;/header&gt;<br>    &lt;div&gt;Lorem ipsum ...&lt;/div&gt;<br>    &lt;footer&gt;&lt;nav&gt;<br>        &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;<br>    &lt;/nav&gt;&lt;/footer&gt;<br>&lt;/div&gt;</pre>
+      <pre><code class="language-html">&lt;section data-card=&quot;full-width&quot;&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Title&lt;/h2&gt;
+        &lt;nav&gt;
+            &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+    &lt;footer&gt;
+        &lt;nav&gt;
+            &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
+        &lt;/nav&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;</code></pre>
     </article>
     <article class="page" id="dialogs">
       <h1>Dialogs</h1>
       <hr>
       <div class="text-center">
-        <input class="dialog-trigger" id="dialog-1" type="checkbox">
-        <label data-button for="dialog-1"><span>dialog-1</span>
-          <div class="overlay"></div>
-        </label>
+        <input id="dialog-1" type="checkbox" data-dialog-trigger>
+        <label data-button for="dialog-1"><span>dialog-1</span></label>
         <dialog data-card>
           <header>
             <h2>Title</h2>
@@ -1752,10 +1855,8 @@
             <button data-button="primary">Get started</button>
           </footer>
         </dialog>
-        <input class="dialog-trigger" id="dialog-2" type="checkbox">
-        <label data-button for="dialog-2"><span>dialog-2</span>
-          <div class="overlay"></div>
-        </label>
+        <input id="dialog-2" type="checkbox" data-dialog-trigger>
+        <label data-button for="dialog-2"><span>dialog-2</span></label>
         <dialog data-card>
           <div data-card-media>
             <header>
@@ -1770,10 +1871,8 @@
             <button data-button="primary">Get started</button>
           </footer>
         </dialog>
-        <input class="dialog-trigger" id="dialog-3" type="checkbox">
-        <label data-button for="dialog-3"><span>dialog-3</span>
-          <div class="overlay"></div>
-        </label>
+        <input id="dialog-3" type="checkbox" data-dialog-trigger>
+        <label data-button for="dialog-3"><span>dialog-3</span></label>
         <dialog data-card="squared">
           <div data-card-media>
             <header>
@@ -1784,10 +1883,8 @@
             </header><img src="./img.jpeg">
           </div>
         </dialog>
-        <input class="dialog-trigger" id="dialog-4" type="checkbox">
-        <label data-button for="dialog-4"><span>dialog-4</span>
-          <div class="overlay"></div>
-        </label>
+        <input id="dialog-4" type="checkbox" data-dialog-trigger>
+        <label data-button for="dialog-4"><span>dialog-4</span></label>
         <dialog data-card="squared">
           <div data-card-media>
             <header>
@@ -1807,62 +1904,116 @@
       <h2>Simple list with primary content</h2>
       <hr>
       <ul data-list>
-        <li> <a href="#">Bhryan Cranston</a></li>
-        <li> <a href="#">Aaron Paul</a></li>
-        <li> <a href="#">Bob Odenkirk</a></li>
+        <li><a href="#">Bhryan Cranston</a></li>
+        <li><a href="#">Aaron Paul</a></li>
+        <li><a href="#">Bob Odenkirk</a></li>
       </ul>
-      <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      <pre><code class="language-html">&lt;ul data-list&gt;
+    &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       <h2>List with primary and secondary content</h2>
       <hr>
       <ul data-list>
-        <li><a href="#">Bhryan Cranston    </a><a href="#"><i class="material-icons">star    </i></a></li>
-        <li><a href="#">Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
-        <li><a href="#">Bob Odenkirk      </a><a href="#"><i class="material-icons">star</i></a></li>
-        <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+        <li><a href#>Bhryan Cranston</a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#>Aaron Paul</a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#>Bob Odenkirk</a><a href#><i class="material-icons">star</i></a></li>
+        <pre><code class="language-html">&lt;ul data-list&gt;
+    &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;
+          &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       </ul>
       <h2>Simple list with primary content and icon</h2>
       <hr>
       <ul data-list>
-        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a></li>
-        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul  </a></li>
-        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk</a></li>
+        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a></li>
+        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul</a></li>
+        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a></li>
       </ul>
-      <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+      <pre><code class="language-html">&lt;ul data-list&gt;
+    &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;
+              ...
+          &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       <h2>List with primary content and icon and secondary content</h2>
       <hr>
       <ul data-list>
-        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston    </a><a href="#"><i class="material-icons">star    </i></a></li>
-        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul</a><a href="#"><i class="material-icons">star   </i></a></li>
-        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk      </a><a href="#"><i class="material-icons">star</i></a></li>
-        <pre>     &lt;ul data-list&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul</a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a><a href#><i class="material-icons">star</i></a></li>
+        <pre><code class="language-html">&lt;ul data-list&gt;
+    &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;
+              ...
+          &lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;
+          &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       </ul>
       <h2>Two line list</h2>
       <hr>
       <ul data-list="two-line">
-        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston    <small>
+        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston<small>
               Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
-              for playing Hal in Malcom in the Middle.    </small></a><a href="#"><i class="material-icons">star    </i></a></li>
-        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul        <small>
+              for playing Hal in Malcom in the Middle.</small></a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
               Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-              the &quot;Need For Speed&quot; Movie.     </small></a><a href="#"><i class="material-icons">star   </i></a></li>
-        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk         <small>
+              the &quot;Need For Speed&quot; Movie.</small></a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
               Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      </small></a><a href="#"><i class="material-icons">star</i></a></li>
-        <pre>     &lt;ul data-list=&quot;two-line&quot;&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>                  &lt;small&gt;<br>                      Lorem ipsum...<br>                  &lt;/small&gt;<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href#><i class="material-icons">star</i></a></li>
+        <pre><code class="language-html">&lt;ul data-list=&quot;two-line&quot;&gt;
+    &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;
+              ...
+              &lt;small&gt;
+                  Lorem ipsum...
+              &lt;/small&gt;
+          &lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;
+          &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       </ul>
       <h2>Three line list</h2>
       <hr>
       <ul data-list="three-line">
-        <li><a href="#"><i class="material-icons" data-background="default">person</i>Bhryan Cranston    <small>
+        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston<small>
               Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
-              for playing Hal in Malcom in the Middle.    </small></a><a href="#"><i class="material-icons">star    </i></a></li>
-        <li><a href="#"><i class="material-icons" data-background="primary">person         </i>Aaron Paul        <small>
+              for playing Hal in Malcom in the Middle.</small></a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
               Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-              the &quot;Need For Speed&quot; Movie.     </small></a><a href="#"><i class="material-icons">star   </i></a></li>
-        <li><a href="#"><i class="material-icons" data-background="success">person          </i>Bob Odenkirk         <small>
+              the &quot;Need For Speed&quot; Movie.</small></a><a href#><i class="material-icons">star</i></a></li>
+        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
               Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.      </small></a><a href="#"><i class="material-icons">star</i></a></li>
-        <pre>     &lt;ul data-list=&quot;three-line&quot;&gt;<br>        &lt;li&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;<br>                  ...<br>                  &lt;small&gt;<br>                      Lorem ipsum...<br>                  &lt;/small&gt;<br>              &lt;/a&gt;<br>              &lt;a href=&quot;#&quot;&gt;<br>                  &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;<br>              &lt;/a&gt;<br>        &lt;/li&gt;<br>    &lt;/ul&gt;</pre>
+              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href#><i class="material-icons">star</i></a></li>
+        <pre><code class="language-html">&lt;ul data-list=&quot;three-line&quot;&gt;
+    &lt;li&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot; data-background=&quot;default&quot;&gt;person&lt;/i&gt;
+              ...
+              &lt;small&gt;
+                  Lorem ipsum...
+              &lt;/small&gt;
+          &lt;/a&gt;
+          &lt;a href=&quot;#&quot;&gt;
+              &lt;i class=&quot;material-icons&quot;&gt;star&lt;/i&gt;
+          &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
       </ul>
     </article>
     <article class="page" id="forms">
@@ -1914,7 +2065,52 @@
           </div>
         </div>
       </div>
-      <pre>  &lt;div data-card&gt;<br>    &lt;div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-warning&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is input has a warning&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-success&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This input has success&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group has-error&quot;&gt;<br>        &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This input has an error&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;textarea placeholder=&quot;Label text&quot; cols=&quot;6&quot;&gt;&lt;/textarea&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>      &lt;div class=&quot;form-group&quot;&gt;<br>        &lt;select placeholder=&quot;Label text&quot;&gt;<br>          &lt;option value=&quot;&quot;&gt;&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>          &lt;option&gt;val&lt;/option&gt;<br>        &lt;/select&gt;<br>        &lt;label&gt;Label text&lt;/label&gt;<br>        &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;<br>      &lt;/div&gt;<br>    &lt;/div&gt;<br>  &lt;/div&gt;<br></pre>
+      <pre><code class="language-html">&lt;div data-card&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot;&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+            &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+            &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group has-warning&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+            &lt;p class=&quot;help-block&quot;&gt;This is input has a warning&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group has-success&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+            &lt;p class=&quot;help-block&quot;&gt;This input has success&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group has-error&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Label text&quot; value=&quot;Hola mundo&quot;&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+            &lt;p class=&quot;help-block&quot;&gt;This input has an error&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;textarea placeholder=&quot;Label text&quot; cols=&quot;6&quot;&gt;&lt;/textarea&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+            &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;select placeholder=&quot;Label text&quot;&gt;
+                &lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+                &lt;option&gt;val&lt;/option&gt;
+                &lt;option&gt;val&lt;/option&gt;
+                &lt;option&gt;val&lt;/option&gt;
+                &lt;option&gt;val&lt;/option&gt;
+                &lt;option&gt;val&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+            &lt;p class=&quot;help-block&quot;&gt;This is a help-block&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </article>
     <article class="page" id="menus">
       <h1>Menus</h1>
@@ -1924,9 +2120,9 @@
           <button data-menu-trigger>Menu 1</button>
           <menu>
             <ul data-list>
-              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
-              <li><a href="#"><i class="material-icons" data-background="primary">person</i>Aaron Paul</a><a href="#"><i class="material-icons">star</i></a></li>
-              <li><a href="#"><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>
+              <li><a href="#"><i class="material-icons" data-background="primary">person</i>Aaron Paul</a></li>
+              <li><a href="#"><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a></li>
             </ul>
           </menu>
         </div>
@@ -1936,13 +2132,13 @@
             <ul data-list="two-line">
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston<small>
                     hryan Cranston played the role of Walter in hreaking Bad. He is also known
-                    for playing Hal in Malcom in the Middle.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    for playing Hal in Malcom in the Middle.</small></a></li>
               <li><a href="#"><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
                     Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-                    the &quot;Need For Speed&quot; Movie.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    the &quot;Need For Speed&quot; Movie.</small></a></li>
               <li><a href="#"><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
                     Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a></li>
             </ul>
           </menu>
         </div>
@@ -1952,13 +2148,13 @@
             <ul data-list="three-line">
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston<small>
                     hryan Cranston played the role of Walter in hreaking Bad. He is also known
-                    for playing Hal in Malcom in the Middle.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    for playing Hal in Malcom in the Middle.</small></a></li>
               <li><a href="#"><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
                     Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-                    the &quot;Need For Speed&quot; Movie.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    the &quot;Need For Speed&quot; Movie.</small></a></li>
               <li><a href="#"><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
                     Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href="#"><i class="material-icons">star</i></a></li>
+                    character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a></li>
             </ul>
           </menu>
         </div>
@@ -1966,7 +2162,7 @@
           <button data-menu-trigger>Menu Right</button>
           <menu>
             <ul data-list>
-              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>
             </ul>
           </menu>
         </div>
@@ -1974,7 +2170,7 @@
           <button data-menu-trigger>Menu Top</button>
           <menu>
             <ul data-list>
-              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>
             </ul>
           </menu>
         </div>
@@ -1982,7 +2178,7 @@
           <button data-menu-trigger>Menu Top-Right</button>
           <menu>
             <ul data-list>
-              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a><a href="#"><i class="material-icons">star</i></a></li>
+              <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>
             </ul>
           </menu>
         </div>
@@ -2017,7 +2213,32 @@
           </tr>
         </tbody>
       </table>
-      <pre>  &lt;table&gt;<br>    &lt;thead&gt;<br>      &lt;tr&gt;<br>        &lt;th class=&quot;text-left&quot;&gt;Material&lt;/th&gt;<br>        &lt;th&gt;Quantity&lt;/th&gt;<br>        &lt;th&gt;Unit price&lt;/th&gt;<br>      &lt;/tr&gt;<br>    &lt;/thead&gt;<br>    &lt;tbody&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Acrylic (Transparent)&lt;/td&gt;<br>        &lt;td&gt;25&lt;/td&gt;<br>        &lt;td&gt;$2.90&lt;/td&gt;<br>      &lt;/tr&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Plywood (Birch)&lt;/td&gt;<br>        &lt;td&gt;50&lt;/td&gt;<br>        &lt;td&gt;$1.25&lt;/td&gt;<br>      &lt;/tr&gt;<br>      &lt;tr&gt;<br>        &lt;td class=&quot;text-left&quot;&gt;Laminate (Gold on Blue)&lt;/td&gt;<br>        &lt;td&gt;10&lt;/td&gt;<br>        &lt;td&gt;$2.35&lt;/td&gt;<br>      &lt;/tr&gt;<br>    &lt;/tbody&gt;<br>  &lt;/table&gt;</pre>
+      <pre><code class="language-html">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th class=&quot;text-left&quot;&gt;Material&lt;/th&gt;
+            &lt;th&gt;Quantity&lt;/th&gt;
+            &lt;th&gt;Unit price&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;text-left&quot;&gt;Acrylic (Transparent)&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;$2.90&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;text-left&quot;&gt;Plywood (Birch)&lt;/td&gt;
+            &lt;td&gt;50&lt;/td&gt;
+            &lt;td&gt;$1.25&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;text-left&quot;&gt;Laminate (Gold on Blue)&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+            &lt;td&gt;$2.35&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
     </article>
     <article class="page" id="tool-bars">
       <h1>In construction</h1>
@@ -2039,15 +2260,21 @@
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="warning">account_box</div>
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="danger">account_box</div>
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-color="success">account_box</div>
-        <pre>&lt;element data-tooltip=&quot;Tooltip content&quot;&gt;...&lt;/element&gt;<br>&lt;!-- Or --&gt;<br>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</pre>
-      </div><br>
+        <pre><code class="language-html">&lt;element data-tooltip=&quot;Tooltip content&quot;&gt;...&lt;/element&gt;
+&lt;!-- Or --&gt;
+&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-color=&quot;{color}&quot;&gt;...&lt;/element&gt;</code></pre>
+      </div>
       <h2>Position</h2>
       <hr>
       <div class="text-center">
+        <div class="material-icons margin-8" data-tooltip="This is a tooltip">account_box</div>
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-position="top">account_box</div>
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-position="left">account_box</div>
         <div class="material-icons margin-8" data-tooltip="This is a tooltip" data-tooltip-position="right">account_box</div>
-        <pre>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;top&quot;&gt;...&lt;/element&gt;<br>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;left&quot;&gt;...&lt;/element&gt;<br>&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;right&quot;&gt;...&lt;/element&gt;</pre>
+        <pre><code class="language-html">&lt;element data-tooltip=&quot;Tooltip content&quot;&gt;...&lt;/element&gt;
+&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;top&quot;&gt;...&lt;/element&gt;
+&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;left&quot;&gt;...&lt;/element&gt;
+&lt;element data-tooltip=&quot;Tooltip content&quot; data-tooltip-position=&quot;right&quot;&gt;...&lt;/element&gt;</code></pre>
       </div>
     </article>
     <article class="page" id="progress">
@@ -2055,52 +2282,38 @@
       <hr>
       <h3>Progress to 40%</h3>
       <div data-progress>
-        <div style="width: 40%"></div>
+        <div data-background="default" style="width: 40%"></div>
       </div>
-      <pre>&lt;div data-progress&gt;<br>   &lt;div style=&quot;width: 40%&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+      <pre><code class="language-html">&lt;div data-progress&gt;
+    &lt;div data-background=&quot;default&quot; style=&quot;width: 40%&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
       <hr>
       <h3>Progress indeterminated</h3>
-      <div data-progress="indeterminated">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated&quot;&gt;&lt;/div&gt;</code></pre>
       <hr>
       <h3>Colors</h3>
       <h4>Primary</h4>
-      <div data-progress="indeterminated primary">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated primary&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated primary"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated primary&quot;&gt;&lt;/div&gt;</code></pre>
       <h4>Accent</h4>
-      <div data-progress="indeterminated accent">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated accent&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated accent"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated accent&quot;&gt;&lt;/div&gt;</code></pre>
       <h4>Info</h4>
-      <div data-progress="indeterminated info">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated info&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated info"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated info&quot;&gt;&lt;/div&gt;</code></pre>
       <h4>Success</h4>
-      <div data-progress="indeterminated success">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated success&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated success"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated success&quot;&gt;&lt;/div&gt;</code></pre>
       <h4>Warning</h4>
-      <div data-progress="indeterminated warning">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated warning&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated warning"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated warning&quot;&gt;&lt;/div&gt;</code></pre>
       <h4>Danger</h4>
-      <div data-progress="indeterminated danger">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated danger&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated danger"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated danger&quot;&gt;&lt;/div&gt;</code></pre>
       <h4>Default</h4>
-      <div data-progress="indeterminated default">
-        <div></div>
-      </div>
-      <pre>&lt;div data-progress=&quot;indeterminated default&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;</pre>
+      <div data-progress="indeterminated default"></div>
+      <pre><code class="language-html">&lt;div data-progress=&quot;indeterminated default&quot;&gt;&lt;/div&gt;</code></pre>
     </article>
     <article class="page" id="spinner">
       <h1>Spinners</h1>
@@ -2114,20 +2327,25 @@
         <div data-spinner="warning"></div>
         <div data-spinner="danger"></div>
         <div data-spinner="success"></div>
-        <pre>&lt;div class=&quot;spinner&quot;&gt;&lt;/div&gt;<br>&lt;!-- Or --&gt;<br>&lt;div class=&quot;spinner spinner-{color}&quot;&gt;&lt;/div&gt;</pre>
+        <pre><code class="language-html">&lt;div data-spinner&gt;&lt;/div&gt;
+&lt;!-- Or --&gt;
+&lt;div data-spinner=&quot;{color}&quot;&gt;&lt;/div&gt;
+</code></pre>
         <div data-spinner="mini"></div>
-        <pre>&lt;div data-spinner=&quot;mini&quot;&gt;&lt;/div&gt;</pre>
+        <pre><code class="language-html">&lt;div data-spinner=&quot;mini&quot;&gt;&lt;/div&gt;</code></pre>
         <div data-row>
-          <div data-column="5"></div>
           <div class="relative" data-column="2">
             <div data-spinner="full"></div>
           </div>
         </div>
-        <pre>&lt;div data-spinner=&quot;full&quot;&gt;&lt;/div&gt;</pre>
+        <pre><code class="language-html">&lt;div data-spinner=&quot;full&quot;&gt;&lt;/div&gt;</code></pre>
         <button data-fab="inline info"><i class="material-icons">add</i>
           <div data-spinner="success"></div>
         </button>
-        <pre> &lt;div data-fab=&quot;inline info&quot;&gt;<br>     &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;<br>     &lt;div data-spinner=&quot;success&quot;&gt;&lt;/div&gt;<br> &lt;/div&gt;</pre>
+        <pre><code class="language-html">&lt;div data-fab=&quot;inline info&quot;&gt;
+     &lt;i class=&quot;material-icons&quot;&gt;add&lt;/i&gt;
+     &lt;div data-spinner=&quot;success&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </article>
     <article class="page" id="sliders">
@@ -2172,6 +2390,6 @@
     </article>
     <footer>
       <h1>PURE MATERIAL</h1>
-    </footer>
+    </footer><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
   </body>
 </html>

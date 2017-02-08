@@ -1,8 +1,9 @@
 [data-progress]
     height: 4rem;
+    overflow: hidden;
     width: 100%;
     position: relative;
-    &>div,&::before
+    &::after,&::before, &>div
         transition: all .3s ease-in-out;
         content: ' ';
         position: absolute;
@@ -10,10 +11,14 @@
         width: 100%;
         left: 0;
         height: 100%;
+        z-index: 0;
+    &::after
+        width: 0%;
     &>div
         position: relative;
+        z-index: 1;
 
-[data-progress~="indeterminated"]>div
+[data-progress~="indeterminated"]::after
     animation-fill-mode: both;
     animation: progressIndeterminate 1.6s infinite;
     animation-timing-function: linear;

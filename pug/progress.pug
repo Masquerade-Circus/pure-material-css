@@ -4,24 +4,24 @@ article.page#progress
     hr
     h3 Progress to 40%
     div(data-progress)
-        div(style="width: 40%")
+        div(data-background="default", style="width: 40%")
     pre
-        =   '<div data-progress>'
-        br
-        =   '   <div style="width: 40%"></div>'
-        br
-        =   '</div>'
+        code.language-html.
+            &lt;div data-progress&gt;
+                &lt;div data-background=&quot;default&quot; style=&quot;width: 40%&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
     hr
     h3 Progress indeterminated
     div(data-progress="indeterminated")
-        div
     pre
-        =   '<div data-progress="indeterminated"><div></div></div>'
+        code.language-html
+            =   '<div data-progress="indeterminated"></div>'
     hr
     h3 Colors
     each color in colors
         h4 #{color.name}
         div(data-progress="indeterminated "+color.class)
-            div
+
         pre
-            =   '<div data-progress="indeterminated '+color.class+'"><div></div></div>'
+            code.language-html
+                =   '<div data-progress="indeterminated '+color.class+'"></div>'

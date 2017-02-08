@@ -7,6 +7,9 @@
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: drawerclose;
+    &::before
+        overlay();
+        content: ' ';
 
 [data-drawer-content]
     flexContainer: column;
@@ -33,7 +36,7 @@
 [data-drawer-button]:focus+[data-drawer],[data-drawer][open]
     animation-name: draweropen;
     z-index: 1;
-    >.overlay
+    &::before
         opacity: 1;
         z-index: -2;
         display: block;
