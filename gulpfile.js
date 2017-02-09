@@ -78,7 +78,8 @@ gulp.task('build', function () {
         };
 
 
-    for (let primary; primary = colors.shift(), primary;) {
+    for (let i = 0; i < colors.length; i++) {
+        let primary = colors[i];
         for (let c = 0; c < colors.length; c++) {
             let accent = colors[c];
             if (primary !== accent) {
