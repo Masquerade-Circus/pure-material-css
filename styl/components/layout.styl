@@ -1,6 +1,7 @@
 html,body
     height: 100%;
     margin: 0;
+    overflow: hidden;
 
 h1,h2,h3,h4,h5
     font-family: 'Roboto', sans-serif;
@@ -18,7 +19,7 @@ body
         &>nav
             >a,>a[data-button]
                 text-transform: none;
-    &>.flexible-bar
+    &>[data-flexible-bar]
         order: 2;
         flex: 1 0 auto;
     &>.tab-bar

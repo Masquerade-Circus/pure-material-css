@@ -16,8 +16,8 @@ html(lang="en")
                 span.material-icons menu
             nav(data-drawer="left")
                 div(data-drawer-content)
-                    .flexible-bar
-                        .flexible-bar-media
+                    div(data-flexible-bar)
+                        div(data-flexible-bar-media)
                             div
                                 h2 PURE MATERIAL
                     ul(data-list)
@@ -35,8 +35,8 @@ html(lang="en")
                 a(href="#about", data-button) About
                 a(href="https://github.com/Masquerade-Circus/pure-material-css", data-button, target="_blank") Github
                 a(href="https://github.com/Masquerade-Circus/pure-material-css/tree/master/css", data-button, target="_blank") Download
-        //.flexible-bar
-        //.tab-bar
+        //div(data-flexible-bar)
+        //div(data-tab-bar)
         include pug/about.pug
         include pug/getting-started.pug
 

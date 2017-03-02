@@ -7,16 +7,23 @@
     animation-duration: .5s;
     animation-fill-mode: both;
     animation-name: drawerclose;
+    max-width: 320rem; // TODO: on mobile 280rem
+    top: 0;
+    left: 0;
     &::before
         overlay();
         content: ' ';
+
+[data-drawer="right"]
+    left: auto;
+    right: 0;
 
 [data-drawer-content]
     flexContainer: column;
     animation-duration: .5s;
     animation-fill-mode: both;
     width: calc(100% - 56rem);
-    max-width: 320rem; // TODO: on mobile 280rem
+    width: 100%;
     padding: 0; // TODO: on mobile 16rem;
     top: 0;
     left:0;

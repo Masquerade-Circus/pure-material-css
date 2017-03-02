@@ -1,11 +1,11 @@
-.flexible-bar
+[data-flexible-bar]
     flexContainer : column;
     text-align: left;
     border-radius: 2rem;
     width: 100%;
     margin: 0 auto;
     line-height: 1.15;
-    &>.flexible-bar-media
+    &>[data-flexible-bar-media]
         order: 0;
         flex: 1 0 auto;
         position: relative;
@@ -51,6 +51,6 @@
         order: 3;
         flex: 0 1 auto;
         padding: 8rem 0;
-    &.flexible-bar-squared
-        &>.flexible-bar-media
+    &[data-flexible-bar-squared]
+        &>[data-flexible-bar-media]
             padding-bottom: 100%;
