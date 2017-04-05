@@ -4,8 +4,8 @@
   "description": "Material Design Components with only css and Html5",
   "main": "index.html",
   "scripts": {
-      "start": "gulp watch",
-      "build": "gulp build"
+    "start": "gulp watch",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -16,11 +16,18 @@
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
+    "clean-css": "^4.0.11",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-fn": "0.0.0",
     "gulp-kss": "0.0.2",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.3.1",
+    "merge-stream": "^1.0.1",
     "pug": "^2.0.0-beta6",
     "stylus": "^0.54.5"
   },

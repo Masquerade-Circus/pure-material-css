@@ -6,7 +6,23 @@ var gulp = require('gulp'),
     gulpStylus = require('gulp-stylus'),
     pug = require('pug'),
     gulpPug = require('gulp-pug'),
-    fs = require('fs');
+    fs = require('fs'),
+    gulpFn = require('gulp-fn'),
+    cssnano = require('cssnano'),
+    CleanCSS = require('clean-css');
+
+let CleanCSSOptions = {
+    level: {
+        1: {
+            roundingPrecision: 'all=3', // rounds pixel values to `N` decimal places; `false` disables rounding; defaults to `false`
+            specialComments: 'none' // denotes a number of /*! ... */ comments preserved; defaults to `all`
+        },
+        2: {
+            restructureRules: true // controls rule restructuring; defaults to false
+        }
+    },
+    compatibility: 'ie11'
+};
 
 gulpStylus.stylus = stylus;
 
@@ -25,7 +41,17 @@ gulp.task('connect', function () {
 gulp.task('stylus', function () {
     return gulp.src('./styl/**/*.styl')
         .pipe(plumber())
-        .pipe(gulpStylus({ compress: true, sourcemap: true }))
+        .pipe(gulpStylus({ compress: false, sourcemap: false }))
+        .pipe(gulpFn(file => {
+            file.contents = new Buffer(new CleanCSS(CleanCSSOptions).minify(file.contents.toString()).styles, 'utf-8');
+            return file;
+        }))
+        .pipe(gulpFn(file => {
+            return cssnano.process(file.contents.toString()).then(function (result) {
+                file.contents = new Buffer(result.css, 'utf-8');
+                return file;
+            });
+        }))
         .pipe(gulp.dest('./css/'))
         .pipe(browserSync.reload({ stream: true }));
 });
@@ -75,36 +101,49 @@ gulp.task('build', function () {
             }
 
             return split.join('-');
+        },
+        file = fs.readFileSync('./styl/pure-material.styl', 'utf-8'),
+        renderFactory = function (primary, accent) {
+            return new Promise((resolve, reject) => {
+                let fileName = './build_styles/pure-material-' + toSnake(primary) + '-' + toSnake(accent) + '.css';
+                console.log('Writing ' + fileName);
+                stylus(file)
+                    .set('compress', false)
+                    .define('primary-color', primary)
+                    .define('accent-color', accent)
+                    .include('./styl')
+                    .render(function (err, css) {
+                        if (err)
+                            return reject(err);
+
+                        css = new CleanCSS(CleanCSSOptions).minify(css).styles;
+                        cssnano.process(css).then(function (result) {
+                            fs.writeFile(fileName, result.css, {encoding : 'utf8'}, function (err) {
+                                if (err)
+                                    return reject(err);
+
+                                console.log('Writed ' + fileName);
+                                resolve(fileName);
+                            });
+                        });
+                    });
+            });
+
         };
 
+    let promises = [];
 
     for (let i = 0; i < colors.length; i++) {
         let primary = colors[i];
         for (let c = 0; c < colors.length; c++) {
             let accent = colors[c];
             if (primary !== accent) {
-                console.log(primary, accent);
-                stylus(fs.readFileSync('./styl/pure-material.styl', 'utf-8'))
-                    .set('compress', true)
-                    .define('primary-color', primary)
-                    .define('accent-color', accent)
-                    .include('./styl')
-                    .render(function (err, css) {
-                        if (err)
-                            console.log(err);
-
-                        let fileName = './build_styles/pure-material-' + toSnake(primary) + '-' + toSnake(accent) + '.css';
-                        fs.writeFile(fileName, css, {encoding : 'utf8'}, function (err) {
-                            if (err)
-                                console.log(err);
-
-                            console.log('Writed ' + fileName);
-                        });
-                    });
+                promises.push(renderFactory(primary, accent));
             }
         }
 
     }
 
+    return Promise.all(promises);
 
 });
