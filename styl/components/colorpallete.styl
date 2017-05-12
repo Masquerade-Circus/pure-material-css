@@ -53,7 +53,7 @@ generateText(prefix, name)
     [data-color~={'"'+prefix+'"'}],
     a[data-color~={'"'+prefix+'"'}],
     [data-button~={'"'+prefix+'"'}],
-    [data-spinner~={'"'+prefix+'"'}]::before
+    [data-spinner~={'"'+prefix+'"'}]
         color: colors[name]['500']
 
     [data-background={'"'+prefix+'"'}],
@@ -103,13 +103,8 @@ generateText('danger', danger-color)
     background-color: white-color;
     box-shadow: none;
 
-::-webkit-input-placeholder {color: inherit; opacity: 0; }
-:-moz-placeholder {color: inherit;  opacity: 0;}
-::-moz-placeholder {color: inherit;  opacity: 0;}
-:-ms-input-placeholder {  color: inherit;  opacity: 0;}
-
 /*** Ripple ***/
-.ripple,button,[data-button],[data-fab],[data-list]>li>a
+.ripple,button,[data-button],[data-fab],[data-list]>li>*
     &::after
         background: alpha(default-color-900, 0.3);
 /*** End of Ripple ***/
@@ -160,6 +155,11 @@ body
     color: primary-color-50;
 
 /*** Forms ***/
+::-webkit-input-placeholder {color: inherit; }
+:-moz-placeholder {color: inherit;}
+::-moz-placeholder {color: inherit;}
+:-ms-input-placeholder {color: inherit;}
+
 label
     color: default-color;
     &::before
@@ -170,6 +170,7 @@ label
 input, select, textarea
     background: transparent;
     color: default-color;
+    border-color: default-color-200;
     &:focus ~label
         color: inherit;
     &[disabled]
@@ -181,11 +182,6 @@ input, select, textarea
     color: info-color;
     >.help-block
         color: default-color;
-    >.input-group
-        >.input-group-addon
-            background: white-color;
-            a
-                color: inherit;
 
 .has-warning
     color: warning-color;

@@ -1,0 +1,136 @@
+{
+  "size": 1028,
+  "gzipSize": 371,
+  "humanizedSize": "1kB",
+  "humanizedGzipSize": "371B",
+  "rules": {
+    "total": 11,
+    "size": {
+      "graph": [
+        7,
+        4,
+        1,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        1,
+        1
+      ],
+      "max": 7,
+      "average": 2.727272727272727
+    }
+  },
+  "selectors": {
+    "total": 16,
+    "type": 0,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 4,
+    "pseudoElement": 3,
+    "values": [
+      "[data-drawer-content]",
+      "[data-drawer]",
+      "[data-drawer]",
+      "[data-drawer]:before",
+      "[data-drawer=right]",
+      "[data-drawer-content]",
+      "[data-drawer-content]>[data-list]",
+      "[data-drawer=right] [data-drawer-content]",
+      "[data-button*=drawer]:focus+[data-drawer]",
+      "[data-drawer][open]",
+      "[data-button*=drawer]:focus+[data-drawer]:before",
+      "[data-drawer][open]:before",
+      "[data-button*=drawer]:focus+[data-drawer] [data-drawer-content]",
+      "[data-drawer][open] [data-drawer-content]",
+      "[data-button*=drawer]:focus+[data-drawer=right] [data-drawer-content]",
+      "[data-drawer=right][open] [data-drawer-content]"
+    ],
+    "specificity": {
+      "max": 40,
+      "average": 21.4375
+    }
+  },
+  "declarations": {
+    "total": 30,
+    "unique": 28,
+    "properties": {
+      "animation-duration": [
+        ".5s"
+      ],
+      "animation-fill-mode": [
+        "both"
+      ],
+      "width": [
+        "100%"
+      ],
+      "padding": [
+        "0"
+      ],
+      "top": [
+        "0"
+      ],
+      "left": [
+        "0",
+        "auto",
+        "auto"
+      ],
+      "height": [
+        "100%"
+      ],
+      "position": [
+        "fixed",
+        "absolute"
+      ],
+      "z-index": [
+        "-1",
+        "1",
+        "-2"
+      ],
+      "animation-name": [
+        "drawerclose",
+        "slideOutLeft",
+        "slideOutRight",
+        "draweropen",
+        "slideInLeft",
+        "slideInRight"
+      ],
+      "max-width": [
+        "320rem"
+      ],
+      "content": [
+        "\" \""
+      ],
+      "right": [
+        "0",
+        "0"
+      ],
+      "flexContainer": [
+        "column"
+      ],
+      "flex": [
+        "1 1 0"
+      ],
+      "overflow": [
+        "auto"
+      ],
+      "min-height": [
+        "140rem"
+      ],
+      "opacity": [
+        "1"
+      ],
+      "display": [
+        "block"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

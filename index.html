@@ -11,7 +11,7 @@
   </head>
   <body>
     <header>
-      <button data-button data-drawer-button><span class="material-icons">menu</span></button>
+      <button data-button="drawer"><span class="material-icons">menu</span></button>
       <nav data-drawer="left">
         <div data-drawer-content>
           <div data-flexible-bar>
@@ -75,15 +75,15 @@
       <div class="text-center">
         <div>
           <section data-card data-elevation="hover-16">
-            <div data-card-media style="background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)">
+            <section data-card-media style="background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)">
               <header>
                 <h2>Welcome</h2>
                 <nav>
                   <button data-fab="inline mini"><i class="material-icons">share</i></button>
                 </nav>
               </header>
-            </div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+            </section>
+            <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
             <footer>
               <nav>
                 <button data-button="primary">Get started</button>
@@ -91,7 +91,7 @@
             </footer>
           </section>
           <pre><code class="language-html">&#x3C;section data-card data-elevation=&#x22;hover-16&#x22;&#x3E;
-    &#x3C;div data-card-media style=&#x22;background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)&#x22;&#x3E;
+    &#x3C;section data-card-media style=&#x22;background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)&#x22;&#x3E;
         &#x3C;header&#x3E;
             &#x3C;h2&#x3E;Welcome&#x3C;/h2&#x3E;
             &#x3C;nav&#x3E;
@@ -100,11 +100,11 @@
                 &#x3C;/button&#x3E;
             &#x3C;/nav&#x3E;
         &#x3C;/header&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div&#x3E;
+    &#x3C;/section&#x3E;
+    &#x3C;section&#x3E;
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Mauris sagittis pellentesque lacus eleifend lacinia...
-    &#x3C;/div&#x3E;
+    &#x3C;/section&#x3E;
     &#x3C;footer&#x3E;
         &#x3C;nav&#x3E;
             &#x3C;button data-button=&#x22;primary&#x22;&#x3E;Get started&#x3C;/button&#x3E;
@@ -370,7 +370,7 @@
           <div class="padding-8" data-elevation="2" data-background="white">&nbsp</div>
         </div>
       </div>
-      <pre><code class="language-html">&lt;div data-grid-gutter&gt;
+      <pre><code class="language-html">&lt;div data-grid="gutters"&gt;
     &lt;div data-column=&quot;xs-12 sm-6 md-4 lg-3 xlg-2&quot;&gt;
         &lt;div data-elevation=&quot;2&quot; data-background=&quot;white&quot; class=&quot;padding-8&quot;&gt;&amp;nbsp;&lt;/div&gt;
     &lt;/div&gt;
@@ -1670,15 +1670,15 @@
       <h2>Simple card</h2>
       <hr>
       <section data-card>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
       </section>
       <pre><code class="language-html">&lt;section data-card&gt;
-    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+    &lt;section&gt;Lorem ipsum ...&lt;/section&gt;
 &lt;/section&gt;</code></pre>
       <h2>Card with footer</h2>
       <hr>
       <section data-card>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
         <footer>
           <nav>
             <button data-button="primary">Get started</button>
@@ -1686,7 +1686,7 @@
         </footer>
       </section>
       <pre><code class="language-html">&lt;section data-card&gt;
-    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+    &lt;section&gt;Lorem ipsum ...&lt;/section&gt;
     &lt;footer&gt;
         &lt;nav&gt;
             &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
@@ -1702,7 +1702,7 @@
             <button data-fab="inline mini"><i class="material-icons">share</i></button>
           </nav>
         </header>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
         <footer>
           <nav>
             <button data-button="primary">Get started</button>
@@ -1716,7 +1716,7 @@
             &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
         &lt;/nav&gt;
     &lt;/header&gt;
-    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+    &lt;section&gt;Lorem ipsum ...&lt;/section&gt;
     &lt;footer&gt;
         &lt;nav&gt;
             &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
@@ -1726,15 +1726,15 @@
       <h2>Card with media</h2>
       <hr>
       <section data-card>
-        <div data-card-media style="background-image: url(./img.jpeg)">
+        <section data-card-media style="background-image: url(./img.jpeg)">
           <header>
             <h2>Title</h2>
             <nav>
               <button data-fab="inline mini"><i class="material-icons">share</i></button>
             </nav>
           </header>
-        </div>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        </section>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
         <footer>
           <nav>
             <button data-button="primary">Get started</button>
@@ -1750,7 +1750,7 @@
             &lt;/nav&gt;
         &lt;/header&gt;
     &lt;/section&gt;
-    &lt;div&gt;Lorem ipsum...&lt;/section&gt;
+    &lt;section&gt;Lorem ipsum...&lt;/section&gt;
     &lt;footer&gt;
         &lt;nav&gt;
             &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
@@ -1759,16 +1759,16 @@
 &lt;/section&gt;</code></pre>
       <h2>Card squared</h2>
       <hr>
-      <div data-card="squared">
-        <div data-card-media style="background-image: url(./img.jpeg)">
+      <section data-card="squared">
+        <section data-card-media style="background-image: url(./img.jpeg)">
           <header>
             <h2>Title</h2>
             <nav>
               <button data-fab="inline mini"><i class="material-icons">share</i></button>
             </nav>
           </header>
-        </div>
-      </div>
+        </section>
+      </section>
       <pre><code class="language-html">&lt;section data-card=&quot;squared&quot; style=&quot;background-image: url(http://lorempixel.com/480/480/abstract/)&quot;&gt;
     &lt;section data-card-media&gt;
         &lt;header&gt;
@@ -1781,17 +1781,17 @@
 &lt;/section&gt;</code></pre>
       <h2>Card squared with text instead of media</h2>
       <hr>
-      <div data-card="squared">
-        <div data-card-media>
+      <section data-card="squared">
+        <section data-card-media>
           <header>
             <h2>Title</h2>
             <nav>
               <button data-fab="inline mini"><i class="material-icons">share</i></button>
             </nav>
           </header>
-          <div data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</div>
-        </div>
-      </div>
+          <section data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</section>
+        </section>
+      </section>
       <pre><code class="language-html">&lt;section data-card=&quot;squared&quot;&gt;
     &lt;section data-card-media&gt;
         &lt;header&gt;
@@ -1800,7 +1800,7 @@
                 &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
             &lt;/nav&gt;
         &lt;/header&gt;
-        &lt;div data-background=&quot;primary&quot;&gt;
+        &lt;section data-background=&quot;primary&quot;&gt;
             Featured event: &lt;br&gt; May 24, 2016 &lt;br&gt; 7-11pm
         &lt;/section&gt;
     &lt;/section&gt;
@@ -1808,20 +1808,20 @@
 </code></pre>
       <h2>Full width card</h2>
       <hr>
-      <div data-card="full-width">
+      <section data-card="full-width">
         <header>
           <h2>Title</h2>
           <nav>
             <button data-fab="inline mini"><i class="material-icons">share</i></button>
           </nav>
         </header>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
         <footer>
           <nav>
             <button data-button="primary">Get started</button>
           </nav>
         </footer>
-      </div>
+      </section>
       <pre><code class="language-html">&lt;section data-card=&quot;full-width&quot;&gt;
     &lt;header&gt;
         &lt;h2&gt;Title&lt;/h2&gt;
@@ -1829,7 +1829,7 @@
             &lt;button data-fab=&quot;inline mini&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;share&lt;/i&gt;&lt;/button&gt;
         &lt;/nav&gt;
     &lt;/header&gt;
-    &lt;div&gt;Lorem ipsum ...&lt;/section&gt;
+    &lt;section&gt;Lorem ipsum ...&lt;/section&gt;
     &lt;footer&gt;
         &lt;nav&gt;
             &lt;button data-button=&quot;primary&quot;&gt;Get started&lt;/button&gt;
@@ -1850,7 +1850,7 @@
               <button data-fab="inline mini"><i class="material-icons">share</i></button>
             </nav>
           </header>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+          <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
           <footer>
             <button data-button="primary">Get started</button>
           </footer>
@@ -1858,15 +1858,15 @@
         <input id="dialog-2" type="checkbox" data-dialog-trigger>
         <label data-button for="dialog-2"><span>dialog-2</span></label>
         <dialog data-card>
-          <div data-card-media>
+          <section data-card-media>
             <header>
               <h2>Title</h2>
               <nav>
                 <button data-fab="inline mini"><i class="material-icons">share</i></button>
               </nav>
             </header><img src="./img.jpeg">
-          </div>
-          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</div>
+          </section>
+          <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia...</section>
           <footer>
             <button data-button="primary">Get started</button>
           </footer>
@@ -1874,27 +1874,27 @@
         <input id="dialog-3" type="checkbox" data-dialog-trigger>
         <label data-button for="dialog-3"><span>dialog-3</span></label>
         <dialog data-card="squared">
-          <div data-card-media>
+          <section data-card-media>
             <header>
               <h2>Title</h2>
               <nav>
                 <button data-fab="inline mini"><i class="material-icons">share</i></button>
               </nav>
             </header><img src="./img.jpeg">
-          </div>
+          </section>
         </dialog>
         <input id="dialog-4" type="checkbox" data-dialog-trigger>
         <label data-button for="dialog-4"><span>dialog-4</span></label>
         <dialog data-card="squared">
-          <div data-card-media>
+          <section data-card-media>
             <header>
               <h2>Title</h2>
               <nav>
                 <button data-fab="inline mini"><i class="material-icons">share</i></button>
               </nav>
             </header>
-            <div data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</div>
-          </div>
+            <section data-background="primary">Feautred event: <br> May 24, 2016 <br> 7-11pm</section>
+          </section>
         </dialog>
       </div>
     </article>
@@ -1904,9 +1904,9 @@
       <h2>Simple list with primary content</h2>
       <hr>
       <ul data-list>
-        <li><a href="#">Bhryan Cranston</a></li>
-        <li><a href="#">Aaron Paul</a></li>
-        <li><a href="#">Bob Odenkirk</a></li>
+        <li><a tabindex="-1">Bhryan Cranston</a></li>
+        <li><a tabindex="-1">Aaron Paul</a></li>
+        <li><a tabindex="-1">Bob Odenkirk</a></li>
       </ul>
       <pre><code class="language-html">&lt;ul data-list&gt;
     &lt;li&gt;
@@ -1916,9 +1916,9 @@
       <h2>List with primary and secondary content</h2>
       <hr>
       <ul data-list>
-        <li><a href#>Bhryan Cranston</a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#>Aaron Paul</a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#>Bob Odenkirk</a><a href#><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1">Bhryan Cranston</a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1">Aaron Paul</a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1">Bob Odenkirk</a><a tabindex="-1"><i class="material-icons">star</i></a></li>
         <pre><code class="language-html">&lt;ul data-list&gt;
     &lt;li&gt;
           &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
@@ -1931,9 +1931,9 @@
       <h2>Simple list with primary content and icon</h2>
       <hr>
       <ul data-list>
-        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a></li>
-        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul</a></li>
-        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="primary">person</i>Aaron Paul</a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a></li>
       </ul>
       <pre><code class="language-html">&lt;ul data-list&gt;
     &lt;li&gt;
@@ -1946,9 +1946,9 @@
       <h2>List with primary content and icon and secondary content</h2>
       <hr>
       <ul data-list>
-        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul</a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a><a href#><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="default">person</i>Bhryan Cranston</a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="primary">person</i>Aaron Paul</a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="success">person</i>Bob Odenkirk</a><a tabindex="-1"><i class="material-icons">star</i></a></li>
         <pre><code class="language-html">&lt;ul data-list&gt;
     &lt;li&gt;
           &lt;a href=&quot;#&quot;&gt;
@@ -1964,15 +1964,15 @@
       <h2>Two line list</h2>
       <hr>
       <ul data-list="two-line">
-        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston<small>
+        <li><a tabindex="-1"><i class="material-icons" data-background="default">person</i>Bhryan Cranston<small>
               Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
-              for playing Hal in Malcom in the Middle.</small></a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
+              for playing Hal in Malcom in the Middle.</small></a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
               Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-              the &quot;Need For Speed&quot; Movie.</small></a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
+              the &quot;Need For Speed&quot; Movie.</small></a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
               Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href#><i class="material-icons">star</i></a></li>
+              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a tabindex="-1"><i class="material-icons">star</i></a></li>
         <pre><code class="language-html">&lt;ul data-list=&quot;two-line&quot;&gt;
     &lt;li&gt;
           &lt;a href=&quot;#&quot;&gt;
@@ -1991,15 +1991,15 @@
       <h2>Three line list</h2>
       <hr>
       <ul data-list="three-line">
-        <li><a href#><i class="material-icons" data-background="default">person</i>Bhryan Cranston<small>
+        <li><a tabindex="-1"><i class="material-icons" data-background="default">person</i>Bhryan Cranston<small>
               Bhryan Cranston played the role of Walter in hreaking Bad. He is also known
-              for playing Hal in Malcom in the Middle.</small></a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
+              for playing Hal in Malcom in the Middle.</small></a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="primary">person</i>Aaron Paul<small>
               Aaron Paul played the role of Jesse in hreaking Bad. He also featured in
-              the &quot;Need For Speed&quot; Movie.</small></a><a href#><i class="material-icons">star</i></a></li>
-        <li><a href#><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
+              the &quot;Need For Speed&quot; Movie.</small></a><a tabindex="-1"><i class="material-icons">star</i></a></li>
+        <li><a tabindex="-1"><i class="material-icons" data-background="success">person</i>Bob Odenkirk<small>
               Bob Odinkrik played the role of Saul in hreaking Bad. Due to public fondness for the
-              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a href#><i class="material-icons">star</i></a></li>
+              character, Bob stars in his own show now, called &quot;Better Call Saul&quot;.</small></a><a tabindex="-1"><i class="material-icons">star</i></a></li>
         <pre><code class="language-html">&lt;ul data-list=&quot;three-line&quot;&gt;
     &lt;li&gt;
           &lt;a href=&quot;#&quot;&gt;
@@ -2019,8 +2019,8 @@
     <article class="page" id="forms">
       <h1>Forms</h1>
       <hr>
-      <div data-card>
-        <div>
+      <section data-card>
+        <section>
           <div class="form-group">
             <input type="text" placeholder="Label text">
             <label>Label text</label>
@@ -2063,8 +2063,13 @@
             <label>Label text</label>
             <p class="help-block">This is a help-block</p>
           </div>
-        </div>
-      </div>
+          <div> 
+            <label>Label text</label>
+            <input type="text" placeholder="Label text">
+            <p class="help-block">This is a help-block</p>
+          </div>
+        </section>
+      </section>
       <pre><code class="language-html">&lt;div data-card&gt;
     &lt;div&gt;
         &lt;div class=&quot;form-group&quot;&gt;
@@ -2117,7 +2122,7 @@
       <hr>
       <div class="text-center">
         <div data-menu>
-          <button data-menu-trigger>Menu 1</button>
+          <button data-button="menu">Menu 1</button>
           <menu>
             <ul data-list>
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>
@@ -2127,7 +2132,7 @@
           </menu>
         </div>
         <div data-menu>
-          <button data-menu-trigger>Menu 2</button>
+          <button data-button="menu">Menu 2</button>
           <menu>
             <ul data-list="two-line">
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston<small>
@@ -2143,7 +2148,7 @@
           </menu>
         </div>
         <div data-menu>
-          <button data-menu-trigger>Menu 3</button>
+          <button data-button="menu">Menu 3</button>
           <menu>
             <ul data-list="three-line">
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston<small>
@@ -2159,7 +2164,7 @@
           </menu>
         </div>
         <div data-menu="right">
-          <button data-menu-trigger>Menu Right</button>
+          <button data-button="menu">Menu Right</button>
           <menu>
             <ul data-list>
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>
@@ -2167,7 +2172,7 @@
           </menu>
         </div>
         <div data-menu="top">
-          <button data-menu-trigger>Menu Top</button>
+          <button data-button="menu">Menu Top</button>
           <menu>
             <ul data-list>
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>
@@ -2175,7 +2180,7 @@
           </menu>
         </div>
         <div data-menu="top-right">
-          <button data-menu-trigger>Menu Top-Right</button>
+          <button data-button="menu">Menu Top-Right</button>
           <menu>
             <ul data-list>
               <li><a href="#"><i class="material-icons" data-background="default">person</i>hryan Cranston</a></li>

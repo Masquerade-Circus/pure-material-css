@@ -10,7 +10,6 @@ button,
     display: inline-block;
     font-size: 14rem;
     font-weight: 500;
-    text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
@@ -25,7 +24,7 @@ button,
         cursor: default;
 
 [data-button~="outline"]
-    border: 1.5rem solid;
+    border: 1rem solid;
 
 [data-button~="raised"],
 [data-button~="outline"]
@@ -54,7 +53,6 @@ button,
     left: auto;
     right: auto;
     bottom: auto;
-    elevation(2);
     vertical-align: middle;
 
 [data-fab~="mini"]
@@ -63,6 +61,6 @@ button,
     width: 30rem;
     min-width: 30rem;
     line-height: 30rem;
-    [class*="icon"]
+    >[class*="icon"]
         line-height: 30rem;
         font-size: 16rem;

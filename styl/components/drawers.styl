@@ -40,7 +40,7 @@
     left: auto;
     animation-name: slideOutRight;
 
-[data-drawer-button]:focus+[data-drawer],[data-drawer][open]
+[data-button*="drawer"]:focus+[data-drawer],[data-drawer][open]
     animation-name: draweropen;
     z-index: 1;
     &::before
@@ -50,6 +50,6 @@
     [data-drawer-content]
         animation-name: slideInLeft;
 
-[data-drawer-button]:focus+[data-drawer="right"],[data-drawer="right"][open]
+[data-button*="drawer"]:focus+[data-drawer="right"],[data-drawer="right"][open]
     [data-drawer-content]
         animation-name: slideInRight;

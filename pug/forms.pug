@@ -2,8 +2,8 @@ article.page#forms
 
     h1 Forms
     hr
-    div(data-card)
-        div
+    section(data-card)
+        section
             div.form-group
                 input(type="text" placeholder="Label text")
                 label Label text
@@ -34,6 +34,10 @@ article.page#forms
                     each val in [1,2,3,4,5]
                         option val
                 label Label text
+                p.help-block This is a help-block
+            div 
+                label Label text
+                input(type="text" placeholder="Label text")
                 p.help-block This is a help-block
     pre
         code.language-html.

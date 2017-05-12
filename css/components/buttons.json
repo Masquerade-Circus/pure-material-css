@@ -1,0 +1,163 @@
+{
+  "size": 1113,
+  "gzipSize": 493,
+  "humanizedSize": "1kB",
+  "humanizedGzipSize": "493B",
+  "rules": {
+    "total": 9,
+    "size": {
+      "graph": [
+        18,
+        2,
+        2,
+        1,
+        1,
+        9,
+        2,
+        7,
+        3
+      ],
+      "max": 18,
+      "average": 5
+    }
+  },
+  "selectors": {
+    "total": 16,
+    "type": 2,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 0,
+    "values": [
+      "[data-button]",
+      "[data-fab]",
+      "button",
+      "[data-fab]",
+      "[data-fab]>[class*=icon]",
+      "[data-button][disabled]",
+      "[data-fab][disabled]",
+      "button[disabled]",
+      "[data-button~=outline]",
+      "[data-button~=outline]",
+      "[data-button~=raised]",
+      "[data-fab]",
+      "[data-fab~=mini]",
+      "[data-fab~=mini]>[class*=icon]",
+      "[data-fab~=inline]",
+      "[data-fab~=mini]"
+    ],
+    "specificity": {
+      "max": 20,
+      "average": 12
+    }
+  },
+  "declarations": {
+    "total": 45,
+    "unique": 41,
+    "properties": {
+      "border": [
+        "none",
+        "1rem solid"
+      ],
+      "border-radius": [
+        "2rem",
+        "50%"
+      ],
+      "position": [
+        "relative",
+        "fixed",
+        "relative"
+      ],
+      "min-width": [
+        "64rem",
+        "30rem",
+        "30rem"
+      ],
+      "padding": [
+        "12rem 16rem",
+        "0"
+      ],
+      "line-height": [
+        "1",
+        "56rem",
+        "30rem"
+      ],
+      "display": [
+        "inline-block",
+        "inline-block"
+      ],
+      "font-size": [
+        "14rem",
+        "24rem",
+        "16rem"
+      ],
+      "font-weight": [
+        "500"
+      ],
+      "white-space": [
+        "nowrap"
+      ],
+      "overflow": [
+        "hidden",
+        "visible"
+      ],
+      "transition": [
+        "box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1)"
+      ],
+      "outline": [
+        "0"
+      ],
+      "cursor": [
+        "pointer",
+        "default"
+      ],
+      "text-decoration": [
+        "none"
+      ],
+      "text-align": [
+        "center"
+      ],
+      "vertical-align": [
+        "middle",
+        "middle"
+      ],
+      "text-transform": [
+        "uppercase"
+      ],
+      "opacity": [
+        ".8"
+      ],
+      "margin": [
+        "4rem"
+      ],
+      "height": [
+        "56rem",
+        "30rem"
+      ],
+      "width": [
+        "56rem",
+        "30rem"
+      ],
+      "right": [
+        "16rem",
+        "auto"
+      ],
+      "bottom": [
+        "16rem",
+        "auto"
+      ],
+      "top": [
+        "auto"
+      ],
+      "left": [
+        "auto"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

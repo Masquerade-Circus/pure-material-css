@@ -1,0 +1,124 @@
+{
+  "size": 626,
+  "gzipSize": 322,
+  "humanizedSize": "626B",
+  "humanizedGzipSize": "322B",
+  "rules": {
+    "total": 8,
+    "size": {
+      "graph": [
+        3,
+        1,
+        2,
+        1,
+        5,
+        7,
+        3,
+        1
+      ],
+      "max": 7,
+      "average": 2.875
+    }
+  },
+  "selectors": {
+    "total": 18,
+    "type": 18,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 2,
+    "pseudoElement": 0,
+    "values": [
+      "footer",
+      "header",
+      "footer>*",
+      "header>*",
+      "footer>[data-button]",
+      "header>[data-button]",
+      "footer>[data-button]:first-child",
+      "header>[data-button]:first-child",
+      "footer>h1",
+      "footer>h2",
+      "footer>h3",
+      "header>h1",
+      "header>h2",
+      "header>h3",
+      "nav",
+      "nav>[data-fab~=mini]",
+      "nav>a",
+      "nav>a[data-button]"
+    ],
+    "specificity": {
+      "max": 21,
+      "average": 5.888888888888889
+    }
+  },
+  "declarations": {
+    "total": 23,
+    "unique": 21,
+    "properties": {
+      "flexContainer": [
+        "row"
+      ],
+      "overflow": [
+        "visible",
+        "visible"
+      ],
+      "height": [
+        "56rem"
+      ],
+      "padding": [
+        "8rem",
+        "16rem",
+        "20rem 16rem"
+      ],
+      "flex": [
+        "0 0 auto",
+        "0 0 auto",
+        "1 1 auto"
+      ],
+      "margin-right": [
+        "-16rem",
+        "8rem"
+      ],
+      "margin": [
+        "0"
+      ],
+      "font-size": [
+        "16rem"
+      ],
+      "line-height": [
+        "1"
+      ],
+      "display": [
+        "flex"
+      ],
+      "flex-direction": [
+        "row"
+      ],
+      "align-items": [
+        "center"
+      ],
+      "flex-wrap": [
+        "nowrap"
+      ],
+      "justify-content": [
+        "flex-end"
+      ],
+      "margin-top": [
+        "6rem"
+      ],
+      "box-shadow": [
+        "none"
+      ],
+      "text-transform": [
+        "none"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

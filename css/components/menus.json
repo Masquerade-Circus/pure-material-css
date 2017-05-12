@@ -1,0 +1,109 @@
+{
+  "size": 546,
+  "gzipSize": 297,
+  "humanizedSize": "546B",
+  "humanizedGzipSize": "297B",
+  "rules": {
+    "total": 6,
+    "size": {
+      "graph": [
+        12,
+        2,
+        2,
+        2,
+        3,
+        4
+      ],
+      "max": 12,
+      "average": 4.166666666666667
+    }
+  },
+  "selectors": {
+    "total": 7,
+    "type": 6,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 1,
+    "pseudoElement": 0,
+    "values": [
+      "menu",
+      "[data-menu]",
+      "[data-menu=top] menu",
+      "[data-menu=right] menu",
+      "[data-menu=top-right] menu",
+      "[data-button*=menu]:focus+menu",
+      "menu[open]"
+    ],
+    "specificity": {
+      "max": 21,
+      "average": 10.857142857142858
+    }
+  },
+  "declarations": {
+    "total": 25,
+    "unique": 23,
+    "properties": {
+      "position": [
+        "absolute",
+        "relative"
+      ],
+      "z-index": [
+        "-1",
+        "8"
+      ],
+      "opacity": [
+        "0",
+        "1"
+      ],
+      "overflow": [
+        "hidden"
+      ],
+      "transition": [
+        "all .2s ease-in-out"
+      ],
+      "border-radius": [
+        "2rem"
+      ],
+      "list-style": [
+        "none"
+      ],
+      "margin": [
+        "0"
+      ],
+      "padding": [
+        "0"
+      ],
+      "min-width": [
+        "256rem"
+      ],
+      "transform": [
+        "scale(0)",
+        "scale(1)"
+      ],
+      "transform-origin": [
+        "top left",
+        "bottom left",
+        "top right",
+        "bottom right"
+      ],
+      "display": [
+        "inline-block",
+        "block"
+      ],
+      "top": [
+        "-200%",
+        "-200%"
+      ],
+      "right": [
+        "0",
+        "0"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

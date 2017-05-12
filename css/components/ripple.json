@@ -1,0 +1,103 @@
+{
+  "size": 621,
+  "gzipSize": 296,
+  "humanizedSize": "621B",
+  "humanizedGzipSize": "296B",
+  "rules": {
+    "total": 2,
+    "size": {
+      "graph": [
+        12,
+        3
+      ],
+      "max": 12,
+      "average": 7.5
+    }
+  },
+  "selectors": {
+    "total": 15,
+    "type": 6,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 10,
+    "pseudoElement": 15,
+    "values": [
+      "[data-button]:after",
+      "[data-fab]:after",
+      "[data-list]>li>a:after",
+      "[data-ripple]:after",
+      "button:after",
+      "[data-button]:active:after",
+      "[data-button]:focus:after",
+      "[data-fab]:active:after",
+      "[data-fab]:focus:after",
+      "[data-list]>li>a:active:after",
+      "[data-list]>li>a:focus:after",
+      "[data-ripple]:active:after",
+      "[data-ripple]:focus:after",
+      "button:active:after",
+      "button:focus:after"
+    ],
+    "specificity": {
+      "max": 23,
+      "average": 16.266666666666666
+    }
+  },
+  "declarations": {
+    "total": 15,
+    "unique": 15,
+    "properties": {
+      "content": [
+        "\" \""
+      ],
+      "display": [
+        "block"
+      ],
+      "position": [
+        "absolute"
+      ],
+      "top": [
+        "50%"
+      ],
+      "left": [
+        "50%"
+      ],
+      "width": [
+        "110%"
+      ],
+      "height": [
+        "0"
+      ],
+      "padding-bottom": [
+        "110%"
+      ],
+      "border-radius": [
+        "100%"
+      ],
+      "opacity": [
+        ".6"
+      ],
+      "transform": [
+        "scale(0) translate(-50%,-50%)"
+      ],
+      "transform-origin": [
+        "top left"
+      ],
+      "animation-fill-mode": [
+        "both"
+      ],
+      "animation": [
+        "ripple 1.2s"
+      ],
+      "animation-timing-function": [
+        "linear"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

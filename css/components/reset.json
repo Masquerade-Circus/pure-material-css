@@ -1,0 +1,95 @@
+{
+  "size": 310,
+  "gzipSize": 225,
+  "humanizedSize": "310B",
+  "humanizedGzipSize": "225B",
+  "rules": {
+    "total": 6,
+    "size": {
+      "graph": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "max": 3,
+      "average": 2
+    }
+  },
+  "selectors": {
+    "total": 16,
+    "type": 9,
+    "class": 1,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 2,
+    "values": [
+      "*",
+      ":after",
+      ":before",
+      "html",
+      "html",
+      ".inline-block",
+      "[class*=icon]",
+      "[data-button]",
+      "[data-fab]",
+      "a",
+      "button",
+      "small",
+      "body",
+      "a",
+      "img",
+      "small"
+    ],
+    "specificity": {
+      "max": 10,
+      "average": 3.1875
+    }
+  },
+  "declarations": {
+    "total": 12,
+    "unique": 12,
+    "properties": {
+      "box-sizing": [
+        "border-box"
+      ],
+      "font-size": [
+        "1px",
+        "16rem",
+        ".7em"
+      ],
+      "display": [
+        "inline-block"
+      ],
+      "transition": [
+        "all .3s linear"
+      ],
+      "line-height": [
+        "1.618"
+      ],
+      "outline": [
+        "0"
+      ],
+      "margin": [
+        "0"
+      ],
+      "text-decoration": [
+        "none"
+      ],
+      "opacity": [
+        ".6"
+      ],
+      "padding": [
+        "0 8rem"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

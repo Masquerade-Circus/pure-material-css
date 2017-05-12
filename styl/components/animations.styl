@@ -1,8 +1,6 @@
 @keyframes slideInLeft
     0%
         transform: translate(-100%, 0%);
-    0%
-        transform: translate(-100%, 0%);
     100%
         transform: translate(0%, 0%);
 .slideInLeft
@@ -14,15 +12,11 @@
         transform: translate(0%, 0%);
     100%
         transform: translate(-100%, 0%);
-    100%
-        transform: translate(-100%, 0%);
 .slideOutLeft
     animation-name: slideOutLeft;
 
 
 @keyframes slideInRight
-    0%
-        transform: translate(100%, 0%);
     0%
         transform: translate(100%, 0%);
     100%
@@ -34,8 +28,6 @@
 @keyframes slideOutRight
     0%
         transform: translate(0%, 0%);
-    100%
-        transform: translate(100%, 0%);
     100%
         transform: translate(100%, 0%);
 .slideOutLeft
@@ -56,17 +48,17 @@
 @keyframes ripple
     0%
         transform: scale(0) translate(-50%, -50%);
-    20%
-        transform: scale(1) translate(-50%, -50%);
+    30%
+        transform: scale(1.2) translate(-50%, -50%);
     100%
         opacity: 0;
-        transform: scale(1) translate(-50%, -50%);
+        transform: scale(1.5) translate(-50%, -50%);
 
 @keyframes drawerclose
     0%
         top: 0;
         z-index: 1;
-    99%
+    99.9%
         top: 0;
         z-index: 1;
     100%

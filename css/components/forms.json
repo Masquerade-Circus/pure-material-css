@@ -1,0 +1,194 @@
+{
+  "size": 1384,
+  "gzipSize": 512,
+  "humanizedSize": "1kB",
+  "humanizedGzipSize": "512B",
+  "rules": {
+    "total": 21,
+    "size": {
+      "graph": [
+        1,
+        3,
+        1,
+        2,
+        10,
+        5,
+        7,
+        3,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max": 10,
+      "average": 2.3333333333333335
+    }
+  },
+  "selectors": {
+    "total": 39,
+    "type": 27,
+    "class": 15,
+    "id": 0,
+    "pseudoClass": 2,
+    "pseudoElement": 10,
+    "values": [
+      "input",
+      "label",
+      "select",
+      "textarea",
+      ".help-block",
+      "label",
+      ".form-group",
+      "label",
+      "label",
+      "input",
+      "select",
+      "textarea",
+      "input~label",
+      "select~label",
+      "textarea~label",
+      "input~label:after",
+      "input~label:before",
+      "select~label:after",
+      "select~label:before",
+      "textarea~label:after",
+      "textarea~label:before",
+      "input~label:after",
+      "select~label:after",
+      "textarea~label:after",
+      ".help-block",
+      ".form-group",
+      ".form-group>*",
+      ".form-group>::-webkit-input-placeholder",
+      ".form-group>:-moz-placeholder",
+      ".form-group>::-moz-placeholder",
+      ".form-group>:-ms-input-placeholder",
+      ".form-group>:placeholder-shown~label",
+      ".form-group>:focus~label",
+      ".form-group>:focus~label:after",
+      ".form-group>.help-block",
+      ".form-group>textarea",
+      ".form-group>textarea~label",
+      "[type=checkbox]",
+      "[type=radio]"
+    ],
+    "specificity": {
+      "max": 22,
+      "average": 7.230769230769231
+    }
+  },
+  "declarations": {
+    "total": 49,
+    "unique": 36,
+    "properties": {
+      "transition": [
+        "all .3s ease-in-out",
+        "all .3s ease-in-out"
+      ],
+      "font-size": [
+        "13rem",
+        "16rem",
+        "13rem"
+      ],
+      "opacity": [
+        ".6",
+        "0",
+        "0",
+        "0"
+      ],
+      "line-height": [
+        "13rem",
+        "32rem"
+      ],
+      "position": [
+        "relative",
+        "relative",
+        "absolute",
+        "absolute",
+        "absolute"
+      ],
+      "z-index": [
+        "0",
+        "1"
+      ],
+      "padding": [
+        "0",
+        "8rem",
+        "24rem 8rem 0",
+        "0"
+      ],
+      "outline": [
+        "0"
+      ],
+      "height": [
+        "32rem",
+        "48rem",
+        "2rem",
+        "auto",
+        "100%"
+      ],
+      "border-width": [
+        "0 0 2rem"
+      ],
+      "border-radius": [
+        "0"
+      ],
+      "border-bottom-style": [
+        "solid"
+      ],
+      "width": [
+        "100%",
+        "100%",
+        "100%",
+        "0",
+        "100%",
+        "100%",
+        "auto"
+      ],
+      "top": [
+        "0"
+      ],
+      "left": [
+        "0",
+        "0",
+        "50%"
+      ],
+      "content": [
+        "\" \""
+      ],
+      "bottom": [
+        "0"
+      ],
+      "transform": [
+        "translate(-50%)"
+      ],
+      "margin": [
+        "2rem 0 0"
+      ],
+      "margin-bottom": [
+        "22rem"
+      ],
+      "padding-top": [
+        "16rem"
+      ],
+      "border-bottom": [
+        "0"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "size": 105,
+  "gzipSize": 106,
+  "humanizedSize": "105B",
+  "humanizedGzipSize": "106B",
+  "rules": {
+    "total": 2,
+    "size": {
+      "graph": [
+        4,
+        3
+      ],
+      "max": 4,
+      "average": 3.5
+    }
+  },
+  "selectors": {
+    "total": 3,
+    "type": 3,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 2,
+    "values": [
+      "hr",
+      "hr:after",
+      "hr:before"
+    ],
+    "specificity": {
+      "max": 2,
+      "average": 1.6666666666666667
+    }
+  },
+  "declarations": {
+    "total": 7,
+    "unique": 6,
+    "properties": {
+      "margin": [
+        "8rem 0"
+      ],
+      "border": [
+        "0"
+      ],
+      "height": [
+        "1rem"
+      ],
+      "clear": [
+        "both",
+        "both"
+      ],
+      "content": [
+        "\" \""
+      ],
+      "display": [
+        "block"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

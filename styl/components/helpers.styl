@@ -1,60 +1,7 @@
-/*** Helper classes Start ***/
-for size in 0 4 8 16 24 32 40
-    /* Padding */
-    .padding-{size}
-        padding: size rem;
-    .padding-left-{size}
-        padding-left: size rem;
-    .padding-right-{size}
-        padding-right: size rem;
-    .padding-top-{size}
-        padding-top: size rem;
-    .padding-bottom-{size}
-        padding-bottom: size rem;
-
-    /* margin */
-    .margin-{size}
-        margin: size rem;
-    .margin-left-{size}
-        margin-left: size rem;
-    .margin-right-{size}
-        margin-right: size rem;
-    .margin-top-{size}
-        margin-top: size rem;
-    .margin-bottom-{size}
-        margin-bottom: size rem;
-
-for size in 0 4 8 10 12 14 16 18 20 24 32 40 48 56 64 72 80
-    /* font-size */
-    .font-{size}
-        font-size: size rem;
-
-/* align */
-for val in left right center justify
-    .text-{val}
-        text-align: val;
-
 flexContainer(direction)
     display: flex;
     flex-direction: direction;
     align-items: stretch;
     overflow: hidden;
-
-.inline-block
-    position: relative;
-    display: inline-block;
-    top:auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    box-shadow: none;
-    vertical-align: middle;
-
-for val in relative static absolute fixed
-    .{val}
-        position: val;
-
-.scrollable
-    max-height: 360rem;
 
 /*** Helper classes End ***/

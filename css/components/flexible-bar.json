@@ -1,0 +1,149 @@
+{
+  "size": 1061,
+  "gzipSize": 387,
+  "humanizedSize": "1kB",
+  "humanizedGzipSize": "387B",
+  "rules": {
+    "total": 11,
+    "size": {
+      "graph": [
+        6,
+        6,
+        10,
+        1,
+        4,
+        1,
+        2,
+        1,
+        5,
+        3,
+        1
+      ],
+      "max": 10,
+      "average": 3.6363636363636362
+    }
+  },
+  "selectors": {
+    "total": 13,
+    "type": 10,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 0,
+    "values": [
+      "[data-flexible-bar]",
+      "[data-flexible-bar]>[data-flexible-bar-media]",
+      "[data-flexible-bar]>[data-flexible-bar-media]>header",
+      "[data-flexible-bar]>[data-flexible-bar-media]>header~div",
+      "[data-flexible-bar]>[data-flexible-bar-media]>div",
+      "[data-flexible-bar]>[data-flexible-bar-media]>div>*",
+      "[data-flexible-bar]>header",
+      "[data-flexible-bar]>header>h1",
+      "[data-flexible-bar]>header>h2",
+      "[data-flexible-bar]>header>h3",
+      "[data-flexible-bar]>div",
+      "[data-flexible-bar]>footer",
+      "[data-flexible-bar][data-flexible-bar-squared]>[data-flexible-bar-media]"
+    ],
+    "specificity": {
+      "max": 30,
+      "average": 16.46153846153846
+    }
+  },
+  "declarations": {
+    "total": 40,
+    "unique": 38,
+    "properties": {
+      "flexContainer": [
+        "column"
+      ],
+      "text-align": [
+        "left"
+      ],
+      "border-radius": [
+        "2rem"
+      ],
+      "width": [
+        "100%"
+      ],
+      "margin": [
+        "0 auto",
+        "0",
+        "-1rem",
+        "auto",
+        "0"
+      ],
+      "line-height": [
+        "1.15"
+      ],
+      "order": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "flex": [
+        "1 0 auto",
+        "0 0 auto",
+        "1 1 auto",
+        "0 1 auto"
+      ],
+      "position": [
+        "relative",
+        "absolute"
+      ],
+      "overflow": [
+        "hidden",
+        "auto"
+      ],
+      "border": [
+        "0",
+        "0"
+      ],
+      "padding": [
+        "0",
+        "32rem 16rem 92rem",
+        "32rem 25% 32rem 16rem",
+        "16rem",
+        "8rem 0"
+      ],
+      "bottom": [
+        "0"
+      ],
+      "left": [
+        "0"
+      ],
+      "right": [
+        "0"
+      ],
+      "z-index": [
+        "1",
+        "0"
+      ],
+      "top": [
+        "auto"
+      ],
+      "height": [
+        "60rem"
+      ],
+      "text-shadow": [
+        "none"
+      ],
+      "font-size": [
+        "24px"
+      ],
+      "font-weight": [
+        "400"
+      ],
+      "padding-bottom": [
+        "100%"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

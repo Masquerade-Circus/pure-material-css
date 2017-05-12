@@ -1,0 +1,75 @@
+{
+  "size": 237,
+  "gzipSize": 186,
+  "humanizedSize": "237B",
+  "humanizedGzipSize": "186B",
+  "rules": {
+    "total": 2,
+    "size": {
+      "graph": [
+        9,
+        2
+      ],
+      "max": 9,
+      "average": 5.5
+    }
+  },
+  "selectors": {
+    "total": 3,
+    "type": 3,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 0,
+    "values": [
+      "code",
+      "pre",
+      "pre>code"
+    ],
+    "specificity": {
+      "max": 2,
+      "average": 1.3333333333333333
+    }
+  },
+  "declarations": {
+    "total": 11,
+    "unique": 11,
+    "properties": {
+      "text-align": [
+        "left"
+      ],
+      "border-radius": [
+        "4rem"
+      ],
+      "padding": [
+        "16rem",
+        "0"
+      ],
+      "margin": [
+        "16rem",
+        "0"
+      ],
+      "overflow": [
+        "auto"
+      ],
+      "font-family": [
+        "Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace"
+      ],
+      "clear": [
+        "both"
+      ],
+      "display": [
+        "block"
+      ],
+      "font-size": [
+        "13rem"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

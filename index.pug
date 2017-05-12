@@ -12,7 +12,7 @@ html(lang="en")
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css" />
     body
         header
-            button(data-button, data-drawer-button)
+            button(data-button="drawer")
                 span.material-icons menu
             nav(data-drawer="left")
                 div(data-drawer-content)
@@ -29,7 +29,6 @@ html(lang="en")
                                     else
                                         i.material-icons(data-background=item[2]) #{item[3]}
                                     | #{item[1]}
-
             h1 PURE MATERIAL
             nav
                 a(href="#about", data-button) About

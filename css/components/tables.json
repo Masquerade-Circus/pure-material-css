@@ -1,0 +1,79 @@
+{
+  "size": 216,
+  "gzipSize": 167,
+  "humanizedSize": "216B",
+  "humanizedGzipSize": "167B",
+  "rules": {
+    "total": 4,
+    "size": {
+      "graph": [
+        7,
+        1,
+        2,
+        1
+      ],
+      "max": 7,
+      "average": 2.75
+    }
+  },
+  "selectors": {
+    "total": 5,
+    "type": 5,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 0,
+    "values": [
+      "table",
+      "thead",
+      "td",
+      "th",
+      "th"
+    ],
+    "specificity": {
+      "max": 1,
+      "average": 1
+    }
+  },
+  "declarations": {
+    "total": 11,
+    "unique": 11,
+    "properties": {
+      "position": [
+        "relative"
+      ],
+      "border-collapse": [
+        "collapse"
+      ],
+      "white-space": [
+        "nowrap"
+      ],
+      "font-size": [
+        "13rem",
+        "12rem"
+      ],
+      "border-radius": [
+        "2rem"
+      ],
+      "width": [
+        "100%"
+      ],
+      "text-align": [
+        "right",
+        "center"
+      ],
+      "padding": [
+        "16rem 24rem"
+      ],
+      "font-weight": [
+        "400"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "size": 1340,
+  "gzipSize": 446,
+  "humanizedSize": "1kB",
+  "humanizedGzipSize": "446B",
+  "rules": {
+    "total": 12,
+    "size": {
+      "graph": [
+        7,
+        11,
+        9,
+        3,
+        3,
+        2,
+        1,
+        3,
+        2,
+        1,
+        9,
+        1
+      ],
+      "max": 11,
+      "average": 4.333333333333333
+    }
+  },
+  "selectors": {
+    "total": 16,
+    "type": 11,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 0,
+    "values": [
+      "[data-card]",
+      "[data-card]>[data-card-media]",
+      "[data-card]>[data-card-media]>header",
+      "[data-card]>[data-card-media]>header>h1",
+      "[data-card]>[data-card-media]>header>h2",
+      "[data-card]>[data-card-media]>header>h3",
+      "[data-card]>[data-card-media]>header nav",
+      "[data-card~=squared]",
+      "[data-card~=squared]>[data-card-media]",
+      "[data-card~=squared]>[data-card-media]>header",
+      "[data-card~=squared]>[data-card-media]>header>h1",
+      "[data-card~=squared]>[data-card-media]>header>h2",
+      "[data-card~=squared]>[data-card-media]>header>h3",
+      "[data-card~=squared]>[data-card-media]>header nav",
+      "[data-card~=squared]>[data-card-media]>section",
+      "[data-card~=full-width]"
+    ],
+    "specificity": {
+      "max": 22,
+      "average": 19.3125
+    }
+  },
+  "declarations": {
+    "total": 52,
+    "unique": 40,
+    "properties": {
+      "flexContainer": [
+        "column"
+      ],
+      "text-align": [
+        "left"
+      ],
+      "border-radius": [
+        "2rem"
+      ],
+      "max-width": [
+        "360rem",
+        "256rem",
+        "100%"
+      ],
+      "margin": [
+        "0 auto 16rem",
+        "0",
+        "-1rem"
+      ],
+      "overflow": [
+        "visible",
+        "hidden"
+      ],
+      "padding": [
+        "0",
+        "0 0 56%"
+      ],
+      "order": [
+        "0"
+      ],
+      "flex": [
+        "1 1 auto"
+      ],
+      "position": [
+        "relative",
+        "absolute",
+        "absolute",
+        "absolute",
+        "static",
+        "static",
+        "absolute"
+      ],
+      "width": [
+        "100%"
+      ],
+      "height": [
+        "0",
+        "auto",
+        "60rem"
+      ],
+      "border": [
+        "0",
+        "0"
+      ],
+      "background-size": [
+        "cover"
+      ],
+      "background-repeat": [
+        "no-repeat"
+      ],
+      "background-position": [
+        "50% 0"
+      ],
+      "bottom": [
+        "0",
+        "0",
+        "0"
+      ],
+      "top": [
+        "0",
+        "0",
+        "auto",
+        "0"
+      ],
+      "left": [
+        "0",
+        "0"
+      ],
+      "right": [
+        "0",
+        "0",
+        "0"
+      ],
+      "z-index": [
+        "1"
+      ],
+      "font-size": [
+        "24rem",
+        "16rem",
+        "24px"
+      ],
+      "min-width": [
+        "256rem"
+      ],
+      "padding-bottom": [
+        "100%"
+      ],
+      "text-shadow": [
+        "none"
+      ],
+      "padding-right": [
+        "25%"
+      ],
+      "font-weight": [
+        "400"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

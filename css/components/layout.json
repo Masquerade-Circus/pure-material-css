@@ -1,0 +1,138 @@
+{
+  "size": 590,
+  "gzipSize": 352,
+  "humanizedSize": "590B",
+  "humanizedGzipSize": "352B",
+  "rules": {
+    "total": 12,
+    "size": {
+      "graph": [
+        1,
+        1,
+        3,
+        3,
+        1,
+        4,
+        3,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "max": 4,
+      "average": 1.9166666666666667
+    }
+  },
+  "selectors": {
+    "total": 30,
+    "type": 23,
+    "class": 3,
+    "id": 0,
+    "pseudoClass": 1,
+    "pseudoElement": 6,
+    "values": [
+      "*",
+      ":after",
+      ":before",
+      "body",
+      "html",
+      "body",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "body",
+      "html",
+      "body",
+      ".tab-bar",
+      "[data-flexible-bar]",
+      "footer",
+      "header",
+      "article",
+      "section",
+      "article:after",
+      "article:before",
+      "section:after",
+      "section:before",
+      "section",
+      "section>[data-list]",
+      "body>footer",
+      "footer",
+      ".page",
+      ".page:target"
+    ],
+    "specificity": {
+      "max": 20,
+      "average": 3
+    }
+  },
+  "declarations": {
+    "total": 23,
+    "unique": 22,
+    "properties": {
+      "font-family": [
+        "Roboto,sans-serif"
+      ],
+      "font-weight": [
+        "300"
+      ],
+      "height": [
+        "100%",
+        "100%"
+      ],
+      "margin": [
+        "0",
+        "-16rem"
+      ],
+      "overflow": [
+        "hidden",
+        "auto"
+      ],
+      "flexContainer": [
+        "column"
+      ],
+      "justify-content": [
+        "space-between"
+      ],
+      "flex": [
+        "0 0 auto",
+        "1 1 auto"
+      ],
+      "padding": [
+        "16rem"
+      ],
+      "overflow-x": [
+        "auto"
+      ],
+      "z-index": [
+        "0",
+        "1"
+      ],
+      "clear": [
+        "both"
+      ],
+      "content": [
+        "\" \""
+      ],
+      "display": [
+        "block",
+        "none",
+        "initial"
+      ],
+      "font-size": [
+        "14rem"
+      ],
+      "order": [
+        "9999"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

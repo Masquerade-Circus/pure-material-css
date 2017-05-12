@@ -1,0 +1,95 @@
+{
+  "size": 468,
+  "gzipSize": 251,
+  "humanizedSize": "468B",
+  "humanizedGzipSize": "251B",
+  "rules": {
+    "total": 5,
+    "size": {
+      "graph": [
+        4,
+        8,
+        1,
+        2,
+        3
+      ],
+      "max": 8,
+      "average": 3.6
+    }
+  },
+  "selectors": {
+    "total": 7,
+    "type": 2,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 4,
+    "values": [
+      "[data-progress]",
+      "[data-progress]:after",
+      "[data-progress]:before",
+      "[data-progress]>div",
+      "[data-progress]:after",
+      "[data-progress]>div",
+      "[data-progress~=indeterminated]:after"
+    ],
+    "specificity": {
+      "max": 11,
+      "average": 10.857142857142858
+    }
+  },
+  "declarations": {
+    "total": 18,
+    "unique": 16,
+    "properties": {
+      "height": [
+        "4rem",
+        "100%"
+      ],
+      "overflow": [
+        "hidden"
+      ],
+      "width": [
+        "100%",
+        "100%",
+        "0"
+      ],
+      "position": [
+        "relative",
+        "absolute",
+        "relative"
+      ],
+      "transition": [
+        "all .3s ease-in-out"
+      ],
+      "content": [
+        "\" \""
+      ],
+      "bottom": [
+        "0"
+      ],
+      "left": [
+        "0"
+      ],
+      "z-index": [
+        "0",
+        "1"
+      ],
+      "animation-fill-mode": [
+        "both"
+      ],
+      "animation": [
+        "progressIndeterminate 1.6s infinite"
+      ],
+      "animation-timing-function": [
+        "linear"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

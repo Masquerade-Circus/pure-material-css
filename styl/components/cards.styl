@@ -6,21 +6,7 @@
     margin: 0 auto;
     margin-bottom: 16rem;
     overflow: visible;
-    &>header
-        order: 1;
-        flex: 0 0 auto;
-    &>div
-        order: 2;
-        flex: 1 1 auto;
-        padding: 16rem;
-        overflow: auto;
-        z-index: 0;
-        font-size: 14rem;
-        &>[data-list]
-            margin: -16rem;
-    &>footer
-        order: 3;
-        flex: 0 1 auto;
+    padding: 0;
     &>[data-card-media]
         order: 0;
         flex: 1 1 auto;
@@ -43,7 +29,7 @@
             border: 0;
             height: auto;
             z-index: 1;
-            > h1, > h2, > h3, > h4, > h5, > h6
+            > h1, > h2, > h3
                 position: absolute;
                 bottom:0;
                 font-size: 24rem;
@@ -51,8 +37,6 @@
                 position: absolute;
                 top:0;
                 right: 0;
-        &>div
-            padding: 16rem;
 
 [data-card~="squared"]
     max-width: 256rem;
@@ -63,12 +47,12 @@
             top: auto;
             height: 60rem;
             text-shadow: none;
-            > h1, > h2, > h3, > h4, > h5, > h6
+            > h1, > h2, > h3
                 position: static;
                 font-size: 16rem;
             nav
                 position: static;
-        &>div
+        &>section
             position: absolute;
             top: 0;
             left: 0;

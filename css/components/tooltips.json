@@ -1,0 +1,110 @@
+{
+  "size": 734,
+  "gzipSize": 309,
+  "humanizedSize": "734B",
+  "humanizedGzipSize": "309B",
+  "rules": {
+    "total": 7,
+    "size": {
+      "graph": [
+        1,
+        13,
+        3,
+        2,
+        3,
+        4,
+        1
+      ],
+      "max": 13,
+      "average": 3.857142857142857
+    }
+  },
+  "selectors": {
+    "total": 7,
+    "type": 0,
+    "class": 0,
+    "id": 0,
+    "pseudoClass": 2,
+    "pseudoElement": 6,
+    "values": [
+      "[data-tooltip]",
+      "[data-tooltip]:after",
+      "[data-tooltip]:hover:after",
+      "[data-tooltip-position=top]:after",
+      "[data-tooltip-position=left]:after",
+      "[data-tooltip-position=right]:after",
+      "[data-tooltip-position=right]:hover:after"
+    ],
+    "specificity": {
+      "max": 21,
+      "average": 13.714285714285714
+    }
+  },
+  "declarations": {
+    "total": 27,
+    "unique": 26,
+    "properties": {
+      "position": [
+        "relative",
+        "absolute"
+      ],
+      "content": [
+        "attr(data-tooltip)"
+      ],
+      "border-radius": [
+        "8rem"
+      ],
+      "font-size": [
+        "12rem"
+      ],
+      "line-height": [
+        "22rem"
+      ],
+      "font-weight": [
+        "700"
+      ],
+      "left": [
+        "50%",
+        "-200%",
+        "100%"
+      ],
+      "top": [
+        "100%",
+        "-100%",
+        "0",
+        "0"
+      ],
+      "transform": [
+        "translate(-50%) scale(0)",
+        "translate(-50%) scale(1)",
+        "translate(0) scale(0)",
+        "translate(0) scale(1)"
+      ],
+      "font-family": [
+        "Roboto,sans-serif"
+      ],
+      "opacity": [
+        "0",
+        "1"
+      ],
+      "padding": [
+        "0 6rem"
+      ],
+      "transform-origin": [
+        "top center",
+        "bottom center",
+        "right center",
+        "left center"
+      ],
+      "display": [
+        "block"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "size": 357,
+  "gzipSize": 134,
+  "humanizedSize": "357B",
+  "humanizedGzipSize": "134B",
+  "rules": {
+    "total": 10,
+    "size": {
+      "graph": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max": 1,
+      "average": 1
+    }
+  },
+  "selectors": {
+    "total": 10,
+    "type": 4,
+    "class": 2,
+    "id": 0,
+    "pseudoClass": 0,
+    "pseudoElement": 0,
+    "values": [
+      ".slideInLeft",
+      ".slideOutLeft",
+      "0%",
+      "to",
+      "0%",
+      "to",
+      "0%",
+      "to",
+      "0%",
+      "to"
+    ],
+    "specificity": {
+      "max": 10,
+      "average": 2.8
+    }
+  },
+  "declarations": {
+    "total": 10,
+    "unique": 4,
+    "properties": {
+      "animation-name": [
+        "a",
+        "b"
+      ],
+      "transform": [
+        "translate(-100%)",
+        "translate(0)",
+        "translate(-100%)",
+        "translate(0)",
+        "translate(0)",
+        "translate(-100%)",
+        "translate(0)",
+        "translate(-100%)"
+      ]
+    }
+  },
+  "mediaQueries": {
+    "total": 0,
+    "unique": 0,
+    "values": [],
+    "contents": []
+  }
+}
