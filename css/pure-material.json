@@ -1,10 +1,10 @@
 {
-  "size": 49149,
-  "gzipSize": 8676,
+  "size": 48808,
+  "gzipSize": 8646,
   "humanizedSize": "48kB",
   "humanizedGzipSize": "8kB",
   "rules": {
-    "total": 677,
+    "total": 676,
     "size": {
       "graph": [
         1,
@@ -557,6 +557,7 @@
         1,
         1,
         9,
+        1,
         6,
         5,
         11,
@@ -564,7 +565,6 @@
         4,
         1,
         2,
-        1,
         5,
         3,
         5,
@@ -578,7 +578,7 @@
         3,
         1,
         1,
-        4,
+        3,
         1,
         4,
         1,
@@ -587,7 +587,6 @@
         2,
         1,
         2,
-        1,
         1,
         1,
         1,
@@ -686,12 +685,12 @@
         1
       ],
       "max": 18,
-      "average": 1.9039881831610044
+      "average": 1.9038461538461537
     }
   },
   "selectors": {
-    "total": 1025,
-    "type": 276,
+    "total": 1027,
+    "type": 278,
     "class": 142,
     "id": 0,
     "pseudoClass": 163,
@@ -1577,6 +1576,12 @@
       "[type=checkbox]",
       "[type=radio]",
       "[data-flexible-bar]",
+      ".margin-0",
+      "[data-flexible-bar]>header>h1",
+      "[data-flexible-bar]>header>h2",
+      "[data-flexible-bar]>header>h3",
+      "body",
+      "html",
       "[data-flexible-bar]>[data-flexible-bar-media]",
       "[data-drawer]",
       "[data-drawer]:before",
@@ -1585,9 +1590,6 @@
       "[data-flexible-bar]>[data-flexible-bar-media]>div",
       "[data-flexible-bar]>[data-flexible-bar-media]>div>*",
       "[data-flexible-bar]>header",
-      "[data-flexible-bar]>header>h1",
-      "[data-flexible-bar]>header>h2",
-      "[data-flexible-bar]>header>h3",
       "[data-flexible-bar]>div",
       "[data-flexible-bar]>footer",
       "[data-drawer]",
@@ -1632,7 +1634,6 @@
       ".padding-right-0",
       ".padding-top-0",
       ".padding-bottom-0",
-      ".margin-0",
       ".margin-left-0",
       ".margin-right-0",
       ".margin-top-0",
@@ -1725,12 +1726,12 @@
     ],
     "specificity": {
       "max": 40,
-      "average": 10.962926829268293
+      "average": 10.94352482960078
     }
   },
   "declarations": {
-    "total": 1289,
-    "unique": 630,
+    "total": 1287,
+    "unique": 616,
     "properties": {
       "box-sizing": [
         "border-box"
@@ -1775,13 +1776,13 @@
         "0",
         "0",
         "1.6rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "color": [
         "#fff",
@@ -2619,26 +2620,26 @@
       "margin-left": [
         "-.8rem",
         "5.6rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "margin-right": [
         "-.8rem",
         "-1.6rem",
         ".8rem",
         "1.6rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "transition": [
         "all .3s ease-in-out",
@@ -2714,23 +2715,23 @@
         "1.3rem",
         "2.4rem",
         "1.4rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "10/10 rem",
-        "12/10 rem",
-        "14/10 rem",
-        "16/10 rem",
-        "18/10 rem",
-        "20/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem",
-        "48/10 rem",
-        "56/10 rem",
-        "64/10 rem",
-        "72/10 rem",
-        "80/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1rem",
+        "1.2rem",
+        "1.4rem",
+        "1.6rem",
+        "1.8rem",
+        "2rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem",
+        "4.8rem",
+        "5.6rem",
+        "6.4rem",
+        "7.2rem",
+        "8rem"
       ],
       "font-family": [
         "Roboto,Helvetica Neue,Calibri Light,sans-serif",
@@ -2774,18 +2775,16 @@
         ".2rem 0 0",
         "0 auto",
         "0",
+        "0",
         "-.1rem",
         "auto",
-        "0",
-        "0",
         "-1.6rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "text-decoration": [
         "none",
@@ -2926,13 +2925,13 @@
         "100%",
         "calc(100% + 1.2rem)",
         "100%",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "border-radius": [
         "100%",
@@ -3076,13 +3075,13 @@
         "-1rem",
         "-.2rem",
         ".4rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "list-style-type": [
         "none"
@@ -3120,13 +3119,13 @@
       ],
       "padding-right": [
         "25%",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "border-width": [
         "0 0 .2rem"
@@ -3136,23 +3135,23 @@
       ],
       "margin-bottom": [
         "2.2rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "padding-top": [
         "1.6rem",
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "-webkit-font-smoothing": [
         "antialiased"
@@ -3164,13 +3163,13 @@
         "auto"
       ],
       "padding-left": [
-        "0/10 rem",
-        "4/10 rem",
-        "8/10 rem",
-        "16/10 rem",
-        "24/10 rem",
-        "32/10 rem",
-        "40/10 rem"
+        "0",
+        ".4rem",
+        ".8rem",
+        "1.6rem",
+        "2.4rem",
+        "3.2rem",
+        "4rem"
       ],
       "max-height": [
         "36rem"
