@@ -1,8 +1,8 @@
 {
-  "size": 310,
-  "gzipSize": 225,
-  "humanizedSize": "310B",
-  "humanizedGzipSize": "225B",
+  "size": 313,
+  "gzipSize": 226,
+  "humanizedSize": "313B",
+  "humanizedGzipSize": "226B",
   "rules": {
     "total": 6,
     "size": {
@@ -56,8 +56,8 @@
         "border-box"
       ],
       "font-size": [
-        "1px",
-        "16rem",
+        "10px",
+        "1.6rem",
         ".7em"
       ],
       "display": [
@@ -82,7 +82,7 @@
         ".6"
       ],
       "padding": [
-        "0 8rem"
+        "0 .8rem"
       ]
     }
   },

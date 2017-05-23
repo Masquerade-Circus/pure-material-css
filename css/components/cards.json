@@ -1,8 +1,8 @@
 {
-  "size": 1340,
-  "gzipSize": 446,
+  "size": 1347,
+  "gzipSize": 444,
   "humanizedSize": "1kB",
-  "humanizedGzipSize": "446B",
+  "humanizedGzipSize": "444B",
   "rules": {
     "total": 12,
     "size": {
@@ -56,7 +56,7 @@
   },
   "declarations": {
     "total": 52,
-    "unique": 40,
+    "unique": 39,
     "properties": {
       "flexContainer": [
         "column"
@@ -65,17 +65,17 @@
         "left"
       ],
       "border-radius": [
-        "2rem"
+        ".2rem"
       ],
       "max-width": [
-        "360rem",
-        "256rem",
+        "36rem",
+        "25.6rem",
         "100%"
       ],
       "margin": [
-        "0 auto 16rem",
+        "0 auto 1.6rem",
         "0",
-        "-1rem"
+        "-.1rem"
       ],
       "overflow": [
         "visible",
@@ -106,7 +106,7 @@
       "height": [
         "0",
         "auto",
-        "60rem"
+        "6rem"
       ],
       "border": [
         "0",
@@ -145,12 +145,12 @@
         "1"
       ],
       "font-size": [
-        "24rem",
-        "16rem",
-        "24px"
+        "2.4rem",
+        "1.6rem",
+        "2.4rem"
       ],
       "min-width": [
-        "256rem"
+        "25.6rem"
       ],
       "padding-bottom": [
         "100%"

@@ -1,8 +1,8 @@
 {
-  "size": 1026,
-  "gzipSize": 438,
+  "size": 1038,
+  "gzipSize": 440,
   "humanizedSize": "1kB",
-  "humanizedGzipSize": "438B",
+  "humanizedGzipSize": "440B",
   "rules": {
     "total": 10,
     "size": {
@@ -51,19 +51,19 @@
     "unique": 33,
     "properties": {
       "width": [
-        "56rem",
-        "30rem",
+        "5.6rem",
+        "3rem",
         "100%",
-        "calc(100% + 12rem)"
+        "calc(100% + 1.2rem)"
       ],
       "height": [
         "0"
       ],
       "padding-bottom": [
-        "56rem",
-        "30rem",
+        "5.6rem",
+        "3rem",
         "100%",
-        "calc(100% + 12rem)"
+        "calc(100% + 1.2rem)"
       ],
       "border-radius": [
         "50%",
@@ -97,29 +97,29 @@
       ],
       "top": [
         "0",
-        "-6rem"
+        "-.6rem"
       ],
       "left": [
         "0",
-        "-6rem"
+        "-.6rem"
       ],
       "right": [
         "0",
-        "-6rem"
+        "-.6rem"
       ],
       "bottom": [
         "0",
-        "-6rem"
+        "-.6rem"
       ],
       "box-shadow": [
-        "inset 0 0 0 4rem",
-        "inset 0 0 0 6rem"
+        "inset 0 0 0 .4rem",
+        "inset 0 0 0 .6rem"
       ],
       "-webkit-clip-path": [
-        "inset(4rem 0 0 0)",
-        "inset(6rem 0 0 0)",
-        "inset(calc(100% - 6rem) 0 0 0)",
-        "inset(calc(100% - 6rem) 0 0 0)"
+        "inset(.4rem 0 0 0)",
+        "inset(.6rem 0 0 0)",
+        "inset(calc(100% - .6rem) 0 0 0)",
+        "inset(calc(100% - .6rem) 0 0 0)"
       ]
     }
   },

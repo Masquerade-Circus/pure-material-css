@@ -2,10 +2,12 @@ html,body
     height: 100%;
     margin: 0;
     overflow: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 *,:after,:before
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
 
 h1,h2,h3,h4,h5
     font-weight: 300;
@@ -27,7 +29,7 @@ header,footer
 
 article,section
     flex: 1 1 auto;
-    padding: 16rem;
+    padding: 1.6rem;
     overflow-x: auto;
     z-index: 0;
     &::after, &::before
@@ -37,9 +39,9 @@ article,section
 
 section
     overflow: auto;
-    font-size: 14rem;
+    font-size: 1.4rem;
     &>[data-list]
-        margin: -16rem;
+        margin: -1.6rem;
 
 footer,body>footer
     z-index: 3;

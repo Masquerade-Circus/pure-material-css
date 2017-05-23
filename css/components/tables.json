@@ -1,8 +1,8 @@
 {
-  "size": 216,
-  "gzipSize": 167,
-  "humanizedSize": "216B",
-  "humanizedGzipSize": "167B",
+  "size": 221,
+  "gzipSize": 170,
+  "humanizedSize": "221B",
+  "humanizedGzipSize": "170B",
   "rules": {
     "total": 4,
     "size": {
@@ -49,11 +49,11 @@
         "nowrap"
       ],
       "font-size": [
-        "13rem",
-        "12rem"
+        "1.3rem",
+        "1.2rem"
       ],
       "border-radius": [
-        "2rem"
+        ".2rem"
       ],
       "width": [
         "100%"
@@ -63,7 +63,7 @@
         "center"
       ],
       "padding": [
-        "16rem 24rem"
+        "1.6rem 2.4rem"
       ],
       "font-weight": [
         "400"

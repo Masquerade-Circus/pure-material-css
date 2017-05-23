@@ -1,8 +1,8 @@
 {
-  "size": 468,
-  "gzipSize": 251,
-  "humanizedSize": "468B",
-  "humanizedGzipSize": "251B",
+  "size": 469,
+  "gzipSize": 252,
+  "humanizedSize": "469B",
+  "humanizedGzipSize": "252B",
   "rules": {
     "total": 5,
     "size": {
@@ -43,7 +43,7 @@
     "unique": 16,
     "properties": {
       "height": [
-        "4rem",
+        ".4rem",
         "100%"
       ],
       "overflow": [

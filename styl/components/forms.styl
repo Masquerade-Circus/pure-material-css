@@ -1,7 +1,7 @@
 label
     transition: all .3s ease-in-out
-    font-size: 13rem;
-    line-height: 13rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
     z-index: 0;
     opacity: 0.6;
     padding: 0;
@@ -9,22 +9,22 @@ label
 
 input,select,textarea
     outline: 0;
-    padding:8rem;
+    padding:.8rem;
     transition: all .3s ease-in-out;
-    height: 32rem;
-    line-height: 32rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
     border-width:0;
     z-index: 1;
     position: relative;
     border-radius: 0;
-    border-bottom-width: 2rem;
+    border-bottom-width: .2rem;
     border-bottom-style: solid;
     width: 100%;
     ~label
         position: absolute;
         top:0;
         left:0;
-        height: 48rem
+        height: 4.8rem
         width: 100%
         &::after,&::before
             content: ' ';
@@ -33,22 +33,22 @@ input,select,textarea
             bottom: 0;
             width: 100%;
             left: 0;
-            height: 2rem;
+            height: .2rem;
         &::after
             width: 0%;
             left: 50%;
             transform: translate(-50%);
 
 .help-block
-    font-size: 13rem;
-    margin: 2rem 0 0;
+    font-size: 1.3rem;
+    margin: .2rem 0 0;
     opacity: 0.6;
-    line-height: 13rem;
+    line-height: 1.3rem;
 
 .form-group
-    margin-bottom: 22rem;
+    margin-bottom: 2.2rem;
     position: relative;
-    padding-top: 16rem;
+    padding-top: 1.6rem;
     >*
         width: 100%;
         border-bottom: 0;
@@ -57,11 +57,11 @@ input,select,textarea
         &::-moz-placeholder {opacity: 0;}
         &:-ms-input-placeholder {opacity: 0;}
         &:placeholder-shown~label
-            padding:24rem 8rem 0;
-            font-size: 16rem;
+            padding:2.4rem .8rem 0;
+            font-size: 1.6rem;
         &:focus~label
             padding: 0;
-            font-size: 13rem;
+            font-size: 1.3rem;
             &::after
                 width: 100%;
     >.help-block

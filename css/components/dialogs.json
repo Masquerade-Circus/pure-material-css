@@ -1,8 +1,8 @@
 {
-  "size": 919,
-  "gzipSize": 362,
-  "humanizedSize": "919B",
-  "humanizedGzipSize": "362B",
+  "size": 920,
+  "gzipSize": 363,
+  "humanizedSize": "920B",
+  "humanizedGzipSize": "363B",
   "rules": {
     "total": 10,
     "size": {
@@ -91,7 +91,7 @@
         "absolute"
       ],
       "top": [
-        "calc(50% + 32rem)",
+        "calc(50% + 3.2rem)",
         "0",
         "-9999rem"
       ],

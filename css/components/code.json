@@ -1,8 +1,8 @@
 {
-  "size": 237,
-  "gzipSize": 186,
-  "humanizedSize": "237B",
-  "humanizedGzipSize": "186B",
+  "size": 241,
+  "gzipSize": 188,
+  "humanizedSize": "241B",
+  "humanizedGzipSize": "188B",
   "rules": {
     "total": 2,
     "size": {
@@ -39,14 +39,14 @@
         "left"
       ],
       "border-radius": [
-        "4rem"
+        ".4rem"
       ],
       "padding": [
-        "16rem",
+        "1.6rem",
         "0"
       ],
       "margin": [
-        "16rem",
+        "1.6rem",
         "0"
       ],
       "overflow": [
@@ -62,7 +62,7 @@
         "block"
       ],
       "font-size": [
-        "13rem"
+        "1.3rem"
       ]
     }
   },

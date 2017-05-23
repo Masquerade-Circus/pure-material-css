@@ -1,8 +1,8 @@
 {
-  "size": 234,
-  "gzipSize": 170,
-  "humanizedSize": "234B",
-  "humanizedGzipSize": "170B",
+  "size": 240,
+  "gzipSize": 171,
+  "humanizedSize": "240B",
+  "humanizedGzipSize": "171B",
   "rules": {
     "total": 2,
     "size": {
@@ -48,25 +48,25 @@
         "50%"
       ],
       "font-size": [
-        "12rem"
+        "1.2rem"
       ],
       "height": [
-        "22rem"
+        "2.2rem"
       ],
       "width": [
-        "22rem"
+        "2.2rem"
       ],
       "line-height": [
-        "22rem"
+        "2.2rem"
       ],
       "font-weight": [
         "700"
       ],
       "top": [
-        "-11rem"
+        "-1.1rem"
       ],
       "right": [
-        "-11rem"
+        "-1.1rem"
       ],
       "z-index": [
         "1"

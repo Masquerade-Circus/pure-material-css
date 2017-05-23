@@ -1,8 +1,8 @@
 {
-  "size": 1113,
-  "gzipSize": 493,
+  "size": 1122,
+  "gzipSize": 494,
   "humanizedSize": "1kB",
-  "humanizedGzipSize": "493B",
+  "humanizedGzipSize": "494B",
   "rules": {
     "total": 9,
     "size": {
@@ -57,10 +57,10 @@
     "properties": {
       "border": [
         "none",
-        "1rem solid"
+        ".1rem solid"
       ],
       "border-radius": [
-        "2rem",
+        ".2rem",
         "50%"
       ],
       "position": [
@@ -69,27 +69,27 @@
         "relative"
       ],
       "min-width": [
-        "64rem",
-        "30rem",
-        "30rem"
+        "6.4rem",
+        "3rem",
+        "3rem"
       ],
       "padding": [
-        "12rem 16rem",
+        "1.2rem 1.6rem",
         "0"
       ],
       "line-height": [
         "1",
-        "56rem",
-        "30rem"
+        "5.6rem",
+        "3rem"
       ],
       "display": [
         "inline-block",
         "inline-block"
       ],
       "font-size": [
-        "14rem",
-        "24rem",
-        "16rem"
+        "1.4rem",
+        "2.4rem",
+        "1.6rem"
       ],
       "font-weight": [
         "500"
@@ -128,22 +128,22 @@
         ".8"
       ],
       "margin": [
-        "4rem"
+        ".4rem"
       ],
       "height": [
-        "56rem",
-        "30rem"
+        "5.6rem",
+        "3rem"
       ],
       "width": [
-        "56rem",
-        "30rem"
+        "5.6rem",
+        "3rem"
       ],
       "right": [
-        "16rem",
+        "1.6rem",
         "auto"
       ],
       "bottom": [
-        "16rem",
+        "1.6rem",
         "auto"
       ],
       "top": [
