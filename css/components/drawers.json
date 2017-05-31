@@ -1,8 +1,8 @@
 {
-  "size": 1026,
-  "gzipSize": 370,
+  "size": 1028,
+  "gzipSize": 371,
   "humanizedSize": "1kB",
-  "humanizedGzipSize": "370B",
+  "humanizedGzipSize": "371B",
   "rules": {
     "total": 11,
     "size": {
@@ -98,7 +98,7 @@
         "slideInRight"
       ],
       "max-width": [
-        "32rem"
+        "320rem"
       ],
       "content": [
         "\" \""
@@ -117,7 +117,7 @@
         "auto"
       ],
       "min-height": [
-        "14rem"
+        "140rem"
       ],
       "opacity": [
         "1"

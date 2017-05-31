@@ -1,6 +1,6 @@
 {
-  "size": 17723,
-  "gzipSize": 2930,
+  "size": 17714,
+  "gzipSize": 2928,
   "humanizedSize": "17kB",
   "humanizedGzipSize": "3kB",
   "rules": {
@@ -1093,20 +1093,20 @@
         "none"
       ],
       "border-bottom": [
-        ".1rem solid rgba(33,33,33,.16)",
-        ".1rem solid rgba(33,33,33,.16)",
+        "1rem solid rgba(33,33,33,.16)",
+        "1rem solid rgba(33,33,33,.16)",
         "none"
       ],
       "border-top": [
-        ".1rem solid rgba(33,33,33,.16)",
-        ".1rem solid rgba(33,33,33,.3)",
-        ".1rem solid rgba(33,33,33,.16)"
+        "1rem solid rgba(33,33,33,.16)",
+        "1rem solid rgba(33,33,33,.3)",
+        "1rem solid rgba(33,33,33,.16)"
       ],
       "text-shadow": [
-        ".1rem .1rem .2rem #212121"
+        "1rem 1rem 2rem #212121"
       ],
       "border": [
-        ".1rem solid rgba(33,33,33,.16)"
+        "1rem solid rgba(33,33,33,.16)"
       ]
     }
   },

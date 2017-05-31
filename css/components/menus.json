@@ -1,8 +1,8 @@
 {
-  "size": 548,
-  "gzipSize": 299,
-  "humanizedSize": "548B",
-  "humanizedGzipSize": "299B",
+  "size": 546,
+  "gzipSize": 297,
+  "humanizedSize": "546B",
+  "humanizedGzipSize": "297B",
   "rules": {
     "total": 6,
     "size": {
@@ -62,7 +62,7 @@
         "all .2s ease-in-out"
       ],
       "border-radius": [
-        ".2rem"
+        "2rem"
       ],
       "list-style": [
         "none"
@@ -74,7 +74,7 @@
         "0"
       ],
       "min-width": [
-        "25.6rem"
+        "256rem"
       ],
       "transform": [
         "scale(0)",

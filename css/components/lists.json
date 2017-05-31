@@ -1,8 +1,8 @@
 {
-  "size": 1600,
-  "gzipSize": 510,
+  "size": 1584,
+  "gzipSize": 502,
   "humanizedSize": "2kB",
-  "humanizedGzipSize": "510B",
+  "humanizedGzipSize": "502B",
   "rules": {
     "total": 16,
     "size": {
@@ -78,15 +78,15 @@
       ],
       "padding": [
         "0",
-        "1.6rem",
-        "2.2rem 1.6rem",
-        "1.4rem 1.6rem",
-        ".8rem 1.6rem"
+        "16rem",
+        "22rem 16rem",
+        "14rem 16rem",
+        "8rem 16rem"
       ],
       "font-size": [
-        "1.6rem",
-        "2.4rem",
-        "3rem"
+        "16rem",
+        "24rem",
+        "30rem"
       ],
       "font-weight": [
         "400",
@@ -112,9 +112,9 @@
       ],
       "line-height": [
         "1.15",
-        "3.2rem",
+        "32rem",
         "1.42",
-        "4rem"
+        "40rem"
       ],
       "position": [
         "relative"
@@ -123,11 +123,11 @@
         "inherit"
       ],
       "height": [
-        "6.4rem",
-        "3.2rem",
-        "4rem",
-        "1.8rem",
-        "3.2rem"
+        "64rem",
+        "32rem",
+        "40rem",
+        "18rem",
+        "32rem"
       ],
       "transition": [
         "all .5s linear"
@@ -141,16 +141,16 @@
         "2 1 auto"
       ],
       "width": [
-        "6.4rem",
-        "3.2rem",
+        "64rem",
+        "32rem",
         "auto",
-        "4rem"
+        "40rem"
       ],
       "margin-top": [
-        ".4rem",
-        "-1rem",
-        "-.2rem",
-        ".4rem"
+        "4rem",
+        "-10rem",
+        "-2rem",
+        "4rem"
       ],
       "opacity": [
         ".8"
@@ -159,13 +159,13 @@
         "50%"
       ],
       "margin-right": [
-        "1.6rem"
+        "16rem"
       ],
       "vertical-align": [
         "top"
       ],
       "margin-left": [
-        "5.6rem"
+        "56rem"
       ],
       "float": [
         "left"

@@ -2,32 +2,32 @@
 for size in 0 4 8 16 24 32 40
     /* Padding */
     .padding-{size}
-        padding: (size/10)rem;
+        padding: size rem;
     .padding-left-{size}
-        padding-left: (size/10)rem;
+        padding-left: size rem;
     .padding-right-{size}
-        padding-right: (size/10)rem;
+        padding-right: size rem;
     .padding-top-{size}
-        padding-top: (size/10)rem;
+        padding-top: size rem;
     .padding-bottom-{size}
-        padding-bottom: (size/10)rem;
+        padding-bottom: size rem;
 
     /* margin */
     .margin-{size}
-        margin: (size/10)rem;
+        margin: size rem;
     .margin-left-{size}
-        margin-left: (size/10)rem;
+        margin-left: size rem;
     .margin-right-{size}
-        margin-right: (size/10)rem;
+        margin-right: size rem;
     .margin-top-{size}
-        margin-top: (size/10)rem;
+        margin-top: size rem;
     .margin-bottom-{size}
-        margin-bottom: (size/10)rem;
+        margin-bottom: size rem;
 
 for size in 0 4 8 10 12 14 16 18 20 24 32 40 48 56 64 72 80
     /* font-size */
     .font-{size}
-        font-size: (size/10)rem;
+        font-size: size rem;
 
 /* align */
 for val in left right center justify
@@ -49,6 +49,6 @@ for val in relative static absolute fixed
         position: val;
 
 .scrollable
-    max-height: 36.0rem;
+    max-height: 360rem;
 
 /*** Helper classes End ***/

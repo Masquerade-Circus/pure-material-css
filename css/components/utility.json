@@ -1,8 +1,8 @@
 {
-  "size": 3120,
-  "gzipSize": 716,
+  "size": 3073,
+  "gzipSize": 724,
   "humanizedSize": "3kB",
-  "humanizedGzipSize": "716B",
+  "humanizedGzipSize": "724B",
   "rules": {
     "total": 97,
     "size": {
@@ -233,112 +233,112 @@
       ],
       "padding": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "padding-left": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "padding-right": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "padding-top": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "padding-bottom": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "margin": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "margin-left": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "margin-right": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "margin-top": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "margin-bottom": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1.6rem",
-        "2.4rem",
-        "3.2rem",
-        "4rem"
+        "4rem",
+        "8rem",
+        "16rem",
+        "24rem",
+        "32rem",
+        "40rem"
       ],
       "font-size": [
         "0",
-        ".4rem",
-        ".8rem",
-        "1rem",
-        "1.2rem",
-        "1.4rem",
-        "1.6rem",
-        "1.8rem",
-        "2rem",
-        "2.4rem",
-        "3.2rem",
         "4rem",
-        "4.8rem",
-        "5.6rem",
-        "6.4rem",
-        "7.2rem",
-        "8rem"
+        "8rem",
+        "10rem",
+        "12rem",
+        "14rem",
+        "16rem",
+        "18rem",
+        "20rem",
+        "24rem",
+        "32rem",
+        "40rem",
+        "48rem",
+        "56rem",
+        "64rem",
+        "72rem",
+        "80rem"
       ],
       "text-align": [
         "left",
@@ -368,7 +368,7 @@
         "middle"
       ],
       "max-height": [
-        "36rem"
+        "360rem"
       ]
     }
   },

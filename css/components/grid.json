@@ -1,8 +1,8 @@
 {
-  "size": 2827,
-  "gzipSize": 515,
+  "size": 2823,
+  "gzipSize": 513,
   "humanizedSize": "3kB",
-  "humanizedGzipSize": "515B",
+  "humanizedGzipSize": "513B",
   "rules": {
     "total": 77,
     "size": {
@@ -189,7 +189,7 @@
         "left"
       ],
       "min-height": [
-        ".05rem"
+        ".5rem"
       ],
       "clear": [
         "both",
@@ -202,13 +202,13 @@
         "block"
       ],
       "margin-left": [
-        "-.8rem"
+        "-8rem"
       ],
       "margin-right": [
-        "-.8rem"
+        "-8rem"
       ],
       "padding": [
-        ".8rem"
+        "8rem"
       ],
       "width": [
         "100%",
