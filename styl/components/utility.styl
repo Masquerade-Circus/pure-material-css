@@ -29,6 +29,10 @@ for size in 0 4 8 10 12 14 16 18 20 24 32 40 48 56 64 72 80
     .font-{size}
         font-size: size rem;
 
+for size in (1..100)
+    .width-{size}
+        width: (size)%;
+
 /* align */
 for val in left right center justify
     .text-{val}

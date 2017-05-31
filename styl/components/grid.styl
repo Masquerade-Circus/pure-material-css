@@ -8,15 +8,28 @@ generate(width, id)
                 grid(12/size)
 
 [data-column]
-    float: left;
+    order: 0;
+    flex: 0 1 auto;
     min-height: 0.5rem;
 
 [data-grid]
     clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
     &:after, &::before
-        clear both
-        content " "
-        display block
+        clear both;
+        content " ";
+        display block;
+
+[data-grid*="end"]
+    justify-content: flex-end;
+
+[data-grid*="center"]
+    justify-content: center;
 
 [data-grid="gutters"]
     margin-left -8rem

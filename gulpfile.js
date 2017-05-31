@@ -9,8 +9,7 @@ var gulp = require('gulp'),
     fs = require('fs'),
     gulpFn = require('gulp-fn'),
     cssnano = require('cssnano'),
-    CleanCSS = require('clean-css'),
-    cssstats = require('gulp-cssstats');
+    CleanCSS = require('clean-css');
 
 let CleanCSSOptions = {
     level: {
@@ -54,9 +53,7 @@ gulp.task('stylus', function () {
             });
         }))
         .pipe(gulp.dest('./css/'))
-        .pipe(browserSync.reload({ stream: true }))
-        .pipe(cssstats())
-        .pipe(gulp.dest('./css/'));
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('pug', function () {
