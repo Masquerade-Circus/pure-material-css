@@ -26,15 +26,15 @@ article.page#colors
         thead
             tr
                 each color in colors
-                    th(data-color=color.class)
+                    th(data-font=color.class)
                         | #{color.name}
-                        div data-color="#{color.class}"
+                        div data-font="#{color.class}"
         tbody.text-left
             each weight in weights
                 tr
                     each color in colors
-                        td(data-color=color.class+' '+weight)
+                        td(data-font=color.class+'-'+weight)
                             div Normal text
                             div 
                                 b Bold text
-                            div data-color="#{color.class} #{weight}"
+                            div data-font="#{color.class}-#{weight}"

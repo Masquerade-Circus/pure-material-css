@@ -1,1 +1,34 @@
-*,:after,:before,html{box-sizing:border-box}html{font-size:1px}.inline-block,[class*=icon],[data-button],[data-fab],a,button,small{display:inline-block;transition:all .3s linear}body{font-size:16rem;line-height:1.618}a,img{outline:0;margin:0;text-decoration:none}small{font-size:.7em;opacity:.6;padding:0 8rem}
+html {
+  font-size: 1px;
+  box-sizing: border-box;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+[class*="icon"],
+.inline-block,
+a,
+small,
+button,
+[data-button],
+[data-fab] {
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+body {
+  font-size: 16rem;
+  line-height: 1.618;
+}
+a,
+img {
+  outline: 0;
+  margin: 0;
+  text-decoration: none;
+}
+small {
+  font-size: 0.7em;
+  opacity: 0.6;
+  padding: 0 8rem;
+}

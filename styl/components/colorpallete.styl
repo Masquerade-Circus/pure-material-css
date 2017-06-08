@@ -20,7 +20,7 @@ base-color = #ededed
 line-color = alpha(colors['Grey']['900'], 0.16)
 transparent-color = alpha(colors['Grey']['900'], 0.3)
 
-[data-color="white"]
+[data-font="white"]
     color: white-color;
 
 button,[data-button],[data-fab]
@@ -50,8 +50,8 @@ generateText(prefix, name)
         define(prefix+'-color-'+weight, shade, true)
 
     /*** Init Color ***/
-    [data-color~={'"'+prefix+'"'}],
-    a[data-color~={'"'+prefix+'"'}],
+    [data-font~={'"'+prefix+'"'}],
+    a[data-font~={'"'+prefix+'"'}],
     [data-button~={'"'+prefix+'"'}],
     [data-spinner~={'"'+prefix+'"'}]
         color: colors[name]['500']
@@ -65,14 +65,14 @@ generateText(prefix, name)
         background-color: colors[name]['500'];
         color: colors[name]['50'];
 
-    a[data-color~={'"'+prefix+'"'}]:hover
+    a[data-font~={'"'+prefix+'"'}]:hover
         color: colors[name]['700']
 
     [data-tooltip-color~={'"'+prefix+'"'}]::before
         border-color:colors[name]['500']
 
     for weight, shade in colors[name]
-        [data-color*={'"'+prefix+' '+weight+'"'}]
+        [data-font*={'"'+prefix+'-'+weight+'"'}]
             color: colors[name][weight];
 
         [data-background*={'"'+prefix+' '+weight+'"'}]

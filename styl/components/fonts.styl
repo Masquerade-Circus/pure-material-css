@@ -1,0 +1,35 @@
+/*** Fonts Start ***/
+/* font-size */
+for size in 10 12 14 16 18 20 24 32 40 48 56 64 72 80
+    [data-font~={'"'+size+ '"'}]
+        font-size: (size)rem;
+
+/* style */
+for val in normal italic oblique inherit
+    [data-font~={'"'+val+ '"'}]
+        font-style: val;
+
+/* variant */
+for val in normal small-caps
+    [data-font~={'"'+val+ '"'}]
+        font-variant: val;
+
+/* weight */
+for val in normal bold lighter bolder 100 200 300 400 500 600 700 800 900 inherit
+    [data-font~={'"'+val+ '"'}]
+        font-weight: val;
+
+/* text transform */
+for val in capitalize uppercase lowercase
+    [data-font~={'"'+val+ '"'}]
+        text-transform: val;
+
+/* line height */
+for val in 1 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2
+    [data-font~={'"line-height-'+val+ '"'}]
+        line-height: val;
+
+/* align */
+for val in left right center justify
+    [data-font~={'"'+val+ '"'}]
+        text-align: val;

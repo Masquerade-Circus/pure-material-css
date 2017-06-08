@@ -1,1 +1,17 @@
-[data-badge]{position:relative}[data-badge]:after{content:attr(data-badge);display:block;position:absolute;border-radius:50%;font-size:12rem;height:22rem;width:22rem;line-height:22rem;font-weight:700;top:-11rem;right:-11rem;z-index:1}
+[data-badge] {
+  position: relative;
+}
+[data-badge]::after {
+  content: attr(data-badge);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 12rem;
+  height: 22rem;
+  width: 22rem;
+  line-height: 22rem;
+  font-weight: bold;
+  top: -11rem;
+  right: -11rem;
+  z-index: 2;
+}

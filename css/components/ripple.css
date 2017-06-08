@@ -1,1 +1,32 @@
-[data-button]:after,[data-fab]:after,[data-list]>li>a:after,[data-ripple]:after,button:after{content:" ";display:block;position:absolute;top:50%;left:50%;width:110%;height:0;padding-bottom:110%;border-radius:100%;opacity:.6;transform:scale(0) translate(-50%,-50%);transform-origin:top left}[data-button]:active:after,[data-button]:focus:after,[data-fab]:active:after,[data-fab]:focus:after,[data-list]>li>a:active:after,[data-list]>li>a:focus:after,[data-ripple]:active:after,[data-ripple]:focus:after,button:active:after,button:focus:after{animation-fill-mode:both;animation:ripple 1.2s;animation-timing-function:linear}
+[data-ripple]::after,
+button::after,
+[data-fab]::after,
+[data-button]::after,
+[data-list]>li>a::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 0;
+  padding-bottom: 110%;
+  border-radius: 100%;
+  opacity: 0.6;
+  transform: scale(0) translate(-50%, -50%);
+  transform-origin: top left;
+}
+[data-ripple]:active::after,
+button:active::after,
+[data-fab]:active::after,
+[data-button]:active::after,
+[data-list]>li>a:active::after,
+[data-ripple]:focus::after,
+button:focus::after,
+[data-fab]:focus::after,
+[data-button]:focus::after,
+[data-list]>li>a:focus::after {
+  animation-fill-mode: both;
+  animation: ripple 1.2s;
+  animation-timing-function: linear;
+}

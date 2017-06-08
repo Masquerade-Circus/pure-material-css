@@ -24,17 +24,17 @@ So, you just write HTML5 and get Material Design. No javascript, just pure css.
 
 ## Why is Pure Material framework friendly?
 
-Pure Material css isn't based on css conventions like OOCSS, SMACSS or BEM, instead it tries to be html5 compilant without overpopulating your html with a bunch of css classes. To do this it takes a different aproach of styling components.  
+Pure Material css isn't based on css conventions like OOCSS, SMACSS or BEM, instead it tries to be html5 compliant without overpopulating your html with a bunch of css classes. To do this it takes a different approach of styling components.  
 
-Each component, except of those who already have an html tag like "menu" or "dialog", is declared with a data attribute. This gives you the feedom to style, toggle or remove any css class that you want, leaving the path free to any framework you use without getting in the way of the Pure Material styles.  
+Each component, except of those who already have an html tag like "menu" or "dialog", is declared with a data attribute (Data driven CSS). This gives you the freedom to style, toggle or remove any css class that you want, leaving the path free to any framework you use without getting in the way of the Pure Material styles.  
 
-All animations can be activated by toggling a simple param on the data atribute without the need of third party javascript plugins. Just use your famework to add or remove a property.  
+All animations can be activated by toggling a simple param on the data attribute without the need of third party javascript plugins. Just use your framework to add or remove a property.  
 
 Consider the following example of creating a card with Pure Material and compare it with the same [MDL component](https://getmdl.io/components/index.html#cards-section) :  
 
 ```html
 <section data-card data-elevation="hover-16">
-    <div data-card-media style="background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)">
+    <section data-card-media style="background-image: url(https://getmdl.io/assets/demos/welcome_card.jpg)">
         <header>
             <h2>Welcome</h2>
             <nav>
@@ -43,11 +43,11 @@ Consider the following example of creating a card with Pure Material and compare
                 </button>
             </nav>
         </header>
-    </div>
-    <div>
+    </section>
+    <section>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Mauris sagittis pellentesque lacus eleifend lacinia...
-    </div>
+    </section>
     <footer>
         <nav>
             <button data-button="primary">Get started</button>
@@ -62,11 +62,11 @@ Consider the following example of creating a card with Pure Material and compare
 
 Because write and markup an app should be as simple as write plain html and nothing more.  
 
-I'm not in war with google's mdl. If you like the way it works, if you depend on a component that has not yet been integrated here, if you use want to use it because it's Google, then, use MDL.  
+I'm not in war with google's mdl. If you like the way it works, if you depend on a component that hasn't yet been integrated here, if you just want to use it because it's Google, then, use MDL.  
 
 This framework is not for all developers. And certainly it's not a must to have to every project.  
 
-But, if you have very little time to make a good looking app, if you just want a quick prototype, if you want to have your app framework friendly and third party plugin's free and want to keep your code clean, then, give Pure Material a try.  
+But, if you have very little time to make a good looking app, if you just want a quick prototype, if you want to have your app framework friendly and third party plugin's free, and want to keep your code clean, then, give Pure Material a try.  
 
 * * *
 

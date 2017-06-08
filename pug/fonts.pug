@@ -1,0 +1,49 @@
+- var fonts = [10, 12, 14, 16, 18, 20, 24, 32, 40, 48, 56, 64, 72, 80];
+- var align = ['left', 'right', 'center', 'justify'];
+- var style = ['normal', 'italic', 'oblique', 'inherit', 'small-caps', 'uppercase', 'lowercase', 'capitalize', 'bold', 'lighter', 'bolder', '100', '200', '300', '400', '500', '600', '700', '800', '900'];
+- var height = [1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2];
+
+article.page#fonts
+    h1 Fonts
+    hr
+        
+    section(data-card="full-width")
+        header
+            h1 Full example
+                small(data-font="12") data-font="14 italic primary lighter capitalize justify line-height-2"
+        section
+            div(data-font='14 italic primary lighter capitalize justify line-height-2')
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                br 
+                br
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+    section(data-card="full-width")
+        header
+            h1 Font sizes
+        section
+            each font in fonts
+                div(data-font=font)
+                    | data-font="#{font}"
+                    
+    section(data-card="full-width")
+        header
+            h1 Styles
+        section
+            each font in style
+                div(data-font=font)
+                    | data-font="#{font}"
+
+    each font in align
+        section(data-card="full-width")
+            header
+                h1 data-font="#{font}"
+            section(data-font=font)
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    each font in height
+        section(data-card="full-width")
+            header
+                h1 data-font="line-height-#{font}"
+            section(data-font="line-height-"+font)
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

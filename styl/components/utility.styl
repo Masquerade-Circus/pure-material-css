@@ -1,44 +1,39 @@
 /*** Helper classes Start ***/
 for size in 0 4 8 16 24 32 40
     /* Padding */
-    .padding-{size}
+    .u-padding-{size}
         padding: size rem;
-    .padding-left-{size}
+    .u-padding-left-{size}
         padding-left: size rem;
-    .padding-right-{size}
+    .u-padding-right-{size}
         padding-right: size rem;
-    .padding-top-{size}
+    .u-padding-top-{size}
         padding-top: size rem;
-    .padding-bottom-{size}
+    .u-padding-bottom-{size}
         padding-bottom: size rem;
 
     /* margin */
-    .margin-{size}
+    .u-margin-{size}
         margin: size rem;
-    .margin-left-{size}
+    .u-margin-left-{size}
         margin-left: size rem;
-    .margin-right-{size}
+    .u-margin-right-{size}
         margin-right: size rem;
-    .margin-top-{size}
+    .u-margin-top-{size}
         margin-top: size rem;
-    .margin-bottom-{size}
+    .u-margin-bottom-{size}
         margin-bottom: size rem;
 
-for size in 0 4 8 10 12 14 16 18 20 24 32 40 48 56 64 72 80
-    /* font-size */
-    .font-{size}
-        font-size: size rem;
-
+/* Widths */
 for size in (1..100)
-    .width-{size}
+    .u-width-{size}
         width: (size)%;
 
-/* align */
-for val in left right center justify
-    .text-{val}
-        text-align: val;
+for val in relative static absolute fixed
+    .u-{val}
+        position: val;
 
-.inline-block
+.u-inline-block
     position: relative;
     display: inline-block;
     top:auto;
@@ -48,11 +43,7 @@ for val in left right center justify
     box-shadow: none;
     vertical-align: middle;
 
-for val in relative static absolute fixed
-    .{val}
-        position: val;
-
-.scrollable
+.u-scrollable
     max-height: 360rem;
 
 /*** Helper classes End ***/

@@ -41,17 +41,17 @@ gulp.task('connect', function () {
 gulp.task('stylus', function () {
     return gulp.src('./styl/**/*.styl')
         .pipe(plumber())
-        .pipe(gulpStylus({ compress: false, sourcemap: false }))
-        .pipe(gulpFn(file => {
-            file.contents = new Buffer(new CleanCSS(CleanCSSOptions).minify(file.contents.toString()).styles, 'utf-8');
-            return file;
-        }))
-        .pipe(gulpFn(file => {
-            return cssnano.process(file.contents.toString()).then(function (result) {
-                file.contents = new Buffer(result.css, 'utf-8');
-                return file;
-            });
-        }))
+        .pipe(gulpStylus({ compress: false, sourcemap: true }))
+        // .pipe(gulpFn(file => {
+        //     file.contents = new Buffer(new CleanCSS(CleanCSSOptions).minify(file.contents.toString()).styles, 'utf-8');
+        //     return file;
+        // }))
+        // .pipe(gulpFn(file => {
+        //     return cssnano.process(file.contents.toString()).then(function (result) {
+        //         file.contents = new Buffer(result.css, 'utf-8');
+        //         return file;
+        //     });
+        // }))
         .pipe(gulp.dest('./css/'))
         .pipe(browserSync.reload({ stream: true }));
 });
