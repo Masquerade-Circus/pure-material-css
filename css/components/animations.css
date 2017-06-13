@@ -10,6 +10,62 @@
 .slideOutLeft {
   animation-name: slideOutLeft;
 }
+@-moz-keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+@-webkit-keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+@-o-keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+@keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
 @-moz-keyframes slideInLeft {
   0% {
     transform: translate(-100%, 0%);
@@ -136,62 +192,6 @@
   }
   100% {
     transform: translate(100%, 0%);
-  }
-}
-@-moz-keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
-@-webkit-keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
-@-o-keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
-@keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
   }
 }
 @-moz-keyframes ripple {

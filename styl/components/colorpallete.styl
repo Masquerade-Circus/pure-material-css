@@ -94,10 +94,11 @@ generateText(prefix, name)
 generateText('default', default-color)
 generateText('primary', primary-color)
 generateText('accent', accent-color)
-generateText('info', info-color)
-generateText('success', success-color)
-generateText('warning', warning-color)
-generateText('danger', danger-color)
+if $slim != true
+    generateText('info', info-color)
+    generateText('success', success-color)
+    generateText('warning', warning-color)
+    generateText('danger', danger-color)
 
 [data-button~="outline"]
     background-color: white-color;
@@ -146,14 +147,6 @@ body
     a, button, [data-button], [data-fab], [class*="icon"]
         color: white-color;
 
-/*** Dialog ***/
-
-
-/*** Flexible Bar ***/
-[data-flexible-bar]
-    background: primary-color;
-    color: primary-color-50;
-
 /*** Forms ***/
 ::-webkit-input-placeholder {color: inherit; }
 :-moz-placeholder {color: inherit;}
@@ -179,65 +172,46 @@ input, select, textarea
         border-color: line-color;
 
 .form-group
-    color: info-color;
+    color: colors['Light Blue']['500'];
     >.help-block
         color: default-color;
 
 .has-warning
-    color: warning-color;
+    color: colors['Orange']['500'];
     .help-block
-        color: warning-color;
+        color: colors['Orange']['500'];
     label
-        color: warning-color;
+        color: colors['Orange']['500'];
         &::after
-            background-color: warning-color;
+            background-color: colors['Orange']['500'];
         &::before
-            background: warning-color-200;
+            background: colors['Orange']['200'];
 
 .has-success
-    color: success-color;
+    color: colors['Green']['500'];
     .help-block
-        color: success-color;
+        color: colors['Green']['500'];
     label
-        color: success-color;
+        color: colors['Green']['500'];
         &::after
-            background-color: success-color;
+            background-color: colors['Green']['500'];
         &::before
-            background: success-color-200;
+            background: colors['Green']['200'];
 
 .has-error
-    color: danger-color;
+    color: colors['Red']['500'];
     .help-block
-        color: danger-color;
+        color: colors['Red']['500'];
     label
-        color: danger-color;
+        color: colors['Red']['500'];
         &::after
-            background-color: danger-color;
+            background-color: colors['Red']['500'];
         &::before
-            background: danger-color-200;
+            background: colors['Red']['200'];
 
 /*** Menu ***/
 menu
     background: white-color;
-
-/*** Hr ***/
-hr
-    background: line-color;
-
-/*** Tables ***/
-table
-    background-color: white-color;
-    color: default-color-900;
-    border: 1rem solid line-color;
-    th
-        color: default-color;
-    td
-        border-top: 1rem solid line-color;
-        border-bottom: 1rem solid line-color;
-
-/*** Progress ***/
-[data-progress]::before
-    background: default-color-300;
 
 /*** List ***/
 [data-list]>li
@@ -253,10 +227,30 @@ table
 dialog::after
     background: white-color;
 
-
-/*** Code ***/
-pre, code
-    background: default-color-300;
-    color: default-color-800;
+if ($slim != true)
+    /*** Flexible Bar ***/
+    [data-flexible-bar]
+        background: primary-color;
+        color: primary-color-50;
+    /*** Progress ***/
+    [data-progress]::before
+        background: default-color-300;
+    /*** Hr ***/
+    hr
+        background: line-color;
+    /*** Tables ***/
+    table
+        background-color: white-color;
+        color: default-color-900;
+        border: 1rem solid line-color;
+        th
+            color: default-color;
+        td
+            border-top: 1rem solid line-color;
+            border-bottom: 1rem solid line-color;
+    /*** Code ***/
+    pre, code
+        background: default-color-300;
+        color: default-color-800;
 
 /*** ColorPallete End ***/

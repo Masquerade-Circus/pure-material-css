@@ -393,7 +393,6 @@ a[data-font~="accent"]:hover {
   color: #fce4ec;
 }
 /*** End Color ***/
-/*** Init Color ***/
 [data-font~="info"],
 a[data-font~="info"],
 [data-button~="info"],
@@ -524,8 +523,6 @@ a[data-font~="info"]:hover {
   background-color: #4fc3f7;
   color: #e1f5fe;
 }
-/*** End Color ***/
-/*** Init Color ***/
 [data-font~="success"],
 a[data-font~="success"],
 [data-button~="success"],
@@ -656,8 +653,6 @@ a[data-font~="success"]:hover {
   background-color: #81c784;
   color: #e8f5e9;
 }
-/*** End Color ***/
-/*** Init Color ***/
 [data-font~="warning"],
 a[data-font~="warning"],
 [data-button~="warning"],
@@ -788,8 +783,6 @@ a[data-font~="warning"]:hover {
   background-color: #ffb74d;
   color: #fff3e0;
 }
-/*** End Color ***/
-/*** Init Color ***/
 [data-font~="danger"],
 a[data-font~="danger"],
 [data-button~="danger"],
@@ -920,7 +913,6 @@ a[data-font~="danger"]:hover {
   background-color: #e57373;
   color: #ffebee;
 }
-/*** End Color ***/
 [data-button~="outline"] {
   background-color: #fff;
   box-shadow: none;
@@ -985,12 +977,6 @@ body>footer>nav>a {
 [data-card-media]>header [data-fab],
 [data-card-media]>header [class*="icon"] {
   color: #fff;
-}
-/*** Dialog ***/
-/*** Flexible Bar ***/
-[data-flexible-bar] {
-  background: #3f51b5;
-  color: #e8eaf6;
 }
 /*** Forms ***/
 ::-webkit-input-placeholder {
@@ -1088,27 +1074,6 @@ textarea[disabled] {
 menu {
   background: #fff;
 }
-/*** Hr ***/
-hr {
-  background: rgba(33,33,33,0.16);
-}
-/*** Tables ***/
-table {
-  background-color: #fff;
-  color: #212121;
-  border: 1rem solid rgba(33,33,33,0.16);
-}
-table th {
-  color: #9e9e9e;
-}
-table td {
-  border-top: 1rem solid rgba(33,33,33,0.16);
-  border-bottom: 1rem solid rgba(33,33,33,0.16);
-}
-/*** Progress ***/
-[data-progress]::before {
-  background: #e0e0e0;
-}
 /*** List ***/
 [data-list]>li {
   border-bottom: 1rem solid rgba(33,33,33,0.16);
@@ -1126,10 +1091,30 @@ table td {
 dialog::after {
   background: #fff;
 }
-/*** Code ***/
+[data-flexible-bar] {
+  background: #3f51b5;
+  color: #e8eaf6;
+}
+[data-progress]::before {
+  background: #e0e0e0;
+}
+hr {
+  background: rgba(33,33,33,0.16);
+}
+table {
+  background-color: #fff;
+  color: #212121;
+  border: 1rem solid rgba(33,33,33,0.16);
+}
+table th {
+  color: #9e9e9e;
+}
+table td {
+  border-top: 1rem solid rgba(33,33,33,0.16);
+  border-bottom: 1rem solid rgba(33,33,33,0.16);
+}
 pre,
 code {
   background: #e0e0e0;
   color: #424242;
 }
-/*** ColorPallete End ***/

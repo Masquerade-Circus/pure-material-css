@@ -33,18 +33,6 @@
 .slideOutLeft
     animation-name: slideOutLeft;
 
-
-@keyframes progressIndeterminate
-    0%
-        left: 0;
-        width: 0%;
-    50%
-        left: 25%;
-        width: 75%;
-    100%
-        left: 100%;
-        width: 0%;
-
 @keyframes ripple
     0%
         transform: scale(0) translate(-50%, -50%);
@@ -64,3 +52,15 @@
     100%
         top: -100%;
         z-index: -1;
+
+if ($slim != true)
+    @keyframes progressIndeterminate
+        0%
+            left: 0;
+            width: 0%;
+        50%
+            left: 25%;
+            width: 75%;
+        100%
+            left: 100%;
+            width: 0%;

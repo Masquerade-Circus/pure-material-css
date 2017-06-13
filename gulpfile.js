@@ -103,11 +103,12 @@ gulp.task('build', function () {
             return split.join('-');
         },
         file = fs.readFileSync('./styl/pure-material.styl', 'utf-8'),
-        renderFactory = function (primary, accent) {
+        slimfile = fs.readFileSync('./styl/pure-material-slim.styl', 'utf-8'),
+        renderFactory = function (primary, accent, slim = false) {
             return new Promise((resolve, reject) => {
-                let fileName = './build_styles/pure-material-' + toSnake(primary) + '-' + toSnake(accent) + '.css';
+                let fileName = './build_styles/' + (slim ? 'slim/' : '') + 'pure-material-' + toSnake(primary) + '-' + toSnake(accent) + (slim ? '-slim' : '') + '.css';
                 console.log('Writing ' + fileName);
-                stylus(file)
+                stylus(slim ? slimfile : file)
                     .set('compress', false)
                     .define('primary-color', primary)
                     .define('accent-color', accent)
@@ -131,19 +132,48 @@ gulp.task('build', function () {
 
         };
 
-    let promises = [];
+    let colors2 = [];
+    for (let c of colors) {
+        colors2.push(c);
+    }
 
-    for (let i = 0; i < colors.length; i++) {
-        let primary = colors[i];
-        for (let c = 0; c < colors.length; c++) {
-            let accent = colors[c];
+    let renderColors = function () {
+        if (colors.length <= 0) {
+            return Promise.resolve();
+        }
+
+        let primary = colors.shift();
+        console.log('');
+        console.log('************** Rendering ' + primary + ' Set **************');
+        let promises = [];
+        for (let c = 0; c < colors2.length; c++) {
+            let accent = colors2[c];
             if (primary !== accent) {
                 promises.push(renderFactory(primary, accent));
+                promises.push(renderFactory(primary, accent, true));
             }
         }
 
-    }
+        return Promise.all(promises).then(() => renderColors());
+    };
 
-    return Promise.all(promises);
+    return renderColors().then(() => console.log('Done'));
+
+
+    // let promises = [];
+    //
+    // for (let i = 0; i < colors.length; i++) {
+    //     let primary = colors[i];
+    //     for (let c = 0; c < colors.length; c++) {
+    //         let accent = colors[c];
+    //         if (primary !== accent) {
+    //             promises.push(renderFactory(primary, accent));
+    //             promises.push(renderFactory(primary, accent, true));
+    //         }
+    //     }
+    //
+    // }
+    //
+    // return Promise.all(promises);
 
 });

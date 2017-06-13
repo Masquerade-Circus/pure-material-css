@@ -970,10 +970,6 @@ body>footer>nav>a {
 [data-card-media]>header [class*="icon"] {
   color: #fff;
 }
-[data-flexible-bar] {
-  background: #3f51b5;
-  color: #e8eaf6;
-}
 ::-webkit-input-placeholder {
   color: inherit;
 }
@@ -1068,24 +1064,6 @@ textarea[disabled] {
 menu {
   background: #fff;
 }
-hr {
-  background: rgba(33,33,33,0.16);
-}
-table {
-  background-color: #fff;
-  color: #212121;
-  border: 1rem solid rgba(33,33,33,0.16);
-}
-table th {
-  color: #9e9e9e;
-}
-table td {
-  border-top: 1rem solid rgba(33,33,33,0.16);
-  border-bottom: 1rem solid rgba(33,33,33,0.16);
-}
-[data-progress]::before {
-  background: #e0e0e0;
-}
 [data-list]>li {
   border-bottom: 1rem solid rgba(33,33,33,0.16);
 }
@@ -1100,6 +1078,28 @@ table td {
 }
 dialog::after {
   background: #fff;
+}
+[data-flexible-bar] {
+  background: #3f51b5;
+  color: #e8eaf6;
+}
+[data-progress]::before {
+  background: #e0e0e0;
+}
+hr {
+  background: rgba(33,33,33,0.16);
+}
+table {
+  background-color: #fff;
+  color: #212121;
+  border: 1rem solid rgba(33,33,33,0.16);
+}
+table th {
+  color: #9e9e9e;
+}
+table td {
+  border-top: 1rem solid rgba(33,33,33,0.16);
+  border-bottom: 1rem solid rgba(33,33,33,0.16);
 }
 pre,
 code {
@@ -1118,6 +1118,62 @@ code {
 }
 .slideOutLeft {
   animation-name: slideOutLeft;
+}
+@-moz-keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+@-webkit-keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+@-o-keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+@keyframes progressIndeterminate {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 25%;
+    width: 75%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
 }
 @-moz-keyframes slideInLeft {
   0% {
@@ -1245,62 +1301,6 @@ code {
   }
   100% {
     transform: translate(100%, 0%);
-  }
-}
-@-moz-keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
-@-webkit-keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
-@-o-keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
-  }
-}
-@keyframes progressIndeterminate {
-  0% {
-    left: 0;
-    width: 0%;
-  }
-  50% {
-    left: 25%;
-    width: 75%;
-  }
-  100% {
-    left: 100%;
-    width: 0%;
   }
 }
 @-moz-keyframes ripple {
@@ -1671,11 +1671,6 @@ code {
 .animated {
   transition: all 0.3s ease-in-out;
 }
-dialog {
-  transition: all 0.3s ease-in-out;
-  z-index: 0;
-  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0px 0px 0px rgba(0,0,0,0.12), 0 0px 0px 0 rgba(0,0,0,0.2);
-}
 [data-switch],
 [data-badge] {
   transition: all 0.3s ease-in-out;
@@ -1688,11 +1683,6 @@ dialog {
   transition: all 0.3s ease-in-out;
   z-index: 2;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 0.6667px 2px -2px rgba(0,0,0,0.12), 0 0.6667px 2px 0 rgba(0,0,0,0.2);
-}
-[data-refresh-indicator] {
-  transition: all 0.3s ease-in-out;
-  z-index: 3;
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 1px 3px -3px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
 }
 body>header,
 body>[data-flexible-bar],
@@ -1707,6 +1697,27 @@ body>footer {
   transition: all 0.3s ease-in-out;
   z-index: 6;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.16), 0 2px 6px -6px rgba(0,0,0,0.12), 0 2px 6px 0 rgba(0,0,0,0.2);
+}
+[data-drawer-content],
+[data-modal-bottom-sheet] {
+  transition: all 0.3s ease-in-out;
+  z-index: 16;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.16), 0 5.3333px 16px -16px rgba(0,0,0,0.12), 0 5.3333px 16px 0 rgba(0,0,0,0.2);
+}
+pre {
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16) inset, 0 0.6667px 2px -2px rgba(0,0,0,0.12) inset, 0 0.6667px 2px 0 rgba(0,0,0,0.2) inset;
+}
+dialog {
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0px 0px 0px rgba(0,0,0,0.12), 0 0px 0px 0 rgba(0,0,0,0.2);
+}
+[data-refresh-indicator] {
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 1px 3px -3px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
 }
 [data-bottom-bar],
 [data-card~="active"],
@@ -1732,23 +1743,12 @@ menu menu {
   z-index: 12;
   box-shadow: 0 12px 24px 0 rgba(0,0,0,0.16), 0 4px 12px -12px rgba(0,0,0,0.12), 0 4px 12px 0 rgba(0,0,0,0.2);
 }
-[data-drawer-content],
-[data-modal-bottom-sheet] {
-  transition: all 0.3s ease-in-out;
-  z-index: 16;
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.16), 0 5.3333px 16px -16px rgba(0,0,0,0.12), 0 5.3333px 16px 0 rgba(0,0,0,0.2);
-}
 [data-dialog-trigger]:checked+label+dialog,
 dialog[open],
 [data-picker] {
   transition: all 0.3s ease-in-out;
   z-index: 24;
   box-shadow: 0 24px 48px 0 rgba(0,0,0,0.16), 0 8px 24px -24px rgba(0,0,0,0.12), 0 8px 24px 0 rgba(0,0,0,0.2);
-}
-pre {
-  transition: all 0.3s ease-in-out;
-  z-index: 2;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16) inset, 0 0.6667px 2px -2px rgba(0,0,0,0.12) inset, 0 0.6667px 2px 0 rgba(0,0,0,0.2) inset;
 }
 [data-elevation~="focus-1"]:focus,
 [data-elevation~="active-1"]:active,
@@ -2241,6 +2241,7 @@ pre>code {
   top: -11rem;
   right: -11rem;
   z-index: 2;
+  text-align: center;
 }
 /*** Buttons ***/
 button,
@@ -2976,12 +2977,14 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
 }
-*,
 :after,
-:before {
-  font-family: 'Roboto', sans-serif;
+:before,
+body,
+input,
+select,
+textarea {
+  font-family: -apple-system, Roboto, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 h1,
 h2,

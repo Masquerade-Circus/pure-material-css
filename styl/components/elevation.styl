@@ -15,17 +15,11 @@ elevation(base, isInset = false)
         box-shadow: 0 (base)px (round(base*2,4))px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity), 0 (round(base/3,4))px (base)px (0 - base)px rgba(0, 0, 0, $shadow-key-umbra-opacity), 0 (round(base/3,4))px (base)px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
 
 /*** Components ***/
-dialog
-    elevation(0)
-
 [data-switch], [data-badge]
     elevation(1)
 
 [data-card], [data-button~="raised"], [data-fab~="inline"] //[data-quick-entry], [data-search-bar]
     elevation(2)
-
-[data-refresh-indicator] //[data-quick-entry]:active, [data-quick-entry]:focus, [data-search-bar]:active, [data-search-bar]:focus
-    elevation(3)
 
 body>header,
 body>[data-flexible-bar],
@@ -36,38 +30,45 @@ body>footer
 [data-fab], [data-snackbar]
     elevation(6)
 
-[data-bottom-bar], [data-card~="active"], [data-button~="raised"]:active, [data-button*="raised active"]
-    elevation(8)
-
-menu
-    elevation(8)
-    menu
-        elevation(9)
-
-[data-fab]:active,[data-fab~="active"]
-    elevation(12)
-
 [data-drawer-content], [data-modal-bottom-sheet]
     elevation(16)
-
-[data-dialog-trigger]:checked+label+dialog,dialog[open], [data-picker]
-    elevation(24)
 
 pre
     elevation(2, true)
 
+if ($slim != true)
+    dialog
+        elevation(0)
+
+    [data-refresh-indicator] //[data-quick-entry]:active, [data-quick-entry]:focus, [data-search-bar]:active, [data-search-bar]:focus
+        elevation(3)
+
+    [data-bottom-bar], [data-card~="active"], [data-button~="raised"]:active, [data-button*="raised active"]
+        elevation(8)
+
+    menu
+        elevation(8)
+        menu
+            elevation(9)
+
+    [data-fab]:active,[data-fab~="active"]
+        elevation(12)
+
+    [data-dialog-trigger]:checked+label+dialog,dialog[open], [data-picker]
+        elevation(24)
+
 /*** Attributes ***/
+if ($slim != true)
+    for size in 1 2 3 4 6 8 9 10 11 12 16 24 26
+        [data-elevation~={'"focus-' + size + '"'}]:focus,
+        [data-elevation~={'"active-' + size + '"'}]:active,
+        [data-elevation~={'"hover-' + size + '"'}]:hover,
+        [data-elevation~={'"'+ size + '"'}]
+            elevation(size)
 
-for size in 1 2 3 4 6 8 9 10 11 12 16 24 26
-    [data-elevation~={'"focus-' + size + '"'}]:focus,
-    [data-elevation~={'"active-' + size + '"'}]:active,
-    [data-elevation~={'"hover-' + size + '"'}]:hover,
-    [data-elevation~={'"'+ size + '"'}]
-        elevation(size)
-
-for size in 1 2 3 4 6 8 9 10 11 12 16 24 26
-    [data-emboss~={'"focus-' + size + '"'}]:focus,
-    [data-emboss~={'"active-' + size + '"'}]:active,
-    [data-emboss~={'"hover-' + size + '"'}]:hover,
-    [data-emboss~={'"'+ size + '"'}]
-        elevation(size, true)
+    for size in 1 2 3 4 6 8 9 10 11 12 16 24 26
+        [data-emboss~={'"focus-' + size + '"'}]:focus,
+        [data-emboss~={'"active-' + size + '"'}]:active,
+        [data-emboss~={'"hover-' + size + '"'}]:hover,
+        [data-emboss~={'"'+ size + '"'}]
+            elevation(size, true)

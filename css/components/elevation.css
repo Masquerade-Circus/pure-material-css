@@ -2,11 +2,6 @@
   transition: all 0.3s ease-in-out;
 }
 /*** Components ***/
-dialog {
-  transition: all 0.3s ease-in-out;
-  z-index: 0;
-  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0px 0px 0px rgba(0,0,0,0.12), 0 0px 0px 0 rgba(0,0,0,0.2);
-}
 [data-switch],
 [data-badge] {
   transition: all 0.3s ease-in-out;
@@ -19,11 +14,6 @@ dialog {
   transition: all 0.3s ease-in-out;
   z-index: 2;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 0.6667px 2px -2px rgba(0,0,0,0.12), 0 0.6667px 2px 0 rgba(0,0,0,0.2);
-}
-[data-refresh-indicator] {
-  transition: all 0.3s ease-in-out;
-  z-index: 3;
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 1px 3px -3px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
 }
 body>header,
 body>[data-flexible-bar],
@@ -38,6 +28,27 @@ body>footer {
   transition: all 0.3s ease-in-out;
   z-index: 6;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.16), 0 2px 6px -6px rgba(0,0,0,0.12), 0 2px 6px 0 rgba(0,0,0,0.2);
+}
+[data-drawer-content],
+[data-modal-bottom-sheet] {
+  transition: all 0.3s ease-in-out;
+  z-index: 16;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.16), 0 5.3333px 16px -16px rgba(0,0,0,0.12), 0 5.3333px 16px 0 rgba(0,0,0,0.2);
+}
+pre {
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16) inset, 0 0.6667px 2px -2px rgba(0,0,0,0.12) inset, 0 0.6667px 2px 0 rgba(0,0,0,0.2) inset;
+}
+dialog {
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0px 0px 0px rgba(0,0,0,0.12), 0 0px 0px 0 rgba(0,0,0,0.2);
+}
+[data-refresh-indicator] {
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 1px 3px -3px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
 }
 [data-bottom-bar],
 [data-card~="active"],
@@ -63,12 +74,6 @@ menu menu {
   z-index: 12;
   box-shadow: 0 12px 24px 0 rgba(0,0,0,0.16), 0 4px 12px -12px rgba(0,0,0,0.12), 0 4px 12px 0 rgba(0,0,0,0.2);
 }
-[data-drawer-content],
-[data-modal-bottom-sheet] {
-  transition: all 0.3s ease-in-out;
-  z-index: 16;
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.16), 0 5.3333px 16px -16px rgba(0,0,0,0.12), 0 5.3333px 16px 0 rgba(0,0,0,0.2);
-}
 [data-dialog-trigger]:checked+label+dialog,
 dialog[open],
 [data-picker] {
@@ -76,12 +81,6 @@ dialog[open],
   z-index: 24;
   box-shadow: 0 24px 48px 0 rgba(0,0,0,0.16), 0 8px 24px -24px rgba(0,0,0,0.12), 0 8px 24px 0 rgba(0,0,0,0.2);
 }
-pre {
-  transition: all 0.3s ease-in-out;
-  z-index: 2;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16) inset, 0 0.6667px 2px -2px rgba(0,0,0,0.12) inset, 0 0.6667px 2px 0 rgba(0,0,0,0.2) inset;
-}
-/*** Attributes ***/
 [data-elevation~="focus-1"]:focus,
 [data-elevation~="active-1"]:active,
 [data-elevation~="hover-1"]:hover,
